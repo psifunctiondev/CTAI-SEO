@@ -1,0 +1,1461 @@
+{
+  "report_generated": "2026-04-14T16:48:04.730089",
+  "date_range": {
+    "start": "2026-01-05",
+    "end": "2026-03-04",
+    "days": 59
+  },
+  "classification_summary": {
+    "total_requests": 441648,
+    "human": 281855,
+    "human_pct": 63.8,
+    "non_human": 159793,
+    "non_human_pct": 36.2,
+    "breakdown": {
+      "human": 281855,
+      "suspicious": 59064,
+      "bot": 48513,
+      "malicious": 25974,
+      "search_crawler": 16404,
+      "seo_tool": 7629,
+      "internal": 2209
+    }
+  },
+  "weekly_trends": [
+    {
+      "week": "2026-W02",
+      "start_date": "2026-01-05",
+      "end_date": "2026-01-11",
+      "human_requests": 23875,
+      "human_page_views": 2073,
+      "unique_visitors": 1858,
+      "crawler_requests": 2196,
+      "errors_404": 2716,
+      "malicious_requests": 3799
+    },
+    {
+      "week": "2026-W03",
+      "start_date": "2026-01-12",
+      "end_date": "2026-01-18",
+      "human_requests": 27245,
+      "human_page_views": 2335,
+      "unique_visitors": 1660,
+      "crawler_requests": 2314,
+      "errors_404": 2569,
+      "malicious_requests": 12244
+    },
+    {
+      "week": "2026-W04",
+      "start_date": "2026-01-19",
+      "end_date": "2026-01-25",
+      "human_requests": 29810,
+      "human_page_views": 2344,
+      "unique_visitors": 1867,
+      "crawler_requests": 1871,
+      "errors_404": 4110,
+      "malicious_requests": 4916
+    },
+    {
+      "week": "2026-W05",
+      "start_date": "2026-01-26",
+      "end_date": "2026-02-01",
+      "human_requests": 30028,
+      "human_page_views": 2423,
+      "unique_visitors": 1832,
+      "crawler_requests": 1524,
+      "errors_404": 2802,
+      "malicious_requests": 11965
+    },
+    {
+      "week": "2026-W06",
+      "start_date": "2026-02-02",
+      "end_date": "2026-02-08",
+      "human_requests": 50830,
+      "human_page_views": 2836,
+      "unique_visitors": 1670,
+      "crawler_requests": 1484,
+      "errors_404": 8387,
+      "malicious_requests": 15579
+    },
+    {
+      "week": "2026-W07",
+      "start_date": "2026-02-09",
+      "end_date": "2026-02-15",
+      "human_requests": 33701,
+      "human_page_views": 2354,
+      "unique_visitors": 1845,
+      "crawler_requests": 2112,
+      "errors_404": 9670,
+      "malicious_requests": 13150
+    },
+    {
+      "week": "2026-W08",
+      "start_date": "2026-02-16",
+      "end_date": "2026-02-22",
+      "human_requests": 38920,
+      "human_page_views": 2469,
+      "unique_visitors": 1578,
+      "crawler_requests": 2327,
+      "errors_404": 5485,
+      "malicious_requests": 9280
+    },
+    {
+      "week": "2026-W09",
+      "start_date": "2026-02-23",
+      "end_date": "2026-03-01",
+      "human_requests": 34241,
+      "human_page_views": 2095,
+      "unique_visitors": 1500,
+      "crawler_requests": 1970,
+      "errors_404": 11419,
+      "malicious_requests": 10455
+    },
+    {
+      "week": "2026-W10",
+      "start_date": "2026-03-02",
+      "end_date": "2026-03-04",
+      "human_requests": 13205,
+      "human_page_views": 950,
+      "unique_visitors": 685,
+      "crawler_requests": 606,
+      "errors_404": 1491,
+      "malicious_requests": 3650
+    }
+  ],
+  "daily_unique_visitors": {
+    "2026-01-05": 333,
+    "2026-01-06": 345,
+    "2026-01-07": 371,
+    "2026-01-08": 423,
+    "2026-01-09": 347,
+    "2026-01-10": 310,
+    "2026-01-11": 279,
+    "2026-01-12": 369,
+    "2026-01-13": 360,
+    "2026-01-14": 312,
+    "2026-01-15": 320,
+    "2026-01-16": 289,
+    "2026-01-17": 351,
+    "2026-01-18": 282,
+    "2026-01-19": 407,
+    "2026-01-20": 372,
+    "2026-01-21": 424,
+    "2026-01-22": 357,
+    "2026-01-23": 348,
+    "2026-01-24": 275,
+    "2026-01-25": 271,
+    "2026-01-26": 312,
+    "2026-01-27": 317,
+    "2026-01-28": 355,
+    "2026-01-29": 463,
+    "2026-01-30": 343,
+    "2026-01-31": 266,
+    "2026-02-01": 305,
+    "2026-02-02": 365,
+    "2026-02-03": 293,
+    "2026-02-04": 355,
+    "2026-02-05": 329,
+    "2026-02-06": 310,
+    "2026-02-07": 267,
+    "2026-02-08": 276,
+    "2026-02-09": 309,
+    "2026-02-10": 309,
+    "2026-02-11": 372,
+    "2026-02-12": 360,
+    "2026-02-13": 423,
+    "2026-02-14": 327,
+    "2026-02-15": 293,
+    "2026-02-16": 349,
+    "2026-02-17": 346,
+    "2026-02-18": 331,
+    "2026-02-19": 327,
+    "2026-02-20": 246,
+    "2026-02-21": 236,
+    "2026-02-22": 246,
+    "2026-02-23": 264,
+    "2026-02-24": 261,
+    "2026-02-25": 271,
+    "2026-02-26": 349,
+    "2026-02-27": 281,
+    "2026-02-28": 265,
+    "2026-03-01": 300,
+    "2026-03-02": 329,
+    "2026-03-03": 343,
+    "2026-03-04": 85
+  },
+  "top_pages": [
+    {
+      "path": "/",
+      "views": 8745
+    },
+    {
+      "path": "/projects",
+      "views": 956
+    },
+    {
+      "path": "/about-us",
+      "views": 849
+    },
+    {
+      "path": "/project/barn-with-a-view",
+      "views": 424
+    },
+    {
+      "path": "/project/mid-century-home",
+      "views": 200
+    },
+    {
+      "path": "/project/new-castle-town-hall",
+      "views": 199
+    },
+    {
+      "path": "/project/camberville-chefs-kitchen-and-renovation",
+      "views": 194
+    },
+    {
+      "path": "/project/berkshire-farmhouse",
+      "views": 193
+    },
+    {
+      "path": "/press",
+      "views": 193
+    },
+    {
+      "path": "/project/net-zero-barn",
+      "views": 186
+    },
+    {
+      "path": "/project/modern-townhouse",
+      "views": 181
+    },
+    {
+      "path": "/project/classic-townhouse",
+      "views": 171
+    },
+    {
+      "path": "/project/pool-house-in-an-olmstead-landscape",
+      "views": 168
+    },
+    {
+      "path": "/project/bullfinch-house",
+      "views": 165
+    },
+    {
+      "path": "/project/nantucket-kitchen",
+      "views": 165
+    },
+    {
+      "path": "/project/st-pauls-school-chapels",
+      "views": 163
+    },
+    {
+      "path": "/project/island-renovation-and-expansion",
+      "views": 160
+    },
+    {
+      "path": "/?rest_route=/wp/v2/users",
+      "views": 155
+    },
+    {
+      "path": "/project/mountain-retreat",
+      "views": 141
+    },
+    {
+      "path": "/project/great-camp-bunkhouse",
+      "views": 141
+    },
+    {
+      "path": "/project/heritage-condominium-renovation",
+      "views": 139
+    },
+    {
+      "path": "/project/south-end-townhouse",
+      "views": 135
+    },
+    {
+      "path": "/project/maker-space-art-studio",
+      "views": 134
+    },
+    {
+      "path": "/project/boston-apartment-for-a-young-family",
+      "views": 133
+    },
+    {
+      "path": "/project/wellesley-renovation",
+      "views": 126
+    },
+    {
+      "path": "/project/contemporary-single-family-conversion",
+      "views": 125
+    },
+    {
+      "path": "/project/firestone-and-parson",
+      "views": 120
+    },
+    {
+      "path": "/project/cambridge-house",
+      "views": 117
+    },
+    {
+      "path": "/project/great-camp-barn",
+      "views": 117
+    },
+    {
+      "path": "/project/riverside-condo-renovation",
+      "views": 112
+    }
+  ],
+  "top_landing_pages": [
+    {
+      "path": "/",
+      "sessions": 6169
+    },
+    {
+      "path": "/about-us",
+      "sessions": 280
+    },
+    {
+      "path": "/projects",
+      "sessions": 200
+    },
+    {
+      "path": "/project/barn-with-a-view",
+      "sessions": 195
+    },
+    {
+      "path": "/project/st-pauls-school-chapels",
+      "sessions": 96
+    },
+    {
+      "path": "/project/bullfinch-house",
+      "sessions": 89
+    },
+    {
+      "path": "/project/net-zero-barn",
+      "sessions": 80
+    },
+    {
+      "path": "/project/new-castle-town-hall",
+      "sessions": 80
+    },
+    {
+      "path": "/press",
+      "sessions": 80
+    },
+    {
+      "path": "/project/berkshire-farmhouse",
+      "sessions": 79
+    },
+    {
+      "path": "/project/nantucket-kitchen",
+      "sessions": 72
+    },
+    {
+      "path": "/hello-world",
+      "sessions": 71
+    },
+    {
+      "path": "/project/great-camp-bunkhouse",
+      "sessions": 67
+    },
+    {
+      "path": "/project/mountain-retreat",
+      "sessions": 63
+    },
+    {
+      "path": "/project/boston-apartment-for-a-young-family",
+      "sessions": 62
+    },
+    {
+      "path": "/project/wellesley-renovation",
+      "sessions": 60
+    },
+    {
+      "path": "/project/mid-century-home",
+      "sessions": 60
+    },
+    {
+      "path": "/project/island-renovation-and-expansion",
+      "sessions": 59
+    },
+    {
+      "path": "/project/classic-townhouse",
+      "sessions": 59
+    },
+    {
+      "path": "/project/brookline-kitchen",
+      "sessions": 58
+    }
+  ],
+  "referrer_analysis": {
+    "direct_or_internal": 17707,
+    "search_engines": {
+      "Google": 1257,
+      "Bing": 52,
+      "Duckduckgo": 28,
+      "Yahoo": 19,
+      "Ecosia": 1
+    },
+    "social": {
+      "Pinterest": 145,
+      "Facebook": 35,
+      "Instagram": 25,
+      "Linkedin": 12,
+      "Twitter": 2,
+      "Reddit": 1
+    },
+    "top_referrers": [
+      {
+        "url": "https://www.google.com/",
+        "count": 1032
+      },
+      {
+        "url": "https://www.google.com/url/?sa=t",
+        "count": 85
+      },
+      {
+        "url": "https://www.pinterest.com/pin/32651166044322881",
+        "count": 59
+      },
+      {
+        "url": "http://www.google.com/url?url=www.trumanarchitects.com&yahoo.com",
+        "count": 55
+      },
+      {
+        "url": "https://www.bing.com/",
+        "count": 50
+      },
+      {
+        "url": "https://duckduckgo.com/",
+        "count": 28
+      },
+      {
+        "url": "https://www.bostondesignguide.com/",
+        "count": 26
+      },
+      {
+        "url": "https://l.instagram.com/",
+        "count": 25
+      },
+      {
+        "url": "https://www.google.com",
+        "count": 24
+      },
+      {
+        "url": "www.google.com",
+        "count": 23
+      },
+      {
+        "url": "https://www.pinterest.com/",
+        "count": 22
+      },
+      {
+        "url": "https://thephilosopher.net/",
+        "count": 21
+      },
+      {
+        "url": "https://www.pinterest.com/pin/238690848996410306",
+        "count": 20
+      },
+      {
+        "url": "http://m.facebook.com",
+        "count": 19
+      },
+      {
+        "url": "https://visapedia.ru/",
+        "count": 16
+      },
+      {
+        "url": "android-app://com.pinterest/",
+        "count": 15
+      },
+      {
+        "url": "https://search.yahoo.com/",
+        "count": 14
+      },
+      {
+        "url": "https://www.facebook.com/",
+        "count": 14
+      },
+      {
+        "url": "https://www.pinterest.com/pin/35817759533520296",
+        "count": 13
+      },
+      {
+        "url": "https://nehomemag.com/",
+        "count": 13
+      }
+    ],
+    "total_external_referrals": 2172
+  },
+  "crawler_activity": {
+    "YandexBot": {
+      "total_requests": 3994,
+      "unique_pages_crawled": 40,
+      "top_pages_crawled": [
+        [
+          "/",
+          29
+        ],
+        [
+          "/project/st-pauls-school-chapels",
+          7
+        ],
+        [
+          "/projects",
+          6
+        ],
+        [
+          "/?p=514",
+          4
+        ],
+        [
+          "/?p=2259",
+          4
+        ],
+        [
+          "/project/riverside-condo-renovation",
+          4
+        ],
+        [
+          "/about-us",
+          3
+        ],
+        [
+          "/?p=2329",
+          3
+        ],
+        [
+          "/project/maker-space-art-studio",
+          3
+        ],
+        [
+          "/news/this-is-a-standard-post-with-typography-2",
+          3
+        ],
+        [
+          "/project/nantucket-kitchen",
+          3
+        ],
+        [
+          "/project/newton-kitchen",
+          3
+        ],
+        [
+          "/project/mid-century-home",
+          3
+        ],
+        [
+          "/project/bullfinch-house",
+          2
+        ],
+        [
+          "/project/smith-kitchen",
+          2
+        ]
+      ],
+      "status_codes": {
+        "429": 3994
+      },
+      "first_seen": "2026-01-05T00:05:32-05:00",
+      "last_seen": "2026-03-04T05:06:32-05:00",
+      "avg_daily_requests": 74.0
+    },
+    "Bingbot": {
+      "total_requests": 4262,
+      "unique_pages_crawled": 154,
+      "top_pages_crawled": [
+        [
+          "/",
+          108
+        ],
+        [
+          "/?s=",
+          55
+        ],
+        [
+          "/?s=2025",
+          45
+        ],
+        [
+          "/?s=2026",
+          35
+        ],
+        [
+          "/project/great-camp-barn",
+          22
+        ],
+        [
+          "/about-us",
+          16
+        ],
+        [
+          "/project/berkshire-farmhouse",
+          15
+        ],
+        [
+          "/team_members/andrew-crocker",
+          10
+        ],
+        [
+          "/project/cambridge-house",
+          8
+        ],
+        [
+          "/project/barn-with-a-view",
+          8
+        ],
+        [
+          "/project/mountain-retreat",
+          8
+        ],
+        [
+          "/project/firestone-and-parson",
+          8
+        ],
+        [
+          "/team_members/amy-johnson-carroll",
+          8
+        ],
+        [
+          "/projects",
+          8
+        ],
+        [
+          "/project/classic-townhouse",
+          8
+        ]
+      ],
+      "status_codes": {
+        "200": 4029,
+        "301": 117,
+        "404": 109,
+        "304": 5,
+        "403": 1,
+        "500": 1
+      },
+      "first_seen": "2026-01-05T00:28:33-05:00",
+      "last_seen": "2026-03-04T09:06:09-05:00",
+      "avg_daily_requests": 72.2
+    },
+    "Googlebot": {
+      "total_requests": 3569,
+      "unique_pages_crawled": 97,
+      "top_pages_crawled": [
+        [
+          "/",
+          350
+        ],
+        [
+          "/about-us",
+          56
+        ],
+        [
+          "/projects",
+          35
+        ],
+        [
+          "/project/st-pauls-school-chapels",
+          27
+        ],
+        [
+          "/feed",
+          24
+        ],
+        [
+          "/project/modern-townhouse",
+          21
+        ],
+        [
+          "/press",
+          20
+        ],
+        [
+          "/project/nantucket-kitchen",
+          19
+        ],
+        [
+          "/project/new-castle-town-hall",
+          19
+        ],
+        [
+          "/project/great-camp-bunkhouse",
+          19
+        ],
+        [
+          "/project/bullfinch-house",
+          19
+        ],
+        [
+          "/project/classic-townhouse",
+          18
+        ],
+        [
+          "/project/firestone-and-parson",
+          17
+        ],
+        [
+          "/portfolio/modern-townhouse",
+          16
+        ],
+        [
+          "/comments/feed",
+          16
+        ]
+      ],
+      "status_codes": {
+        "200": 2161,
+        "301": 684,
+        "404": 516,
+        "304": 193,
+        "302": 9,
+        "403": 6
+      },
+      "first_seen": "2026-01-05T00:42:39-05:00",
+      "last_seen": "2026-03-04T07:50:20-05:00",
+      "avg_daily_requests": 60.5
+    },
+    "DuckDuckBot": {
+      "total_requests": 500,
+      "unique_pages_crawled": 5,
+      "top_pages_crawled": [
+        [
+          "/",
+          223
+        ],
+        [
+          "/xmlrpc.php",
+          4
+        ],
+        [
+          "/comments/feed",
+          4
+        ],
+        [
+          "/feed",
+          4
+        ],
+        [
+          "/xmlrpc.php?rsd",
+          4
+        ]
+      ],
+      "status_codes": {
+        "200": 382,
+        "301": 112,
+        "405": 4,
+        "302": 2
+      },
+      "first_seen": "2026-01-05T01:38:43-05:00",
+      "last_seen": "2026-03-03T23:53:29-05:00",
+      "avg_daily_requests": 10.2
+    },
+    "PetalBot": {
+      "total_requests": 1970,
+      "unique_pages_crawled": 123,
+      "top_pages_crawled": [
+        [
+          "/press",
+          121
+        ],
+        [
+          "/about-us",
+          100
+        ],
+        [
+          "/projects",
+          92
+        ],
+        [
+          "/",
+          73
+        ],
+        [
+          "/about",
+          52
+        ],
+        [
+          "/project/berkshire-farmhouse",
+          47
+        ],
+        [
+          "/project/lotta-fountain",
+          45
+        ],
+        [
+          "/project/boston-apartment-for-a-young-family",
+          34
+        ],
+        [
+          "/project/bullfinch-house",
+          31
+        ],
+        [
+          "/project/net-zero-barn",
+          31
+        ],
+        [
+          "/project/modern-townhouse",
+          30
+        ],
+        [
+          "/project/firestone-and-parson",
+          27
+        ],
+        [
+          "/project/riverside-condo-renovation",
+          26
+        ],
+        [
+          "/project/great-camp-cabins",
+          25
+        ],
+        [
+          "/project/townhouse-kitchen",
+          25
+        ]
+      ],
+      "status_codes": {
+        "200": 1037,
+        "301": 751,
+        "404": 174,
+        "302": 6,
+        "500": 2
+      },
+      "first_seen": "2026-01-05T03:51:05-05:00",
+      "last_seen": "2026-03-04T09:17:23-05:00",
+      "avg_daily_requests": 33.4
+    },
+    "Applebot": {
+      "total_requests": 1765,
+      "unique_pages_crawled": 103,
+      "top_pages_crawled": [
+        [
+          "/",
+          28
+        ],
+        [
+          "/contact",
+          17
+        ],
+        [
+          "/comments/feed",
+          6
+        ],
+        [
+          "/feed",
+          6
+        ],
+        [
+          "/news/this-is-a-standard-post-with-typography-5/feed",
+          4
+        ],
+        [
+          "/about-us",
+          3
+        ],
+        [
+          "/project/bullfinch-house/feed",
+          3
+        ],
+        [
+          "/project/brookline-addition",
+          3
+        ],
+        [
+          "/project/bullfinch-hall-renovation-philips-andover-academy/feed",
+          3
+        ],
+        [
+          "/project/great-camp-bunkhouse/feed",
+          3
+        ],
+        [
+          "/project/townhouse-kitchen/feed",
+          2
+        ],
+        [
+          "/project/bullfinch-house",
+          2
+        ],
+        [
+          "/?s=Preparation+H21-211_V1.0+Store+%e2%9d%93+H21-211_V1.0+Training+Courses+%f0%9f%9b%a3+H21-211_V1.0+Valid+Braindumps+Sheet+%f0%9f%96%8a+Search+on+%e2%8f%a9+www.pdfvce.com+%e2%8f%aa+for+%e2%9c%94+H21-211_V1.0+%ef%b8%8f%e2%9c%94%ef%b8%8f+to+obtain+exam+materials+for+free+download+%f0%9f%9a%97H21-211_V1.0+Exam+Course",
+          2
+        ],
+        [
+          "/?s=Free+PDF+Quiz+2024+SAP+C_TS462_2021+%e2%80%93+Efficient+Valid+Exam+Practice+%f0%9f%8d%92+Search+for+%7b+C_TS462_2021+%7d+and+download+it+for+free+immediately+on+%e2%9e%a5+www.pdfvce.com+%f0%9f%a1%84+%f0%9f%95%a3Pass4sure+C_TS462_2021+Dumps+Pdf",
+          2
+        ],
+        [
+          "/?s=Get+MB-700+Exam+Questions+To+Achieve+A+High+Score+%f0%9f%a4%a7+Search+on+%e2%9e%bd+www.pdfvce.com+%f0%9f%a2%aa+for+%e2%9e%a1+MB-700+%ef%b8%8f%e2%ac%85%ef%b8%8f+to+obtain+exam+materials+for+free+download+%f0%9f%9a%9bMB-700+Reliable+Test+Objectives",
+          2
+        ]
+      ],
+      "status_codes": {
+        "200": 1689,
+        "301": 63,
+        "404": 13
+      },
+      "first_seen": "2026-01-05T05:47:26-05:00",
+      "last_seen": "2026-03-03T14:45:39-05:00",
+      "avg_daily_requests": 33.9
+    },
+    "Baiduspider": {
+      "total_requests": 137,
+      "unique_pages_crawled": 27,
+      "top_pages_crawled": [
+        [
+          "/about",
+          26
+        ],
+        [
+          "/portfolio/baker-kitchen",
+          23
+        ],
+        [
+          "/press",
+          11
+        ],
+        [
+          "/portfolio/wellesley-renovation",
+          10
+        ],
+        [
+          "/portfolio/west-cedar-st",
+          9
+        ],
+        [
+          "/portfolio/island-renovation-and-expansion",
+          5
+        ],
+        [
+          "/portfolio/great-camp-bunkhouse",
+          4
+        ],
+        [
+          "/portfolio/townhouse-kitchen",
+          4
+        ],
+        [
+          "/",
+          4
+        ],
+        [
+          "/portfolio/south-end-townhouse",
+          3
+        ],
+        [
+          "/portfolio/new-hampshire-ski-house",
+          3
+        ],
+        [
+          "/portfolio/loft-renovation",
+          3
+        ],
+        [
+          "/project-type/transitional",
+          2
+        ],
+        [
+          "/portfolio/great-camp-barn",
+          2
+        ],
+        [
+          "/people",
+          2
+        ]
+      ],
+      "status_codes": {
+        "429": 136,
+        "200": 1
+      },
+      "first_seen": "2026-01-05T17:51:57-05:00",
+      "last_seen": "2026-03-03T22:49:33-05:00",
+      "avg_daily_requests": 3.0
+    },
+    "GoogleOther": {
+      "total_requests": 170,
+      "unique_pages_crawled": 31,
+      "top_pages_crawled": [
+        [
+          "/",
+          13
+        ],
+        [
+          "/project/net-zero-barn",
+          4
+        ],
+        [
+          "/project/island-renovation-and-expansion",
+          3
+        ],
+        [
+          "/portfolio/net-zero-barn",
+          3
+        ],
+        [
+          "/project/st-pauls-school-chapels",
+          2
+        ],
+        [
+          "/project/classic-townhouse",
+          2
+        ],
+        [
+          "/?s=Consumer-Goods-Cloud-Accredited-Professional%20Dumps%20Free%20%25f0%259f%25a6%258d%20Consumer-Goods-Cloud-Accredited-Professional%20Reliable%20Exam%20Testking%20%25f0%259f%25a7%25ac%20New%20Consumer-Goods-Cloud-Accredited-Professional%20Test%20Syllabus%20%25f0%259f%25a7%2591%20Enter%20%25e2%259e%25a4%20www.pdfvce.com%20%25e2%25ae%2598%20and%20search%20for%20%25e2%259c%2594%20Consumer-Goods-Cloud-Accredited-Professional%20%25ef%25b8%258f%25e2%259c%2594%25ef%25b8%258f%20to%20download%20for%20free%20%25e2%2586%25a9Consumer-Goods-Cloud-Accredited-Professional%20Reliable%20Exam%20Testking",
+          2
+        ],
+        [
+          "/project/boston-apartment-for-a-young-family",
+          2
+        ],
+        [
+          "/wp-content/themes/Divi/images",
+          2
+        ],
+        [
+          "/wp-content/themes/Divi/includes/builder/images",
+          2
+        ],
+        [
+          "/project/bullfinch-house",
+          2
+        ],
+        [
+          "/portfolio/st-pauls-school-chapels",
+          1
+        ],
+        [
+          "/portfolio/classic-townhouse",
+          1
+        ],
+        [
+          "/portfolio/boston-condo-renovation",
+          1
+        ],
+        [
+          "/wp-content/themes/Divi_Child/*",
+          1
+        ]
+      ],
+      "status_codes": {
+        "200": 137,
+        "301": 22,
+        "404": 9,
+        "403": 2
+      },
+      "first_seen": "2026-01-08T09:40:10-05:00",
+      "last_seen": "2026-03-01T13:11:40-05:00",
+      "avg_daily_requests": 8.9
+    },
+    "Yahoo-Slurp": {
+      "total_requests": 2,
+      "unique_pages_crawled": 1,
+      "top_pages_crawled": [
+        [
+          "/?rest_route=/wp/v2/users",
+          2
+        ]
+      ],
+      "status_codes": {
+        "200": 1,
+        "403": 1
+      },
+      "first_seen": "2026-01-12T20:14:45-05:00",
+      "last_seen": "2026-01-14T05:33:16-05:00",
+      "avg_daily_requests": 1.0
+    },
+    "AdsBot-Google": {
+      "total_requests": 34,
+      "unique_pages_crawled": 2,
+      "top_pages_crawled": [
+        [
+          "/apple-app-site-association",
+          6
+        ],
+        [
+          "/project",
+          1
+        ]
+      ],
+      "status_codes": {
+        "200": 22,
+        "404": 12
+      },
+      "first_seen": "2026-01-21T09:18:52-05:00",
+      "last_seen": "2026-02-01T21:36:40-05:00",
+      "avg_daily_requests": 6.8
+    },
+    "Mediapartners-Google": {
+      "total_requests": 1,
+      "unique_pages_crawled": 1,
+      "top_pages_crawled": [
+        [
+          "/project/west-cedar-street-renovation",
+          1
+        ]
+      ],
+      "status_codes": {
+        "200": 1
+      },
+      "first_seen": "2026-02-20T04:59:22-05:00",
+      "last_seen": "2026-02-20T04:59:22-05:00",
+      "avg_daily_requests": 1.0
+    }
+  },
+  "error_analysis": {
+    "status_distribution": {
+      "200": 260604,
+      "206": 7799,
+      "300": 418,
+      "301": 51749,
+      "302": 9897,
+      "304": 1073,
+      "400": 59,
+      "401": 19,
+      "403": 34520,
+      "404": 48649,
+      "405": 179,
+      "408": 3,
+      "409": 20,
+      "429": 12947,
+      "500": 285,
+      "503": 13427
+    },
+    "top_404s": [
+      {
+        "path": "/robots.txt",
+        "count": 569
+      },
+      {
+        "path": "/AutoDiscover/autodiscover.xml",
+        "count": 303
+      },
+      {
+        "path": "/apple-touch-icon.png",
+        "count": 272
+      },
+      {
+        "path": "/apple-touch-icon-precomposed.png",
+        "count": 261
+      },
+      {
+        "path": "/.well-known/traffic-advice",
+        "count": 241
+      },
+      {
+        "path": "/.env",
+        "count": 191
+      },
+      {
+        "path": "/cgi-bin/",
+        "count": 172
+      },
+      {
+        "path": "/th1s_1s_a_4o4.html",
+        "count": 168
+      },
+      {
+        "path": "/blog/",
+        "count": 160
+      },
+      {
+        "path": "/ads.txt",
+        "count": 146
+      },
+      {
+        "path": "/backup/",
+        "count": 143
+      },
+      {
+        "path": "/wordpress/",
+        "count": 142
+      },
+      {
+        "path": "/wp/",
+        "count": 138
+      },
+      {
+        "path": "/favicon.ico",
+        "count": 132
+      },
+      {
+        "path": "/old/",
+        "count": 130
+      },
+      {
+        "path": "/administrator/",
+        "count": 119
+      },
+      {
+        "path": "/admin.php",
+        "count": 108
+      },
+      {
+        "path": "/file.php",
+        "count": 97
+      },
+      {
+        "path": "/about.php",
+        "count": 94
+      },
+      {
+        "path": "/classwithtostring.php",
+        "count": 91
+      },
+      {
+        "path": "/info.php",
+        "count": 84
+      },
+      {
+        "path": "/ioxi-o.php",
+        "count": 80
+      },
+      {
+        "path": "/inputs.php",
+        "count": 79
+      },
+      {
+        "path": "/adminfuns.php",
+        "count": 76
+      },
+      {
+        "path": "/goods.php",
+        "count": 76
+      },
+      {
+        "path": "/?author=4",
+        "count": 75
+      },
+      {
+        "path": "/uploads/",
+        "count": 73
+      },
+      {
+        "path": "/wp-content/plugins/hellopress/wp_filemanager.php",
+        "count": 72
+      },
+      {
+        "path": "/sftp-config.json",
+        "count": 68
+      },
+      {
+        "path": "/autoload_classmap.php",
+        "count": 68
+      }
+    ],
+    "top_500s": [
+      {
+        "path": "/xmlrpc.php",
+        "count": 2580
+      },
+      {
+        "path": "/wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%2Fwp-admin%2Findex.php&reauth=1",
+        "count": 2265
+      },
+      {
+        "path": "/wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%2Fwp-admin%2Fprofile.php&reauth=1",
+        "count": 828
+      },
+      {
+        "path": "/wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%2Fwp-admin%2Fedit.php&reauth=1",
+        "count": 812
+      },
+      {
+        "path": "/wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%2Fwp-admin%2Fplugins.php&reauth=1",
+        "count": 790
+      },
+      {
+        "path": "/wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.com%2Fwp-admin%2Findex.php&reauth=1",
+        "count": 281
+      },
+      {
+        "path": "/wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.com%2Fwp-admin%2Fprofile.php&reauth=1",
+        "count": 259
+      },
+      {
+        "path": "/wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.com%2Fwp-admin%2Fedit.php&reauth=1",
+        "count": 245
+      },
+      {
+        "path": "/wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.com%2Fwp-admin%2Fplugins.php&reauth=1",
+        "count": 229
+      },
+      {
+        "path": "//xmlrpc.php",
+        "count": 164
+      }
+    ],
+    "total_404s": 48649,
+    "total_5xx": 13712
+  },
+  "security_threats": {
+    "total_malicious": 25974,
+    "total_suspicious": 59064,
+    "attack_types": {
+      "probe": 44989,
+      "wp_login_probe": 14075,
+      "xmlrpc_probe": 8697,
+      "wp_exploit": 8677,
+      "brute_force": 8600
+    },
+    "top_attacker_ips": [
+      {
+        "ip": "163.252.150.0",
+        "count": 6490
+      },
+      {
+        "ip": "94.26.106.0",
+        "count": 2404
+      },
+      {
+        "ip": "104.248.185.0",
+        "count": 2289
+      },
+      {
+        "ip": "206.189.190.0",
+        "count": 2235
+      },
+      {
+        "ip": "158.41.240.0",
+        "count": 1621
+      },
+      {
+        "ip": "194.5.82.0",
+        "count": 1585
+      },
+      {
+        "ip": "167.172.76.0",
+        "count": 1330
+      },
+      {
+        "ip": "129.150.33.0",
+        "count": 1278
+      },
+      {
+        "ip": "136.144.33.0",
+        "count": 1104
+      },
+      {
+        "ip": "152.69.221.0",
+        "count": 1076
+      },
+      {
+        "ip": "109.205.211.0",
+        "count": 1056
+      },
+      {
+        "ip": "193.37.32.0",
+        "count": 991
+      },
+      {
+        "ip": "5.161.201.0",
+        "count": 952
+      },
+      {
+        "ip": "193.36.225.0",
+        "count": 941
+      },
+      {
+        "ip": "194.61.40.0",
+        "count": 938
+      }
+    ],
+    "top_attack_paths": [
+      {
+        "path": "/wp-login.php",
+        "count": 14035
+      },
+      {
+        "path": "/wp-admin/index.php",
+        "count": 10730
+      },
+      {
+        "path": "/xmlrpc.php",
+        "count": 8193
+      },
+      {
+        "path": "/wp-admin/admin-ajax.php",
+        "count": 7887
+      },
+      {
+        "path": "/wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%2Fwp-admin%2Findex.php&reauth=1",
+        "count": 3927
+      },
+      {
+        "path": "/wp-content/themes/Divi/core/admin/js/common.js?ver=4.27.5",
+        "count": 1958
+      },
+      {
+        "path": "/wp-admin/profile.php",
+        "count": 1619
+      },
+      {
+        "path": "/wp-admin/edit.php",
+        "count": 1575
+      },
+      {
+        "path": "/wp-admin/plugins.php",
+        "count": 1535
+      },
+      {
+        "path": "/wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.com%2Fwp-admin%2Findex.php&reauth=1",
+        "count": 1021
+      },
+      {
+        "path": "/wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%2Fwp-admin%2Fprofile.php&reauth=1",
+        "count": 852
+      },
+      {
+        "path": "/wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%2Fwp-admin%2Fedit.php&reauth=1",
+        "count": 833
+      },
+      {
+        "path": "/wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%2Fwp-admin%2Fplugins.php&reauth=1",
+        "count": 812
+      },
+      {
+        "path": "/wp-admin/",
+        "count": 601
+      },
+      {
+        "path": "/wp-content/themes/Divi/core/admin/fonts/modules/all/modules.woff",
+        "count": 337
+      }
+    ]
+  },
+  "hourly_distribution": {
+    "0": 7355,
+    "1": 5936,
+    "2": 6401,
+    "3": 4761,
+    "4": 2994,
+    "5": 5207,
+    "6": 7201,
+    "7": 7663,
+    "8": 15406,
+    "9": 11430,
+    "10": 11781,
+    "11": 18628,
+    "12": 14331,
+    "13": 25398,
+    "14": 19659,
+    "15": 21294,
+    "16": 15409,
+    "17": 15884,
+    "18": 12066,
+    "19": 12482,
+    "20": 11324,
+    "21": 11522,
+    "22": 11620,
+    "23": 6103
+  },
+  "hostname_distribution": {
+    "catherinetrumanarchitects.com": 363814,
+    "truman-architects.com": 48596,
+    "trumanarchitects.com": 16701,
+    "www.truman-architects.com": 6558,
+    "www.catherinetrumanarchitects.com": 5421,
+    "www.trumanarchitects.com": 558
+  }
+}

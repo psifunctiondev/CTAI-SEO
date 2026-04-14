@@ -1,0 +1,345 @@
+========================================================================
+CTAI ACCESS LOG ANALYSIS — BASELINE REPORT
+Catherine Truman Architects & Interiors
+Period: 2026-01-05 to 2026-03-04 (59 days)
+Report generated: 2026-04-14T16:48:04.730089
+========================================================================
+
+────────────────────────────────────────
+1. TRAFFIC CLASSIFICATION
+────────────────────────────────────────
+Total requests:       441,648
+Human traffic:        281,855  (63.8%)
+Non-human:            159,793  (36.2%)
+
+Breakdown:
+  human                 281,855  ( 63.8%)
+  suspicious             59,064  ( 13.4%)
+  bot                    48,513  ( 11.0%)
+  malicious              25,974  (  5.9%)
+  search_crawler         16,404  (  3.7%)
+  seo_tool                7,629  (  1.7%)
+  internal                2,209  (  0.5%)
+
+────────────────────────────────────────
+2. WEEKLY TRENDS
+────────────────────────────────────────
+      Week                     Dates  PageViews   Visitors   Crawlers   404s
+  2026-W02 2026-01-05→2026-01-11      2,073      1,858      2,196  2,716
+  2026-W03 2026-01-12→2026-01-18      2,335      1,660      2,314  2,569
+  2026-W04 2026-01-19→2026-01-25      2,344      1,867      1,871  4,110
+  2026-W05 2026-01-26→2026-02-01      2,423      1,832      1,524  2,802
+  2026-W06 2026-02-02→2026-02-08      2,836      1,670      1,484  8,387
+  2026-W07 2026-02-09→2026-02-15      2,354      1,845      2,112  9,670
+  2026-W08 2026-02-16→2026-02-22      2,469      1,578      2,327  5,485
+  2026-W09 2026-02-23→2026-03-01      2,095      1,500      1,970 11,419
+  2026-W10 2026-03-02→2026-03-04        950        685        606  1,491
+
+────────────────────────────────────────
+3. TOP PAGES (Human Page Views)
+────────────────────────────────────────
+    1.  8,745  /
+    2.    956  /projects
+    3.    849  /about-us
+    4.    424  /project/barn-with-a-view
+    5.    200  /project/mid-century-home
+    6.    199  /project/new-castle-town-hall
+    7.    194  /project/camberville-chefs-kitchen-and-renovation
+    8.    193  /project/berkshire-farmhouse
+    9.    193  /press
+   10.    186  /project/net-zero-barn
+   11.    181  /project/modern-townhouse
+   12.    171  /project/classic-townhouse
+   13.    168  /project/pool-house-in-an-olmstead-landscape
+   14.    165  /project/bullfinch-house
+   15.    165  /project/nantucket-kitchen
+   16.    163  /project/st-pauls-school-chapels
+   17.    160  /project/island-renovation-and-expansion
+   18.    155  /?rest_route=/wp/v2/users
+   19.    141  /project/mountain-retreat
+   20.    141  /project/great-camp-bunkhouse
+
+────────────────────────────────────────
+4. TOP LANDING PAGES (First page per session)
+────────────────────────────────────────
+    1.  6,169  /
+    2.    280  /about-us
+    3.    200  /projects
+    4.    195  /project/barn-with-a-view
+    5.     96  /project/st-pauls-school-chapels
+    6.     89  /project/bullfinch-house
+    7.     80  /project/net-zero-barn
+    8.     80  /project/new-castle-town-hall
+    9.     80  /press
+   10.     79  /project/berkshire-farmhouse
+   11.     72  /project/nantucket-kitchen
+   12.     71  /hello-world
+   13.     67  /project/great-camp-bunkhouse
+   14.     63  /project/mountain-retreat
+   15.     62  /project/boston-apartment-for-a-young-family
+
+────────────────────────────────────────
+5. REFERRER ANALYSIS
+────────────────────────────────────────
+Direct / internal:     17,707
+External referrals:     2,172
+
+Organic search:
+  Google                1,257
+  Bing                     52
+  Duckduckgo               28
+  Yahoo                    19
+  Ecosia                    1
+
+Social:
+  Pinterest               145
+  Facebook                 35
+  Instagram                25
+  Linkedin                 12
+  Twitter                   2
+  Reddit                    1
+
+Top external referrers:
+   1,032  https://www.google.com/
+      85  https://www.google.com/url/?sa=t
+      59  https://www.pinterest.com/pin/32651166044322881
+      55  http://www.google.com/url?url=www.trumanarchitects.com&yahoo.com
+      50  https://www.bing.com/
+      28  https://duckduckgo.com/
+      26  https://www.bostondesignguide.com/
+      25  https://l.instagram.com/
+      24  https://www.google.com
+      23  www.google.com
+
+────────────────────────────────────────
+6. SEARCH ENGINE CRAWLER ACTIVITY
+────────────────────────────────────────
+
+  Bingbot:
+    Total requests:         4,262
+    Unique pages found:       154
+    Avg daily requests:      72.2
+    Status codes:        {'200': 4029, '301': 117, '404': 109, '304': 5, '403': 1, '500': 1}
+    Top pages crawled:
+        108  /
+         55  /?s=
+         45  /?s=2025
+         35  /?s=2026
+         22  /project/great-camp-barn
+
+  YandexBot:
+    Total requests:         3,994
+    Unique pages found:        40
+    Avg daily requests:      74.0
+    Status codes:        {'429': 3994}
+    Top pages crawled:
+         29  /
+          7  /project/st-pauls-school-chapels
+          6  /projects
+          4  /?p=514
+          4  /?p=2259
+
+  Googlebot:
+    Total requests:         3,569
+    Unique pages found:        97
+    Avg daily requests:      60.5
+    Status codes:        {'200': 2161, '301': 684, '404': 516, '304': 193, '302': 9, '403': 6}
+    Top pages crawled:
+        350  /
+         56  /about-us
+         35  /projects
+         27  /project/st-pauls-school-chapels
+         24  /feed
+
+  PetalBot:
+    Total requests:         1,970
+    Unique pages found:       123
+    Avg daily requests:      33.4
+    Status codes:        {'200': 1037, '301': 751, '404': 174, '302': 6, '500': 2}
+    Top pages crawled:
+        121  /press
+        100  /about-us
+         92  /projects
+         73  /
+         52  /about
+
+  Applebot:
+    Total requests:         1,765
+    Unique pages found:       103
+    Avg daily requests:      33.9
+    Status codes:        {'200': 1689, '301': 63, '404': 13}
+    Top pages crawled:
+         28  /
+         17  /contact
+          6  /comments/feed
+          6  /feed
+          4  /news/this-is-a-standard-post-with-typography-5/feed
+
+  DuckDuckBot:
+    Total requests:           500
+    Unique pages found:         5
+    Avg daily requests:      10.2
+    Status codes:        {'200': 382, '301': 112, '405': 4, '302': 2}
+    Top pages crawled:
+        223  /
+          4  /xmlrpc.php
+          4  /comments/feed
+          4  /feed
+          4  /xmlrpc.php?rsd
+
+  GoogleOther:
+    Total requests:           170
+    Unique pages found:        31
+    Avg daily requests:       8.9
+    Status codes:        {'200': 137, '301': 22, '404': 9, '403': 2}
+    Top pages crawled:
+         13  /
+          4  /project/net-zero-barn
+          3  /project/island-renovation-and-expansion
+          3  /portfolio/net-zero-barn
+          2  /project/st-pauls-school-chapels
+
+  Baiduspider:
+    Total requests:           137
+    Unique pages found:        27
+    Avg daily requests:       3.0
+    Status codes:        {'429': 136, '200': 1}
+    Top pages crawled:
+         26  /about
+         23  /portfolio/baker-kitchen
+         11  /press
+         10  /portfolio/wellesley-renovation
+          9  /portfolio/west-cedar-st
+
+  AdsBot-Google:
+    Total requests:            34
+    Unique pages found:         2
+    Avg daily requests:       6.8
+    Status codes:        {'200': 22, '404': 12}
+    Top pages crawled:
+          6  /apple-app-site-association
+          1  /project
+
+  Yahoo-Slurp:
+    Total requests:             2
+    Unique pages found:         1
+    Avg daily requests:       1.0
+    Status codes:        {'200': 1, '403': 1}
+    Top pages crawled:
+          2  /?rest_route=/wp/v2/users
+
+  Mediapartners-Google:
+    Total requests:             1
+    Unique pages found:         1
+    Avg daily requests:       1.0
+    Status codes:        {'200': 1}
+    Top pages crawled:
+          1  /project/west-cedar-street-renovation
+
+────────────────────────────────────────
+7. ERROR ANALYSIS (SEO Impact)
+────────────────────────────────────────
+Total 404s: 48,649
+Total 5xx:  13,712
+
+Status code distribution:
+    200   260,604
+    206     7,799
+    300       418
+    301    51,749
+    302     9,897
+    304     1,073
+    400        59
+    401        19
+    403    34,520
+    404    48,649
+    405       179
+    408         3
+    409        20
+    429    12,947
+    500       285
+    503    13,427
+
+Top 404 URLs (broken links — SEO priority!):
+     569  /robots.txt
+     303  /AutoDiscover/autodiscover.xml
+     272  /apple-touch-icon.png
+     261  /apple-touch-icon-precomposed.png
+     241  /.well-known/traffic-advice
+     191  /.env
+     172  /cgi-bin/
+     168  /th1s_1s_a_4o4.html
+     160  /blog/
+     146  /ads.txt
+     143  /backup/
+     142  /wordpress/
+     138  /wp/
+     132  /favicon.ico
+     130  /old/
+
+────────────────────────────────────────
+8. SECURITY THREATS
+────────────────────────────────────────
+Malicious requests:     25,974
+Suspicious requests:    59,064
+
+Attack types:
+  probe                     44,989
+  wp_login_probe            14,075
+  xmlrpc_probe               8,697
+  wp_exploit                 8,677
+  brute_force                8,600
+
+Top attacker IPs:
+   6,490  163.252.150.0
+   2,404  94.26.106.0
+   2,289  104.248.185.0
+   2,235  206.189.190.0
+   1,621  158.41.240.0
+   1,585  194.5.82.0
+   1,330  167.172.76.0
+   1,278  129.150.33.0
+   1,104  136.144.33.0
+   1,076  152.69.221.0
+
+────────────────────────────────────────
+9. HOURLY TRAFFIC DISTRIBUTION (Human)
+────────────────────────────────────────
+  00:00   7,355  ███████████
+  01:00   5,936  █████████
+  02:00   6,401  ██████████
+  03:00   4,761  ███████
+  04:00   2,994  ████
+  05:00   5,207  ████████
+  06:00   7,201  ███████████
+  07:00   7,663  ████████████
+  08:00  15,406  ████████████████████████
+  09:00  11,430  ██████████████████
+  10:00  11,781  ██████████████████
+  11:00  18,628  █████████████████████████████
+  12:00  14,331  ██████████████████████
+  13:00  25,398  ████████████████████████████████████████
+  14:00  19,659  ██████████████████████████████
+  15:00  21,294  █████████████████████████████████
+  16:00  15,409  ████████████████████████
+  17:00  15,884  █████████████████████████
+  18:00  12,066  ███████████████████
+  19:00  12,482  ███████████████████
+  20:00  11,324  █████████████████
+  21:00  11,522  ██████████████████
+  22:00  11,620  ██████████████████
+  23:00   6,103  █████████
+
+────────────────────────────────────────
+10. HOSTNAME DISTRIBUTION
+────────────────────────────────────────
+  catherinetrumanarchitects.com                  363,814
+  truman-architects.com                           48,596
+  trumanarchitects.com                            16,701
+  www.truman-architects.com                        6,558
+  www.catherinetrumanarchitects.com                5,421
+  www.trumanarchitects.com                           558
+
+========================================================================
+END OF REPORT
+========================================================================
