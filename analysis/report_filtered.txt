@@ -2,22 +2,23 @@
 CTAI TRAFFIC ANALYSIS — FILTERED REPORT
 Catherine Truman Architects & Interiors
 Period: 2026-01-05 to 2026-03-04
-Report generated: 2026-04-17T14:21:00.780166
+Report generated: 2026-04-17T17:24:11.436960
 ========================================================================
 
 ────────────────────────────────────────────────────────────
 SECTION 1: TRAFFIC OVERVIEW
 ────────────────────────────────────────────────────────────
 Total log entries:             441,648
-Known IP entries:               84,807
-Organic entries:               356,841
-Known IP share:                  19.2%
+Known IP entries:              135,435
+Organic entries:               306,213
+Known IP share:                  30.7%
 
-Known IP breakdown by role:
-  Web Design / SEO Team                  18,120 requests  (2 IPs, 726 page views)
+Non-organic IP breakdown by role:
+  Vulnerability Scanners / Bots          83,047 requests  (63 IPs, 8,171 page views)
+  Web Design / SEO Team                  21,960 requests  (4 IPs, 961 page views)
+  WordPress Reconnaissance Bots          19,162 requests  (31 IPs, 2,520 page views)
   Content Maintenance Team                6,935 requests  (1 IPs, 325 page views)
-  Hosting Infrastructure                  3,431 requests  (1 IPs, 109 page views)
-  Vulnerability Scanners / Bots          56,321 requests  (14 IPs, 1,355 page views)
+  Hosting Infrastructure                  4,331 requests  (2 IPs, 1,001 page views)
 
 ────────────────────────────────────────────────────────────
 SECTION 2: KNOWN IP VERIFICATION TABLE
@@ -27,7 +28,7 @@ SECTION 2: KNOWN IP VERIFICATION TABLE
   IP: 163.252.150.0
     Role:        Web Design / SEO Team
     Label:       Web Designer (primary)
-    Confidence:  high
+    Matched by:  [registry]  Confidence: high
     Requests:    14,137  (470 page views)
     Active:      17 days  (2026-01-05 → 2026-02-26)
     Evidence:    14,137 requests over 17 days (peak 3,316 on Feb 2). Mac/Firefox user. Divi Builder activity (?et_fb=1&et_bfb=1). Heavy w
@@ -41,7 +42,7 @@ SECTION 2: KNOWN IP VERIFICATION TABLE
   IP: 194.5.82.0
     Role:        Vulnerability Scanners / Bots
     Label:       Vulnerability Scanner A
-    Confidence:  high
+    Matched by:  [registry]  Confidence: high
     Requests:    8,981  (50 page views)
     Active:      12 days  (2026-01-15 → 2026-03-03)
     Evidence:    8,981 requests over 12 days (peak 1,785 on Feb 25). Probing /wp-includes/ID3, /vendor/phpunit, /manager.php, /bless.php.
@@ -55,7 +56,7 @@ SECTION 2: KNOWN IP VERIFICATION TABLE
   IP: 202.8.43.0
     Role:        Vulnerability Scanners / Bots
     Label:       Sitemap Crawler (weekly)
-    Confidence:  high
+    Matched by:  [registry]  Confidence: high
     Requests:    7,294  (600 page views)
     Active:      8 days  (2026-01-05 → 2026-02-19)
     Evidence:    ~1,453 requests/week, every Sunday for 5 weeks. Hits /sitemap_index.xml, /robots.txt, then crawls entire site. Automated
@@ -69,7 +70,7 @@ SECTION 2: KNOWN IP VERIFICATION TABLE
   IP: 148.76.189.0
     Role:        Content Maintenance Team
     Label:       Content Manager
-    Confidence:  high
+    Matched by:  [registry]  Confidence: high
     Requests:    6,935  (325 page views)
     Active:      48 days  (2026-01-05 → 2026-03-04)
     Evidence:    6,935 requests over 48 active days. Windows/Chrome user. Consistent daily presence with periodic editing spikes (peak 99
@@ -83,7 +84,7 @@ SECTION 2: KNOWN IP VERIFICATION TABLE
   IP: 193.37.32.0
     Role:        Vulnerability Scanners / Bots
     Label:       Vulnerability Scanner B
-    Confidence:  high
+    Matched by:  [registry]  Confidence: high
     Requests:    6,645  (39 page views)
     Active:      11 days  (2026-01-15 → 2026-03-03)
     Evidence:    6,645 requests over 11 days (peak 1,525 on Feb 27). Probing /.well-known/index.php, /manager.php, /bless.php, /O-Simple.
@@ -97,7 +98,7 @@ SECTION 2: KNOWN IP VERIFICATION TABLE
   IP: 168.100.149.0
     Role:        Vulnerability Scanners / Bots
     Label:       Sitemap Crawler (weekly, replaced 202.8.43.0)
-    Confidence:  high
+    Matched by:  [registry]  Confidence: high
     Requests:    5,746  (435 page views)
     Active:      5 days  (2026-02-09 → 2026-03-02)
     Evidence:    Same ~1,450 requests/week pattern starting Feb 9. Took over from 202.8.43.0. Same crawl signature.
@@ -111,7 +112,7 @@ SECTION 2: KNOWN IP VERIFICATION TABLE
   IP: 194.61.40.0
     Role:        Vulnerability Scanners / Bots
     Label:       Vulnerability Scanner C
-    Confidence:  high
+    Matched by:  [registry]  Confidence: high
     Requests:    4,563  (22 page views)
     Active:      5 days  (2026-01-29 → 2026-03-03)
     Evidence:    4,563 requests over 5 days (peak 2,308 on Feb 2). Probing /.well-known/index.php, /wp-includes/ID3, /manager.php. Burst 
@@ -125,7 +126,7 @@ SECTION 2: KNOWN IP VERIFICATION TABLE
   IP: 185.177.72.0
     Role:        Vulnerability Scanners / Bots
     Label:       Curl Scanner
-    Confidence:  high
+    Matched by:  [registry]  Confidence: high
     Requests:    4,368  (19 page views)
     Active:      6 days  (2026-01-13 → 2026-03-03)
     Evidence:    4,368 requests over 6 days (peak 1,665 on Mar 3). UA is 'curl/8.7.1'. Automated scanning tool.
@@ -139,7 +140,7 @@ SECTION 2: KNOWN IP VERIFICATION TABLE
   IP: 103.163.220.0
     Role:        Vulnerability Scanners / Bots
     Label:       Vulnerability Scanner E
-    Confidence:  high
+    Matched by:  [registry]  Confidence: high
     Requests:    4,179  (18 page views)
     Active:      3 days  (2026-01-08 → 2026-02-10)
     Evidence:    4,179 requests over 3 days (peak 3,024 on Feb 10). Probing /wp-content/uploads, /wp-content/plugins, /wp-includes. Direc
@@ -153,7 +154,7 @@ SECTION 2: KNOWN IP VERIFICATION TABLE
   IP: 158.41.240.0
     Role:        Web Design / SEO Team
     Label:       Web Designer (secondary)
-    Confidence:  high
+    Matched by:  [registry]  Confidence: high
     Requests:    3,983  (256 page views)
     Active:      4 days  (2026-02-05 → 2026-02-09)
     Evidence:    3,983 requests over 4 days (peak 2,020 on Feb 7). Mac/Firefox user. Heavy Divi Builder + about-us page editing. Burst pa
@@ -167,7 +168,7 @@ SECTION 2: KNOWN IP VERIFICATION TABLE
   IP: 212.30.36.0
     Role:        Vulnerability Scanners / Bots
     Label:       Vulnerability Scanner D
-    Confidence:  high
+    Matched by:  [registry]  Confidence: high
     Requests:    3,464  (13 page views)
     Active:      2 days  (2026-01-25 → 2026-02-14)
     Evidence:    3,464 requests — 3,462 on single day (Jan 25). Probing /.well-known/index.php, /wp-includes/ID3, /manager.php. Single ma
@@ -181,7 +182,7 @@ SECTION 2: KNOWN IP VERIFICATION TABLE
   IP: 74.208.59.0
     Role:        Hosting Infrastructure
     Label:       Hosting Server (cron/monitoring)
-    Confidence:  high
+    Matched by:  [registry]  Confidence: high
     Requests:    3,431  (109 page views)
     Active:      59 days  (2026-01-05 → 2026-03-04)
     Evidence:    3,431 requests over all 59 days. Perfectly steady ~55-60/day. WordPress self-pings (wp-cron.php), internal monitoring. I
@@ -192,10 +193,24 @@ SECTION 2: KNOWN IP VERIFICATION TABLE
           5  /wp-login.php
           2  /xmlrpc.php
 
+  IP: 103.178.154.0
+    Role:        Web Design / SEO Team
+    Label:       Divi Builder activity (10 requests) + authenticated wp-admin
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    2,457  (141 page views)
+    Active:      8 days  (2026-01-20 → 2026-02-19)
+    Evidence:    Divi Builder activity (10 requests) + authenticated wp-admin (498 HTTP 200s)
+    Top paths:
+        289  /wp-admin/admin-ajax.php
+         17  /
+         17  /about-us
+         14  /wp-content/themes/Divi/core/admin/js/common.js?ver=4.27.5
+         14  /wp-content/uploads/2024/08/favicon-196x196-1-150x150.png
+
   IP: 212.30.33.0
     Role:        Vulnerability Scanners / Bots
     Label:       Vulnerability Scanner F
-    Confidence:  high
+    Matched by:  [registry]  Confidence: high
     Requests:    2,442  (3 page views)
     Active:      3 days  (2026-01-14 → 2026-02-21)
     Evidence:    2,442 requests over 3 days (peak 2,308 on Feb 21). Same attack patterns as 212.30.36.0 — likely same operator. /.well-kn
@@ -206,10 +221,66 @@ SECTION 2: KNOWN IP VERIFICATION TABLE
           3  /
           2  /manager.php
 
+  IP: 94.26.106.0
+    Role:        WordPress Reconnaissance Bots
+    Label:       WP recon bot: wp-login (801 hits), wp-admin 0 authenticated,
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    2,431  (137 page views)
+    Active:      4 days  (2026-01-14 → 2026-03-04)
+    Evidence:    WP recon bot: wp-login (801 hits), wp-admin 0 authenticated, 1600 redirected, user enum (?author=N: 18)
+    Top paths:
+        588  /wp-admin/index.php
+        340  /wp-admin/profile.php
+        338  /wp-admin/edit.php
+        332  /wp-admin/plugins.php
+        294  /wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%
+
+  IP: 45.130.203.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       52 attack-path probes (2.3% of requests)
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    2,308  (0 page views)
+    Active:      2 days  (2026-02-15 → 2026-02-23)
+    Evidence:    52 attack-path probes (2.3% of requests)
+    Top paths:
+          4  /.well-known/index.php
+          4  /wordpress/wp-admin/includes
+          4  /wp-includes/ID3
+          2  /manager.php
+          2  /bless.php
+
+  IP: 104.248.185.0
+    Role:        WordPress Reconnaissance Bots
+    Label:       WP recon bot: wp-login (763 hits), wp-admin 0 authenticated,
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    2,304  (164 page views)
+    Active:      1 days  (2026-02-27 → 2026-02-27)
+    Evidence:    WP recon bot: wp-login (763 hits), wp-admin 0 authenticated, 1526 redirected, user enum (?author=N: 10)
+    Top paths:
+      1,524  /wp-admin/index.php
+        762  /wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%
+          2  /wp-admin
+          2  /?author=1
+          2  /?author=2
+
+  IP: 206.189.190.0
+    Role:        WordPress Reconnaissance Bots
+    Label:       WP recon bot: wp-login (745 hits), wp-admin 0 authenticated,
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    2,250  (163 page views)
+    Active:      1 days  (2026-03-03 → 2026-03-03)
+    Evidence:    WP recon bot: wp-login (745 hits), wp-admin 0 authenticated, 1490 redirected, user enum (?author=N: 10)
+    Top paths:
+      1,488  /wp-admin/index.php
+        744  /wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%
+          2  /wp-admin
+          2  /?author=1
+          2  /?author=2
+
   IP: 85.203.15.0
     Role:        Vulnerability Scanners / Bots
     Label:       Vulnerability Scanner G
-    Confidence:  high
+    Matched by:  [registry]  Confidence: high
     Requests:    2,223  (90 page views)
     Active:      5 days  (2026-01-07 → 2026-02-14)
     Evidence:    2,223 requests over 5 days. Short UA ('Mozilla/5.0'). Probing /.well-known/index.php, /wp-includes/ID3, /manager.php.
@@ -223,7 +294,7 @@ SECTION 2: KNOWN IP VERIFICATION TABLE
   IP: 45.132.224.0
     Role:        Vulnerability Scanners / Bots
     Label:       Vulnerability Scanner I
-    Confidence:  high
+    Matched by:  [registry]  Confidence: high
     Requests:    2,188  (24 page views)
     Active:      3 days  (2026-02-14 → 2026-02-23)
     Evidence:    2,188 requests over 3 days (peak 1,072 on Feb 15). Burst scanning pattern.
@@ -237,7 +308,7 @@ SECTION 2: KNOWN IP VERIFICATION TABLE
   IP: 85.203.21.0
     Role:        Vulnerability Scanners / Bots
     Label:       Vulnerability Scanner H (same /16 as G)
-    Confidence:  high
+    Matched by:  [registry]  Confidence: high
     Requests:    1,781  (9 page views)
     Active:      3 days  (2026-02-04 → 2026-02-28)
     Evidence:    1,781 requests over 3 days. Same 85.203.x.x range. Same attack patterns.
@@ -248,10 +319,52 @@ SECTION 2: KNOWN IP VERIFICATION TABLE
           2  /O-Simple.php
           2  /lock360.php
 
+  IP: 136.144.17.0
+    Role:        Web Design / SEO Team
+    Label:       Divi Builder activity (14 requests) + authenticated wp-admin
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    1,383  (94 page views)
+    Active:      3 days  (2026-01-22 → 2026-02-09)
+    Evidence:    Divi Builder activity (14 requests) + authenticated wp-admin (402 HTTP 200s)
+    Top paths:
+        272  /wp-admin/admin-ajax.php
+         14  /wp-admin/admin-ajax.php?lang=en_US
+         12  /about-us
+          8  /wp-admin/post.php
+          7  /
+
+  IP: 167.172.76.0
+    Role:        WordPress Reconnaissance Bots
+    Label:       WP recon bot: wp-login (667 hits), wp-admin 0 authenticated,
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    1,344  (211 page views)
+    Active:      1 days  (2026-02-26 → 2026-02-26)
+    Evidence:    WP recon bot: wp-login (667 hits), wp-admin 0 authenticated, 663 redirected, user enum (?author=N: 9)
+    Top paths:
+        311  /wp-admin/index.php
+        311  /wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%
+        120  /wp-admin/edit.php
+        120  /wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%
+        119  /wp-admin/profile.php
+
+  IP: 129.150.33.0
+    Role:        WordPress Reconnaissance Bots
+    Label:       WP recon bot: wp-login (428 hits), wp-admin 0 authenticated,
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    1,295  (216 page views)
+    Active:      1 days  (2026-01-14 → 2026-01-14)
+    Evidence:    WP recon bot: wp-login (428 hits), wp-admin 0 authenticated, 850 redirected, user enum (?author=N: 10)
+    Top paths:
+        520  /wp-admin/index.php
+        260  /wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%
+        112  /wp-admin/profile.php
+        112  /wp-admin/edit.php
+        104  /wp-admin/plugins.php
+
   IP: 103.125.146.0
     Role:        Vulnerability Scanners / Bots
     Label:       Vulnerability Scanner J
-    Confidence:  medium
+    Matched by:  [registry]  Confidence: medium
     Requests:    1,294  (20 page views)
     Active:      2 days  (2026-01-12 → 2026-02-18)
     Evidence:    ~1,057 requests on Feb 18. Probing /wp-includes/Requests/about.php, /wp-content/themes/ enumeration.
@@ -262,10 +375,122 @@ SECTION 2: KNOWN IP VERIFICATION TABLE
           2  /wp-content/themes/pridmag/db.php?u
           2  /wp-admin/css/colors/blue
 
+  IP: 91.230.225.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       28 attack-path probes (2.4% of requests)
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    1,161  (0 page views)
+    Active:      3 days  (2026-02-19 → 2026-02-27)
+    Evidence:    28 attack-path probes (2.4% of requests)
+    Top paths:
+          2  /vendor/phpunit/phpunit/phpunit.xsd
+          2  /.well-known/index.php
+          2  /wordpress/wp-admin/includes
+          2  /wp-includes/ID3
+          1  /txets.php
+
+  IP: 185.192.71.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       27 attack-path probes (2.3% of requests)
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    1,160  (0 page views)
+    Active:      3 days  (2026-02-07 → 2026-02-27)
+    Evidence:    27 attack-path probes (2.3% of requests)
+    Top paths:
+          2  /.well-known/index.php
+          2  /wordpress/wp-admin/includes
+          2  /wp-includes/ID3
+          1  /txets.php
+          1  /wp-content/txets.php
+
+  IP: 194.32.120.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       26 attack-path probes (2.2% of requests)
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    1,156  (2 page views)
+    Active:      3 days  (2026-01-06 → 2026-02-18)
+    Evidence:    26 attack-path probes (2.2% of requests)
+    Top paths:
+          2  /
+          2  /.well-known/index.php
+          2  /wordpress/wp-admin/includes
+          2  /wp-includes/ID3
+          1  /manager.php
+
+  IP: 173.239.196.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       26 attack-path probes (2.3% of requests)
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    1,154  (13 page views)
+    Active:      1 days  (2026-02-08 → 2026-02-08)
+    Evidence:    26 attack-path probes (2.3% of requests)
+    Top paths:
+          2  /.well-known/index.php
+          2  /wordpress/wp-admin/includes
+          2  /wp-includes/ID3
+          1  /manager.php
+          1  /bless.php
+
+  IP: 193.176.211.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       26 attack-path probes (2.3% of requests)
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    1,154  (0 page views)
+    Active:      1 days  (2026-02-08 → 2026-02-08)
+    Evidence:    26 attack-path probes (2.3% of requests)
+    Top paths:
+          2  /.well-known/index.php
+          2  /wordpress/wp-admin/includes
+          2  /wp-includes/ID3
+          1  /manager.php
+          1  /bless.php
+
+  IP: 45.133.4.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       26 attack-path probes (2.3% of requests)
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    1,154  (13 page views)
+    Active:      1 days  (2026-02-15 → 2026-02-15)
+    Evidence:    26 attack-path probes (2.3% of requests)
+    Top paths:
+          2  /.well-known/index.php
+          2  /wordpress/wp-admin/includes
+          2  /wp-includes/ID3
+          1  /manager.php
+          1  /bless.php
+
+  IP: 85.203.47.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       26 attack-path probes (2.3% of requests)
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    1,154  (0 page views)
+    Active:      1 days  (2026-02-22 → 2026-02-22)
+    Evidence:    26 attack-path probes (2.3% of requests)
+    Top paths:
+          2  /.well-known/index.php
+          2  /wordpress/wp-admin/includes
+          2  /wp-includes/ID3
+          1  /manager.php
+          1  /bless.php
+
+  IP: 45.86.200.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       26 attack-path probes (2.3% of requests)
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    1,154  (13 page views)
+    Active:      1 days  (2026-03-01 → 2026-03-01)
+    Evidence:    26 attack-path probes (2.3% of requests)
+    Top paths:
+          2  /.well-known/index.php
+          2  /wordpress/wp-admin/includes
+          2  /wp-includes/ID3
+          1  /manager.php
+          1  /bless.php
+
   IP: 185.221.132.0
     Role:        Vulnerability Scanners / Bots
     Label:       Vulnerability Scanner K
-    Confidence:  medium
+    Matched by:  [registry]  Confidence: medium
     Requests:    1,153  (13 page views)
     Active:      1 days  (2026-02-07 → 2026-02-07)
     Evidence:    ~909 requests on Feb 7. /.well-known/index.php, /manager.php probes.
@@ -276,22 +501,945 @@ SECTION 2: KNOWN IP VERIFICATION TABLE
           1  /manager.php
           1  /bless.php
 
+  IP: 136.144.33.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       Login probing: 1093 wp-login attempts, zero authenticated wp
+    Matched by:  [behavioral]  Confidence: medium
+    Requests:    1,145  (1,036 page views)
+    Active:      21 days  (2026-01-06 → 2026-02-20)
+    Evidence:    Login probing: 1093 wp-login attempts, zero authenticated wp-admin access
+    Top paths:
+      1,093  /wp-login.php
+         12  /?rest_route=/wp/v2/users
+          9  /xmlrpc.php
+          3  /?author=1
+          3  /?author=2
+
+  IP: 85.237.194.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       20 attack-path probes (1.8% of requests)
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    1,083  (12 page views)
+    Active:      1 days  (2026-02-02 → 2026-02-02)
+    Evidence:    20 attack-path probes (1.8% of requests)
+    Top paths:
+          2  /.well-known/index.php
+          2  /wordpress/wp-admin/includes
+          2  /wp-includes/ID3
+          1  /wp-admin/js/index.php
+          1  /wp-includes/js/jquery/jquery.php
+
+  IP: 216.73.162.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       25 attack-path probes (2.3% of requests)
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    1,074  (6 page views)
+    Active:      3 days  (2026-01-21 → 2026-02-09)
+    Evidence:    25 attack-path probes (2.3% of requests)
+    Top paths:
+         37  /wp-admin/admin-ajax.php
+          3  //wp-login.php
+          3  //xmlrpc.php
+          2  /.well-known/index.php
+          2  /about-us
+
+  IP: 109.205.211.0
+    Role:        WordPress Reconnaissance Bots
+    Label:       WP recon bot: wp-login (530 hits), wp-admin 0 authenticated,
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    1,070  (119 page views)
+    Active:      1 days  (2026-01-30 → 2026-01-30)
+    Evidence:    WP recon bot: wp-login (530 hits), wp-admin 0 authenticated, 526 redirected, user enum (?author=N: 9)
+    Top paths:
+        213  /wp-admin/index.php
+        213  /wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%
+        106  /wp-admin/profile.php
+        106  /wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%
+        104  /wp-admin/edit.php
+
+  IP: 193.36.225.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       Login probing: 938 wp-login attempts, zero authenticated wp-
+    Matched by:  [behavioral]  Confidence: medium
+    Requests:    988  (954 page views)
+    Active:      17 days  (2026-01-12 → 2026-02-20)
+    Evidence:    Login probing: 938 wp-login attempts, zero authenticated wp-admin access
+    Top paths:
+        936  /wp-login.php
+         20  /?rest_route=/wp/v2/users
+          5  /?author=1
+          5  /?author=2
+          5  /?author=3
+
+  IP: 139.180.180.0
+    Role:        Hosting Infrastructure
+    Label:       Steady pattern (CV=0.29) over 59 days, avg 15/day
+    Matched by:  [behavioral]  Confidence: medium
+    Requests:    900  (892 page views)
+    Active:      59 days  (2026-01-05 → 2026-03-04)
+    Evidence:    Steady pattern (CV=0.29) over 59 days, avg 15/day
+    Top paths:
+         10  /
+          1  /wp-load.php?9b08d3=63508
+          1  /wp-load.php?3d704e=23183
+          1  /wp-load.php?bbd214=97834
+          1  /wp-load.php?043b31=88544
+
+  IP: 37.140.223.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       Login probing: 851 wp-login attempts, zero authenticated wp-
+    Matched by:  [behavioral]  Confidence: medium
+    Requests:    894  (859 page views)
+    Active:      19 days  (2026-01-06 → 2026-02-20)
+    Evidence:    Login probing: 851 wp-login attempts, zero authenticated wp-admin access
+    Top paths:
+        851  /wp-login.php
+         20  /xmlrpc.php
+          9  /?rest_route=/wp/v2/users
+          3  /
+          2  /?author=1
+
+  IP: 45.131.195.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       8 attack-path probes (1.2% of requests)
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    685  (324 page views)
+    Active:      11 days  (2026-01-09 → 2026-03-02)
+    Evidence:    8 attack-path probes (1.2% of requests)
+    Top paths:
+        309  /wp-login.php
+         12  /?rest_route=/wp/v2/users
+          3  /?author=1
+          3  /?author=2
+          3  /?author=3
+
+  IP: 213.35.118.0
+    Role:        WordPress Reconnaissance Bots
+    Label:       WP recon bot: wp-login (315 hits), wp-admin 0 authenticated,
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    638  (94 page views)
+    Active:      1 days  (2026-01-18 → 2026-01-18)
+    Evidence:    WP recon bot: wp-login (315 hits), wp-admin 0 authenticated, 314 redirected, user enum (?author=N: 5)
+    Top paths:
+        314  /wp-admin/index.php
+        314  /wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%
+          1  /wp-login.php
+          1  /?author=1
+          1  /author/catherinearumanarchitects
+
+  IP: 142.170.89.0
+    Role:        WordPress Reconnaissance Bots
+    Label:       WP recon bot: wp-login (305 hits), wp-admin 0 authenticated,
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    621  (53 page views)
+    Active:      1 days  (2026-02-07 → 2026-02-07)
+    Evidence:    WP recon bot: wp-login (305 hits), wp-admin 0 authenticated, 305 redirected, user enum (?author=N: 7)
+    Top paths:
+        111  /wp-admin/index.php
+        111  /wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.
+         66  /wp-admin/profile.php
+         66  /wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.
+         65  /wp-admin/edit.php
+
+  IP: 209.87.169.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       Login probing: 568 wp-login attempts, zero authenticated wp-
+    Matched by:  [behavioral]  Confidence: medium
+    Requests:    595  (580 page views)
+    Active:      8 days  (2026-01-12 → 2026-03-04)
+    Evidence:    Login probing: 568 wp-login attempts, zero authenticated wp-admin access
+    Top paths:
+        568  /wp-login.php
+         12  /?rest_route=/wp/v2/users
+          3  /?author=1
+          3  /?author=2
+          3  /?author=3
+
+  IP: 185.223.152.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       Login probing: 534 wp-login attempts, zero authenticated wp-
+    Matched by:  [behavioral]  Confidence: medium
+    Requests:    552  (440 page views)
+    Active:      8 days  (2026-01-07 → 2026-02-21)
+    Evidence:    Login probing: 534 wp-login attempts, zero authenticated wp-admin access
+    Top paths:
+        534  /wp-login.php
+          4  /?rest_route=/wp/v2/users
+          3  /wp-admin
+          1  /?author=1
+          1  /?author=2
+
+  IP: 4.197.75.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       6 attack-path probes (1.2% of requests)
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    499  (18 page views)
+    Active:      2 days  (2026-01-14 → 2026-03-02)
+    Evidence:    6 attack-path probes (1.2% of requests)
+    Top paths:
+          4  /wp-content/plugins/hellopress/wp_filemanager.php
+          4  /themes.php
+          4  /admin.php
+          4  /403.php
+          4  /css.php
+
+  IP: 170.64.181.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       6 attack-path probes (1.2% of requests)
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    493  (6 page views)
+    Active:      3 days  (2026-01-05 → 2026-01-14)
+    Evidence:    6 attack-path probes (1.2% of requests)
+    Top paths:
+          6  //wp-2019.php
+          6  //themes.php
+          6  //.well-known/admin.php
+          6  //wp-admin/js/about.php
+          6  //wp-includes/Text/about.php
+
+  IP: 4.213.174.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       7 attack-path probes (1.4% of requests)
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    488  (1 page views)
+    Active:      2 days  (2026-01-11 → 2026-01-20)
+    Evidence:    7 attack-path probes (1.4% of requests)
+    Top paths:
+          3  /wp-content/plugins/hellopress/wp_filemanager.php
+          3  /dox.php
+          3  /alfa.php
+          3  /elp.php
+          3  /simple.php
+
+  IP: 207.180.220.0
+    Role:        WordPress Reconnaissance Bots
+    Label:       WP recon bot: wp-login (235 hits), wp-admin 0 authenticated,
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    485  (50 page views)
+    Active:      2 days  (2026-01-27 → 2026-02-04)
+    Evidence:    WP recon bot: wp-login (235 hits), wp-admin 0 authenticated, 235 redirected
+    Top paths:
+         95  /wp-admin/index.php
+         95  /wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%
+         47  /wp-admin/profile.php
+         47  /wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%
+         46  /wp-admin/edit.php
+
+  IP: 155.94.150.0
+    Role:        WordPress Reconnaissance Bots
+    Label:       WP recon bot: wp-login (201 hits), wp-admin 0 authenticated,
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    482  (51 page views)
+    Active:      8 days  (2026-01-06 → 2026-01-30)
+    Evidence:    WP recon bot: wp-login (201 hits), wp-admin 0 authenticated, 199 redirected, user enum (?author=N: 5)
+    Top paths:
+         84  /wp-admin/index.php
+         84  /wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%
+         39  /wp-admin/profile.php
+         39  /wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%
+         38  /wp-admin/edit.php
+
+  IP: 173.239.214.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       Login probing: 411 wp-login attempts, zero authenticated wp-
+    Matched by:  [behavioral]  Confidence: medium
+    Requests:    460  (410 page views)
+    Active:      9 days  (2026-01-09 → 2026-02-14)
+    Evidence:    Login probing: 411 wp-login attempts, zero authenticated wp-admin access
+    Top paths:
+        411  /wp-login.php
+          4  /?rest_route=/wp/v2/users
+          1  /?author=1
+          1  /?author=2
+          1  /?author=3
+
+  IP: 95.214.55.0
+    Role:        WordPress Reconnaissance Bots
+    Label:       WP recon bot: wp-login (221 hits), wp-admin 0 authenticated,
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    451  (43 page views)
+    Active:      2 days  (2026-02-14 → 2026-02-15)
+    Evidence:    WP recon bot: wp-login (221 hits), wp-admin 0 authenticated, 220 redirected, user enum (?author=N: 5)
+    Top paths:
+         83  /wp-admin/index.php
+         83  /wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%
+         47  /wp-admin/profile.php
+         47  /wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%
+         46  /wp-admin/edit.php
+
+  IP: 13.79.87.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       6 attack-path probes (1.3% of requests)
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    448  (0 page views)
+    Active:      2 days  (2026-01-12 → 2026-01-19)
+    Evidence:    6 attack-path probes (1.3% of requests)
+    Top paths:
+          5  //adminfuns.php
+          4  /css.php
+          3  /wp-content/plugins/hellopress/wp_filemanager.php
+          3  //wp-admin/images/wp-conflg.php?p=
+          3  //cgi-bin/index.php
+
+  IP: 178.128.220.0
+    Role:        WordPress Reconnaissance Bots
+    Label:       WP recon bot: wp-login (142 hits), wp-admin 0 authenticated,
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    441  (75 page views)
+    Active:      1 days  (2026-01-15 → 2026-01-15)
+    Evidence:    WP recon bot: wp-login (142 hits), wp-admin 0 authenticated, 284 redirected, user enum (?author=N: 10)
+    Top paths:
+        172  /wp-admin/index.php
+         86  /wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%
+         40  /wp-admin/profile.php
+         36  /wp-admin/edit.php
+         34  /wp-admin/plugins.php
+
+  IP: 193.19.109.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       Login probing: 413 wp-login attempts, zero authenticated wp-
+    Matched by:  [behavioral]  Confidence: medium
+    Requests:    421  (417 page views)
+    Active:      2 days  (2026-02-21 → 2026-02-22)
+    Evidence:    Login probing: 413 wp-login attempts, zero authenticated wp-admin access
+    Top paths:
+        413  /wp-login.php
+          4  /?rest_route=/wp/v2/users
+          1  /?author=1
+          1  /?author=2
+          1  /?author=3
+
+  IP: 4.217.180.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       6 attack-path probes (1.4% of requests)
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    416  (0 page views)
+    Active:      4 days  (2026-01-21 → 2026-02-18)
+    Evidence:    6 attack-path probes (1.4% of requests)
+    Top paths:
+          4  /wp-content/plugins/hellopress/wp_filemanager.php
+          3  /wen.php
+          3  /index.php
+          3  /
+          2  /galex.php
+
+  IP: 172.190.142.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       6 attack-path probes (1.5% of requests)
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    412  (0 page views)
+    Active:      2 days  (2026-01-05 → 2026-02-17)
+    Evidence:    6 attack-path probes (1.5% of requests)
+    Top paths:
+          3  /f35.php
+          2  /wp-content/plugins/hellopress/wp_filemanager.php
+          2  /xa.php
+          2  /xxxx.php
+          2  /xx.php
+
+  IP: 172.245.102.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       Login probing: 381 wp-login attempts, zero authenticated wp-
+    Matched by:  [behavioral]  Confidence: medium
+    Requests:    391  (373 page views)
+    Active:      19 days  (2026-01-06 → 2026-02-20)
+    Evidence:    Login probing: 381 wp-login attempts, zero authenticated wp-admin access
+    Top paths:
+        381  /wp-login.php
+          4  /?rest_route=/wp/v2/users
+          1  /xmlrpc.php
+          1  /wp-admin
+          1  /?author=1
+
+  IP: 149.22.83.0
+    Role:        WordPress Reconnaissance Bots
+    Label:       WP recon bot: wp-login (179 hits), wp-admin 0 authenticated,
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    367  (59 page views)
+    Active:      1 days  (2026-02-02 → 2026-02-02)
+    Evidence:    WP recon bot: wp-login (179 hits), wp-admin 0 authenticated, 179 redirected, user enum (?author=N: 5)
+    Top paths:
+         84  /wp-admin/index.php
+         84  /wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%
+         32  /wp-admin/profile.php
+         32  /wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%
+         31  /wp-admin/edit.php
+
+  IP: 152.42.244.0
+    Role:        WordPress Reconnaissance Bots
+    Label:       WP recon bot: wp-login (176 hits), wp-admin 0 authenticated,
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    363  (72 page views)
+    Active:      1 days  (2026-02-11 → 2026-02-11)
+    Evidence:    WP recon bot: wp-login (176 hits), wp-admin 0 authenticated, 176 redirected, user enum (?author=N: 7)
+    Top paths:
+         92  /wp-admin/index.php
+         92  /wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.
+         33  /wp-admin/profile.php
+         33  /wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.
+         25  /wp-admin/edit.php
+
+  IP: 152.42.220.0
+    Role:        WordPress Reconnaissance Bots
+    Label:       WP recon bot: wp-login (167 hits), wp-admin 0 authenticated,
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    346  (100 page views)
+    Active:      2 days  (2026-02-19 → 2026-02-22)
+    Evidence:    WP recon bot: wp-login (167 hits), wp-admin 0 authenticated, 167 redirected, user enum (?author=N: 7)
+    Top paths:
+        111  /wp-admin/index.php
+        111  /wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.
+         19  /wp-admin/profile.php
+         19  /wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.
+         18  /wp-admin/edit.php
+
+  IP: 152.42.200.0
+    Role:        WordPress Reconnaissance Bots
+    Label:       WP recon bot: wp-login (163 hits), wp-admin 0 authenticated,
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    338  (51 page views)
+    Active:      2 days  (2026-02-19 → 2026-02-20)
+    Evidence:    WP recon bot: wp-login (163 hits), wp-admin 0 authenticated, 163 redirected, user enum (?author=N: 7)
+    Top paths:
+         75  /wp-admin/index.php
+         75  /wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.
+         29  /wp-admin/profile.php
+         29  /wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.
+         29  /wp-admin/edit.php
+
+  IP: 165.245.183.0
+    Role:        WordPress Reconnaissance Bots
+    Label:       WP recon bot: wp-login (159 hits), wp-admin 0 authenticated,
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    329  (90 page views)
+    Active:      1 days  (2026-02-21 → 2026-02-21)
+    Evidence:    WP recon bot: wp-login (159 hits), wp-admin 0 authenticated, 159 redirected, user enum (?author=N: 7)
+    Top paths:
+        103  /wp-admin/index.php
+        103  /wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.
+         19  /wp-admin/profile.php
+         19  /wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.
+         18  /wp-admin/edit.php
+
+  IP: 68.218.117.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       8 attack-path probes (2.5% of requests)
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    326  (4 page views)
+    Active:      1 days  (2026-01-11 → 2026-01-11)
+    Evidence:    8 attack-path probes (2.5% of requests)
+    Top paths:
+          8  /images/wso.php
+          4  /server.php
+          4  /about.php
+          4  /admin.php
+          4  /adminfuns.php
+
+  IP: 178.128.27.0
+    Role:        WordPress Reconnaissance Bots
+    Label:       WP recon bot: wp-login (153 hits), wp-admin 0 authenticated,
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    317  (96 page views)
+    Active:      1 days  (2026-02-18 → 2026-02-18)
+    Evidence:    WP recon bot: wp-login (153 hits), wp-admin 0 authenticated, 153 redirected, user enum (?author=N: 7)
+    Top paths:
+        105  /wp-admin/index.php
+        105  /wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.
+         18  /wp-admin/profile.php
+         18  /wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.
+         16  /wp-admin/edit.php
+
+  IP: 157.245.63.0
+    Role:        WordPress Reconnaissance Bots
+    Label:       WP recon bot: wp-login (153 hits), wp-admin 0 authenticated,
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    317  (89 page views)
+    Active:      1 days  (2026-02-22 → 2026-02-22)
+    Evidence:    WP recon bot: wp-login (153 hits), wp-admin 0 authenticated, 153 redirected, user enum (?author=N: 7)
+    Top paths:
+         99  /wp-admin/index.php
+         99  /wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.
+         20  /wp-admin/profile.php
+         20  /wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.
+         17  /wp-admin/edit.php
+
+  IP: 2a03:cfc0:8000::
+    Role:        WordPress Reconnaissance Bots
+    Label:       WP recon bot: wp-login (90 hits), wp-admin 0 authenticated, 
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    315  (19 page views)
+    Active:      4 days  (2026-02-24 → 2026-03-02)
+    Evidence:    WP recon bot: wp-login (90 hits), wp-admin 0 authenticated, 68 redirected, user enum (?author=N: 5)
+    Top paths:
+         59  /wp-admin/index.php
+         51  /wp-admin/profile.php
+         51  /wp-admin/edit.php
+         51  /wp-admin/plugins.php
+         23  /wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%
+
+  IP: 178.128.119.0
+    Role:        WordPress Reconnaissance Bots
+    Label:       WP recon bot: wp-login (150 hits), wp-admin 0 authenticated,
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    312  (58 page views)
+    Active:      1 days  (2026-02-20 → 2026-02-20)
+    Evidence:    WP recon bot: wp-login (150 hits), wp-admin 0 authenticated, 150 redirected, user enum (?author=N: 7)
+    Top paths:
+         75  /wp-admin/index.php
+         75  /wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.
+         27  /wp-admin/profile.php
+         27  /wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.
+         24  /wp-admin/edit.php
+
+  IP: 98.159.37.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       Login probing: 129 wp-login attempts, zero authenticated wp-
+    Matched by:  [behavioral]  Confidence: medium
+    Requests:    308  (135 page views)
+    Active:      6 days  (2026-01-08 → 2026-02-24)
+    Evidence:    Login probing: 129 wp-login attempts, zero authenticated wp-admin access
+    Top paths:
+        129  /wp-login.php
+          4  /
+          4  /?rest_route=/wp/v2/users
+          1  /xmlrpc.php
+          1  /?author=1
+
+  IP: 4.194.217.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       8 attack-path probes (2.6% of requests)
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    306  (0 page views)
+    Active:      3 days  (2026-01-20 → 2026-02-03)
+    Evidence:    8 attack-path probes (2.6% of requests)
+    Top paths:
+          4  /wp-content/plugins/hellopress/wp_filemanager.php
+          3  /tinyfilemanager.php
+          3  /87.php
+          3  /img.php
+          3  /menu.php
+
+  IP: 165.245.181.0
+    Role:        WordPress Reconnaissance Bots
+    Label:       WP recon bot: wp-login (141 hits), wp-admin 0 authenticated,
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    298  (82 page views)
+    Active:      2 days  (2026-02-21 → 2026-02-27)
+    Evidence:    WP recon bot: wp-login (141 hits), wp-admin 0 authenticated, 141 redirected, user enum (?author=N: 7)
+    Top paths:
+         91  /wp-admin/index.php
+         91  /wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.
+         19  /wp-admin/profile.php
+         19  /wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.
+         16  /wp-admin/edit.php
+
+  IP: 45.133.5.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       Login probing: 273 wp-login attempts, zero authenticated wp-
+    Matched by:  [behavioral]  Confidence: medium
+    Requests:    281  (277 page views)
+    Active:      2 days  (2026-02-02 → 2026-02-03)
+    Evidence:    Login probing: 273 wp-login attempts, zero authenticated wp-admin access
+    Top paths:
+        273  /wp-login.php
+          4  /?rest_route=/wp/v2/users
+          1  /?author=1
+          1  /?author=2
+          1  /?author=3
+
+  IP: 4.189.120.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       8 attack-path probes (2.9% of requests)
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    276  (5 page views)
+    Active:      1 days  (2026-01-12 → 2026-01-12)
+    Evidence:    8 attack-path probes (2.9% of requests)
+    Top paths:
+          4  /new.php
+          3  /modules/mod_simplefileuploadv1.3/elements
+          3  /wp-includes/rest-api
+          2  /wp-admin/autoload_classmap.php
+          2  /autoload_classmap/function.php
+
+  IP: 94.72.106.0
+    Role:        WordPress Reconnaissance Bots
+    Label:       WP recon bot: wp-login (132 hits), wp-admin 0 authenticated,
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    274  (77 page views)
+    Active:      1 days  (2026-01-12 → 2026-01-12)
+    Evidence:    WP recon bot: wp-login (132 hits), wp-admin 0 authenticated, 132 redirected, user enum (?author=N: 5)
+    Top paths:
+         86  /wp-admin/index.php
+         86  /wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%
+         18  /wp-admin/profile.php
+         18  /wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%
+         14  /wp-admin/edit.php
+
+  IP: 167.71.198.0
+    Role:        WordPress Reconnaissance Bots
+    Label:       WP recon bot: wp-login (130 hits), wp-admin 0 authenticated,
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    272  (84 page views)
+    Active:      2 days  (2026-02-19 → 2026-02-21)
+    Evidence:    WP recon bot: wp-login (130 hits), wp-admin 0 authenticated, 130 redirected, user enum (?author=N: 7)
+    Top paths:
+         91  /wp-admin/index.php
+         91  /wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.
+         13  /wp-admin/profile.php
+         13  /wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.
+         13  /wp-admin/edit.php
+
+  IP: 52.169.148.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       7 attack-path probes (2.6% of requests)
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    269  (0 page views)
+    Active:      2 days  (2026-01-28 → 2026-02-01)
+    Evidence:    7 attack-path probes (2.6% of requests)
+    Top paths:
+          3  /cong.php
+          2  /wp-content/plugins/hellopress/wp_filemanager.php
+          2  /zwso.php
+          2  /wp-admin/css/colors/blue/index.php
+          2  /class19.php
+
+  IP: 91.217.249.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       7 attack-path probes (2.6% of requests)
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    267  (5 page views)
+    Active:      1 days  (2026-02-24 → 2026-02-24)
+    Evidence:    7 attack-path probes (2.6% of requests)
+    Top paths:
+          2  /wordpress/wp-admin/includes
+          2  /wp-includes/ID3
+          1  /manager.php
+          1  /bless.php
+          1  /O-Simple.php
+
+  IP: 2605:aa80::
+    Role:        WordPress Reconnaissance Bots
+    Label:       WP recon bot: wp-login (83 hits), wp-admin 0 authenticated, 
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    264  (32 page views)
+    Active:      3 days  (2026-01-28 → 2026-02-01)
+    Evidence:    WP recon bot: wp-login (83 hits), wp-admin 0 authenticated, 164 redirected, user enum (?author=N: 10)
+    Top paths:
+         82  /wp-admin/index.php
+         41  /wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%
+         28  /wp-admin/profile.php
+         26  /wp-admin/edit.php
+         26  /wp-admin/plugins.php
+
+  IP: 173.239.216.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       8 attack-path probes (3.1% of requests)
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    254  (2 page views)
+    Active:      1 days  (2026-02-20 → 2026-02-20)
+    Evidence:    8 attack-path probes (3.1% of requests)
+    Top paths:
+          1  /manager.php
+          1  /bless.php
+          1  /O-Simple.php
+          1  /lock360.php
+          1  /zwso.php
+
+  IP: 157.245.206.0
+    Role:        WordPress Reconnaissance Bots
+    Label:       WP recon bot: wp-login (118 hits), wp-admin 0 authenticated,
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    248  (59 page views)
+    Active:      2 days  (2026-02-10 → 2026-02-14)
+    Evidence:    WP recon bot: wp-login (118 hits), wp-admin 0 authenticated, 118 redirected, user enum (?author=N: 7)
+    Top paths:
+         68  /wp-admin/index.php
+         68  /wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.
+         17  /wp-admin/profile.php
+         17  /wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.
+         17  /wp-admin/edit.php
+
+  IP: 68.183.187.0
+    Role:        WordPress Reconnaissance Bots
+    Label:       WP recon bot: wp-login (116 hits), wp-admin 0 authenticated,
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    240  (75 page views)
+    Active:      1 days  (2026-02-05 → 2026-02-05)
+    Evidence:    WP recon bot: wp-login (116 hits), wp-admin 0 authenticated, 115 redirected, user enum (?author=N: 5)
+    Top paths:
+         76  /wp-admin/index.php
+         76  /wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%
+         15  /wp-admin/profile.php
+         15  /wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%
+         12  /wp-admin/edit.php
+
+  IP: 173.239.240.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       Login probing: 225 wp-login attempts, zero authenticated wp-
+    Matched by:  [behavioral]  Confidence: medium
+    Requests:    233  (226 page views)
+    Active:      2 days  (2026-01-15 → 2026-01-16)
+    Evidence:    Login probing: 225 wp-login attempts, zero authenticated wp-admin access
+    Top paths:
+        225  /wp-login.php
+          4  /?rest_route=/wp/v2/users
+          1  /?author=1
+          1  /?author=2
+          1  /?author=3
+
+  IP: 144.91.119.0
+    Role:        WordPress Reconnaissance Bots
+    Label:       WP recon bot: wp-login (113 hits), wp-admin 0 authenticated,
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    227  (22 page views)
+    Active:      2 days  (2026-02-27 → 2026-02-28)
+    Evidence:    WP recon bot: wp-login (113 hits), wp-admin 0 authenticated, 113 redirected
+    Top paths:
+         43  /wp-admin/index.php
+         43  /wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%
+         23  /wp-admin/profile.php
+         23  /wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%
+         23  /wp-admin/edit.php
+
+  IP: 85.11.167.0
+    Role:        WordPress Reconnaissance Bots
+    Label:       WP recon bot: wp-login (61 hits), wp-admin 0 authenticated, 
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    206  (19 page views)
+    Active:      11 days  (2026-01-07 → 2026-02-27)
+    Evidence:    WP recon bot: wp-login (61 hits), wp-admin 0 authenticated, 117 redirected, user enum (?author=N: 10)
+    Top paths:
+         50  /wp-admin/index.php
+         25  /wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%
+         20  /wp-admin/profile.php
+         20  /wp-admin/edit.php
+         20  /wp-admin/plugins.php
+
+  IP: 20.41.98.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       8 attack-path probes (4.8% of requests)
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    168  (0 page views)
+    Active:      2 days  (2026-02-25 → 2026-02-26)
+    Evidence:    8 attack-path probes (4.8% of requests)
+    Top paths:
+          4  /.tmb/dropdown.php
+          4  /.well-known
+          4  /.well-known/about/function.php
+          4  /.well-known/admin.php
+          4  /.well-known/autoload_classmap.php
+
+  IP: 144.91.126.0
+    Role:        WordPress Reconnaissance Bots
+    Label:       WP recon bot: wp-login (76 hits), wp-admin 0 authenticated, 
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    162  (20 page views)
+    Active:      5 days  (2026-01-26 → 2026-02-22)
+    Evidence:    WP recon bot: wp-login (76 hits), wp-admin 0 authenticated, 76 redirected
+    Top paths:
+         33  /wp-admin/index.php
+         33  /wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%
+         14  /wp-admin/profile.php
+         14  /wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%
+         14  /wp-admin/edit.php
+
+  IP: 157.230.34.0
+    Role:        WordPress Reconnaissance Bots
+    Label:       WP recon bot: wp-login (73 hits), wp-admin 0 authenticated, 
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    155  (40 page views)
+    Active:      1 days  (2026-01-29 → 2026-01-29)
+    Evidence:    WP recon bot: wp-login (73 hits), wp-admin 0 authenticated, 73 redirected, user enum (?author=N: 5)
+    Top paths:
+         45  /wp-admin/index.php
+         45  /wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%
+          9  /wp-admin/profile.php
+          9  /wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%
+          9  /wp-admin/edit.php
+
+  IP: 45.133.6.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       7 attack-path probes (4.6% of requests)
+    Matched by:  [behavioral]  Confidence: high
+    Requests:    152  (1 page views)
+    Active:      1 days  (2026-02-22 → 2026-02-22)
+    Evidence:    7 attack-path probes (4.6% of requests)
+    Top paths:
+          1  /manager.php
+          1  /bless.php
+          1  /O-Simple.php
+          1  /lock360.php
+          1  /zwso.php
+
+  IP: 192.42.116.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       Login probing: 135 wp-login attempts, zero authenticated wp-
+    Matched by:  [behavioral]  Confidence: medium
+    Requests:    144  (14 page views)
+    Active:      22 days  (2026-01-08 → 2026-03-04)
+    Evidence:    Login probing: 135 wp-login attempts, zero authenticated wp-admin access
+    Top paths:
+         89  /wp-login.php
+         16  /store/wp-login.php
+         14  /shop/wp-login.php
+         12  /blog/wp-login.php
+          5  /wp-admin
+
+  IP: 216.24.210.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       Login probing: 118 wp-login attempts, zero authenticated wp-
+    Matched by:  [behavioral]  Confidence: medium
+    Requests:    139  (118 page views)
+    Active:      5 days  (2026-01-08 → 2026-02-24)
+    Evidence:    Login probing: 118 wp-login attempts, zero authenticated wp-admin access
+    Top paths:
+        118  /wp-login.php
+          1  /about-us
+          1  /wp-content/et-cache/655/et-divi-dynamic-tb-28-655.css?ver=1771433644
+          1  /wp-content/uploads/2023/11/Steven-Aldridge_ORIG-DSCF3369-FINAL.jpg
+          1  /wp-content/uploads/2023/11/Catherine-Truman_ORIG-DSCF3385-FINAL.jpg
+
+  IP: 2a09:bac1:b00::
+    Role:        Vulnerability Scanners / Bots
+    Label:       Login probing: 136 wp-login attempts, zero authenticated wp-
+    Matched by:  [behavioral]  Confidence: medium
+    Requests:    136  (22 page views)
+    Active:      1 days  (2026-02-25 → 2026-02-25)
+    Evidence:    Login probing: 136 wp-login attempts, zero authenticated wp-admin access
+    Top paths:
+        136  /wp-login.php
+
+  IP: 136.144.43.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       Login probing: 120 wp-login attempts, zero authenticated wp-
+    Matched by:  [behavioral]  Confidence: medium
+    Requests:    131  (124 page views)
+    Active:      3 days  (2026-01-06 → 2026-02-27)
+    Evidence:    Login probing: 120 wp-login attempts, zero authenticated wp-admin access
+    Top paths:
+        120  /wp-login.php
+          4  /?rest_route=/wp/v2/users
+          1  /txets.php
+          1  /wp-content/txets.php
+          1  /wp-admin/txets.php
+
+  IP: 194.33.32.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       Login probing: 82 wp-login attempts, zero authenticated wp-a
+    Matched by:  [behavioral]  Confidence: medium
+    Requests:    126  (59 page views)
+    Active:      1 days  (2026-01-14 → 2026-01-14)
+    Evidence:    Login probing: 82 wp-login attempts, zero authenticated wp-admin access
+    Top paths:
+         82  /wp-login.php
+         44  /?rest_route=/wp/v2/users
+
+  IP: 104.234.53.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       Login probing: 89 wp-login attempts, zero authenticated wp-a
+    Matched by:  [behavioral]  Confidence: medium
+    Requests:    119  (94 page views)
+    Active:      3 days  (2026-01-27 → 2026-02-08)
+    Evidence:    Login probing: 89 wp-login attempts, zero authenticated wp-admin access
+    Top paths:
+         89  /wp-login.php
+          4  /?rest_route=/wp/v2/users
+          1  /?author=1
+          1  /?author=2
+          1  /?author=3
+
+  IP: 66.175.44.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       Login probing: 90 wp-login attempts, zero authenticated wp-a
+    Matched by:  [behavioral]  Confidence: medium
+    Requests:    110  (0 page views)
+    Active:      3 days  (2026-01-23 → 2026-02-05)
+    Evidence:    Login probing: 90 wp-login attempts, zero authenticated wp-admin access
+    Top paths:
+         90  /wp-login.php
+          6  /?rest_route=%2Fwp%2Fv2%2Fusers&_jsonp=cb&timeout=15&follow_redirects=
+          2  /?timeout=15&follow_redirects=true&decode=auto-html
+          2  /wp-json/wp/v2/users?context=edit&timeout=15&follow_redirects=true&dec
+          2  /wp-json/batch/v1
+
+  IP: 185.198.240.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       Login probing: 107 wp-login attempts, zero authenticated wp-
+    Matched by:  [behavioral]  Confidence: medium
+    Requests:    108  (106 page views)
+    Active:      6 days  (2026-01-09 → 2026-01-28)
+    Evidence:    Login probing: 107 wp-login attempts, zero authenticated wp-admin access
+    Top paths:
+        107  /wp-login.php
+          1  /wp-admin
+
+  IP: 173.239.218.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       Login probing: 83 wp-login attempts, zero authenticated wp-a
+    Matched by:  [behavioral]  Confidence: medium
+    Requests:    85  (83 page views)
+    Active:      4 days  (2026-01-08 → 2026-01-12)
+    Evidence:    Login probing: 83 wp-login attempts, zero authenticated wp-admin access
+    Top paths:
+         83  /wp-login.php
+          1  /readme.html
+          1  /license.txt
+
+  IP: 45.84.107.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       Login probing: 56 wp-login attempts, zero authenticated wp-a
+    Matched by:  [behavioral]  Confidence: medium
+    Requests:    73  (2 page views)
+    Active:      19 days  (2026-01-05 → 2026-02-26)
+    Evidence:    Login probing: 56 wp-login attempts, zero authenticated wp-admin access
+    Top paths:
+         52  /wp-login.php
+          5  /
+          4  /wordpress/wp-login.php
+          4  /wp-admin
+          2  /xmlrpc.php?rsd
+
+  IP: 146.190.54.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       Login probing: 51 wp-login attempts, zero authenticated wp-a
+    Matched by:  [behavioral]  Confidence: medium
+    Requests:    59  (55 page views)
+    Active:      1 days  (2026-01-24 → 2026-01-24)
+    Evidence:    Login probing: 51 wp-login attempts, zero authenticated wp-admin access
+    Top paths:
+         51  /wp-login.php
+          4  /?rest_route=/wp/v2/users
+          1  /?author=1
+          1  /?author=2
+          1  /?author=3
+
+  IP: 69.49.112.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       Login probing: 55 wp-login attempts, zero authenticated wp-a
+    Matched by:  [behavioral]  Confidence: medium
+    Requests:    57  (7 page views)
+    Active:      3 days  (2026-02-20 → 2026-03-01)
+    Evidence:    Login probing: 55 wp-login attempts, zero authenticated wp-admin access
+    Top paths:
+         55  /wp-login.php
+          2  /feed
+
 ────────────────────────────────────────────────────────────
 SECTION 3: WEEKLY TRENDS — TOTAL vs ORGANIC
 ────────────────────────────────────────────────────────────
       Week    Total PV  Organic PV   Filtered    Total UV  Organic UV
                                                                      
-  2026-W02       2,073       1,922        151       1,858       1,853
-  2026-W03       2,335       2,178        157       1,660       1,654
-  2026-W04       2,344       2,166        178       1,867       1,863
-  2026-W05       2,423       2,275        148       1,832       1,828
-  2026-W06       2,836       2,482        354       1,670       1,660
-  2026-W07       2,354       2,183        171       1,845       1,838
-  2026-W08       2,469       2,255        214       1,578       1,571
-  2026-W09       2,095       1,932        163       1,500       1,493
-  2026-W10         950         830        120         685         679
+  2026-W02       2,073       1,910        163       1,858       1,842
+  2026-W03       2,335       2,095        240       1,660       1,638
+  2026-W04       2,344       2,149        195       1,867       1,853
+  2026-W05       2,423       2,242        181       1,832       1,818
+  2026-W06       2,836       2,431        405       1,670       1,645
+  2026-W07       2,354       2,096        258       1,845       1,824
+  2026-W08       2,469       2,194        275       1,578       1,555
+  2026-W09       2,095       1,889        206       1,500       1,476
+  2026-W10         950         818        132         685         673
 ──────────  ────────── ─────────── ──────────  ────────── ───────────
-     TOTAL      19,879      18,223      1,656
+     TOTAL      19,879      17,824      2,055
 
   PV = Page Views (human, status 200)
   UV = Unique Visitors (unique IPs with human classification)
@@ -301,111 +1449,111 @@ SECTION 3: WEEKLY TRENDS — TOTAL vs ORGANIC
 SECTION 4: DAILY UNIQUE VISITORS — TOTAL vs ORGANIC
 ────────────────────────────────────────────────────────────
   2026-01-05  Total: 333  Organic: 330  ████████████████████████████
-  2026-01-06  Total: 345  Organic: 344  █████████████████████████████
-  2026-01-07  Total: 371  Organic: 369  ███████████████████████████████
-  2026-01-08  Total: 423  Organic: 421  ████████████████████████████████████
-  2026-01-09  Total: 347  Organic: 346  █████████████████████████████
-  2026-01-10  Total: 310  Organic: 309  ██████████████████████████
-  2026-01-11  Total: 279  Organic: 279  ████████████████████████
-  2026-01-12  Total: 369  Organic: 365  ███████████████████████████████
-  2026-01-13  Total: 360  Organic: 358  ██████████████████████████████
-  2026-01-14  Total: 312  Organic: 309  ██████████████████████████
-  2026-01-15  Total: 320  Organic: 318  ███████████████████████████
-  2026-01-16  Total: 289  Organic: 288  ████████████████████████
-  2026-01-17  Total: 351  Organic: 350  ██████████████████████████████
-  2026-01-18  Total: 282  Organic: 282  ████████████████████████
-  2026-01-19  Total: 407  Organic: 405  ██████████████████████████████████
-  2026-01-20  Total: 372  Organic: 371  ████████████████████████████████
-  2026-01-21  Total: 424  Organic: 423  ████████████████████████████████████
-  2026-01-22  Total: 357  Organic: 355  ██████████████████████████████
+  2026-01-06  Total: 345  Organic: 341  █████████████████████████████
+  2026-01-07  Total: 371  Organic: 366  ███████████████████████████████
+  2026-01-08  Total: 423  Organic: 419  ████████████████████████████████████
+  2026-01-09  Total: 347  Organic: 344  █████████████████████████████
+  2026-01-10  Total: 310  Organic: 308  ██████████████████████████
+  2026-01-11  Total: 279  Organic: 277  ███████████████████████
+  2026-01-12  Total: 369  Organic: 361  ███████████████████████████████
+  2026-01-13  Total: 360  Organic: 355  ██████████████████████████████
+  2026-01-14  Total: 312  Organic: 305  ██████████████████████████
+  2026-01-15  Total: 320  Organic: 316  ███████████████████████████
+  2026-01-16  Total: 289  Organic: 286  ████████████████████████
+  2026-01-17  Total: 351  Organic: 349  ██████████████████████████████
+  2026-01-18  Total: 282  Organic: 278  ████████████████████████
+  2026-01-19  Total: 407  Organic: 404  ██████████████████████████████████
+  2026-01-20  Total: 372  Organic: 368  ███████████████████████████████
+  2026-01-21  Total: 424  Organic: 421  ████████████████████████████████████
+  2026-01-22  Total: 357  Organic: 354  ██████████████████████████████
   2026-01-23  Total: 348  Organic: 347  █████████████████████████████
-  2026-01-24  Total: 275  Organic: 275  ███████████████████████
+  2026-01-24  Total: 275  Organic: 272  ███████████████████████
   2026-01-25  Total: 271  Organic: 270  ███████████████████████
-  2026-01-26  Total: 312  Organic: 310  ██████████████████████████
-  2026-01-27  Total: 317  Organic: 315  ███████████████████████████
-  2026-01-28  Total: 355  Organic: 353  ██████████████████████████████
-  2026-01-29  Total: 463  Organic: 460  ███████████████████████████████████████
-  2026-01-30  Total: 343  Organic: 341  █████████████████████████████
-  2026-01-31  Total: 266  Organic: 264  ██████████████████████
-  2026-02-01  Total: 305  Organic: 304  ██████████████████████████
-  2026-02-02  Total: 365  Organic: 361  ███████████████████████████████
-  2026-02-03  Total: 293  Organic: 289  ████████████████████████
-  2026-02-04  Total: 355  Organic: 351  ██████████████████████████████
-  2026-02-05  Total: 329  Organic: 325  ████████████████████████████
-  2026-02-06  Total: 310  Organic: 307  ██████████████████████████
-  2026-02-07  Total: 267  Organic: 264  ██████████████████████
-  2026-02-08  Total: 276  Organic: 275  ███████████████████████
-  2026-02-09  Total: 309  Organic: 306  ██████████████████████████
-  2026-02-10  Total: 309  Organic: 307  ██████████████████████████
-  2026-02-11  Total: 372  Organic: 370  ███████████████████████████████
+  2026-01-26  Total: 312  Organic: 308  ██████████████████████████
+  2026-01-27  Total: 317  Organic: 312  ██████████████████████████
+  2026-01-28  Total: 355  Organic: 352  ██████████████████████████████
+  2026-01-29  Total: 463  Organic: 459  ███████████████████████████████████████
+  2026-01-30  Total: 343  Organic: 338  █████████████████████████████
+  2026-01-31  Total: 266  Organic: 262  ██████████████████████
+  2026-02-01  Total: 305  Organic: 302  ██████████████████████████
+  2026-02-02  Total: 365  Organic: 357  ██████████████████████████████
+  2026-02-03  Total: 293  Organic: 287  ████████████████████████
+  2026-02-04  Total: 355  Organic: 349  ██████████████████████████████
+  2026-02-05  Total: 329  Organic: 324  ███████████████████████████
+  2026-02-06  Total: 310  Organic: 306  ██████████████████████████
+  2026-02-07  Total: 267  Organic: 261  ██████████████████████
+  2026-02-08  Total: 276  Organic: 270  ███████████████████████
+  2026-02-09  Total: 309  Organic: 303  ██████████████████████████
+  2026-02-10  Total: 309  Organic: 305  ██████████████████████████
+  2026-02-11  Total: 372  Organic: 364  ███████████████████████████████
   2026-02-12  Total: 360  Organic: 359  ███████████████████████████████
-  2026-02-13  Total: 423  Organic: 421  ████████████████████████████████████
-  2026-02-14  Total: 327  Organic: 324  ███████████████████████████
-  2026-02-15  Total: 293  Organic: 291  █████████████████████████
+  2026-02-13  Total: 423  Organic: 420  ████████████████████████████████████
+  2026-02-14  Total: 327  Organic: 321  ███████████████████████████
+  2026-02-15  Total: 293  Organic: 288  ████████████████████████
   2026-02-16  Total: 349  Organic: 346  █████████████████████████████
-  2026-02-17  Total: 346  Organic: 344  █████████████████████████████
-  2026-02-18  Total: 331  Organic: 328  ████████████████████████████
-  2026-02-19  Total: 327  Organic: 326  ████████████████████████████
-  2026-02-20  Total: 246  Organic: 245  █████████████████████
-  2026-02-21  Total: 236  Organic: 235  ████████████████████
-  2026-02-22  Total: 246  Organic: 245  █████████████████████
-  2026-02-23  Total: 264  Organic: 260  ██████████████████████
-  2026-02-24  Total: 261  Organic: 259  ██████████████████████
-  2026-02-25  Total: 271  Organic: 268  ███████████████████████
-  2026-02-26  Total: 349  Organic: 347  █████████████████████████████
-  2026-02-27  Total: 281  Organic: 278  ████████████████████████
-  2026-02-28  Total: 265  Organic: 263  ██████████████████████
-  2026-03-01  Total: 300  Organic: 299  █████████████████████████
-  2026-03-02  Total: 329  Organic: 327  ████████████████████████████
-  2026-03-03  Total: 343  Organic: 338  █████████████████████████████
-  2026-03-04  Total:  85  Organic:  84  ███████
+  2026-02-17  Total: 346  Organic: 343  █████████████████████████████
+  2026-02-18  Total: 331  Organic: 324  ███████████████████████████
+  2026-02-19  Total: 327  Organic: 324  ███████████████████████████
+  2026-02-20  Total: 246  Organic: 242  ████████████████████
+  2026-02-21  Total: 236  Organic: 232  ████████████████████
+  2026-02-22  Total: 246  Organic: 241  ████████████████████
+  2026-02-23  Total: 264  Organic: 255  ██████████████████████
+  2026-02-24  Total: 261  Organic: 255  ██████████████████████
+  2026-02-25  Total: 271  Organic: 267  ███████████████████████
+  2026-02-26  Total: 349  Organic: 344  █████████████████████████████
+  2026-02-27  Total: 281  Organic: 273  ███████████████████████
+  2026-02-28  Total: 265  Organic: 261  ██████████████████████
+  2026-03-01  Total: 300  Organic: 296  █████████████████████████
+  2026-03-02  Total: 329  Organic: 324  ███████████████████████████
+  2026-03-03  Total: 343  Organic: 337  █████████████████████████████
+  2026-03-04  Total:  85  Organic:  82  ███████
 
 ────────────────────────────────────────────────────────────
 SECTION 5: TOP PAGES — ORGANIC vs TOTAL
 ────────────────────────────────────────────────────────────
     #   Organic    Total    Known  Path
-    1.    8,658    8,745       87  /
-    2.      883      956       73  /projects
-    3.      784      849       65  /about-us
+    1.    8,612    8,745      133  /
+    2.      877      956       79  /projects
+    3.      753      849       96  /about-us
     4.      410      424       14  /project/barn-with-a-view
-    5.      189      199       10  /project/new-castle-town-hall
-    6.      189      200       11  /project/mid-century-home
+    5.      189      200       11  /project/mid-century-home
+    6.      189      199       10  /project/new-castle-town-hall
     7.      182      193       11  /project/berkshire-farmhouse
     8.      173      186       13  /project/net-zero-barn
-    9.      172      193       21  /press
-   10.      170      194       24  /project/camberville-chefs-kitchen-and-renovation
-   11.      168      181       13  /project/modern-townhouse
+    9.      170      194       24  /project/camberville-chefs-kitchen-and-renovation
+   10.      168      181       13  /project/modern-townhouse
+   11.      167      193       26  /press
    12.      158      171       13  /project/classic-townhouse
-   13.      154      165       11  /project/bullfinch-house
-   14.      154      165       11  /project/nantucket-kitchen
-   15.      154      155        1  /?rest_route=/wp/v2/users
-   16.      153      163       10  /project/st-pauls-school-chapels
-   17.      149      160       11  /project/island-renovation-and-expansion
-   18.      145      168       23  /project/pool-house-in-an-olmstead-landscape
-   19.      131      141       10  /project/great-camp-bunkhouse
-   20.      127      141       14  /project/mountain-retreat
-   21.      123      135       12  /project/south-end-townhouse
+   13.      154      165       11  /project/nantucket-kitchen
+   14.      154      165       11  /project/bullfinch-house
+   15.      153      163       10  /project/st-pauls-school-chapels
+   16.      149      160       11  /project/island-renovation-and-expansion
+   17.      145      168       23  /project/pool-house-in-an-olmstead-landscape
+   18.      131      141       10  /project/great-camp-bunkhouse
+   19.      127      141       14  /project/mountain-retreat
+   20.      123      135       12  /project/south-end-townhouse
+   21.      121      133       12  /project/boston-apartment-for-a-young-family
    22.      121      134       13  /project/maker-space-art-studio
-   23.      121      133       12  /project/boston-apartment-for-a-young-family
-   24.      120      139       19  /project/heritage-condominium-renovation
-   25.      116      126       10  /project/wellesley-renovation
+   23.      118      139       21  /project/heritage-condominium-renovation
+   24.      116      126       10  /project/wellesley-renovation
+   25.      110      120       10  /project/firestone-and-parson
 
 ────────────────────────────────────────────────────────────
 SECTION 6: ORGANIC REFERRER SOURCES
 ────────────────────────────────────────────────────────────
-  Direct / internal navigation:  16,174
+  Direct / internal navigation:  15,850
 
   Organic Search:
-    Google                1,179
-    Bing                     51
-    Duckduckgo               28
+    Google                1,140
+    Bing                     45
+    Duckduckgo               22
     Yahoo                    19
     Ecosia                    1
 
   Social:
     Pinterest               145
-    Facebook                 35
     Instagram                25
+    Facebook                 24
     Linkedin                 12
     Twitter                   2
     Reddit                    1
@@ -417,10 +1565,10 @@ SECTION 6: ORGANIC REFERRER SOURCES
         15  android-app://com.pinterest/
         13  https://crimeatravels.ru/
         12  https://nehomemag.com/
-        12  https://t.co/
         11  https://vavilon-ritual.com.ua/ru/uslugi/krematorij-krematsiya-tela.htm
          9  https://topkinopro.com/
          9  https://pamjatnik.com.ua/uslugi-info/mesto-baykovoe-kolumbariy
+         8  https://t4k.info/
 
 ────────────────────────────────────────────────────────────
 SECTION 7: KNOWN IP DAILY ACTIVITY
@@ -432,20 +1580,25 @@ SECTION 7: KNOWN IP DAILY ACTIVITY
     2026-01-12   1,758  ██████████████████████████████████████████████████
     2026-01-13       1  
     2026-01-14       1  
+    2026-01-20     352  █████████████████
+    2026-01-22      16  
     2026-01-27     727  ████████████████████████████████████
     2026-01-28     571  ████████████████████████████
     2026-01-29   1,136  ██████████████████████████████████████████████████
     2026-01-30   2,087  ██████████████████████████████████████████████████
-    2026-01-31     728  ████████████████████████████████████
+    2026-01-31   1,253  ██████████████████████████████████████████████████
     2026-02-01   1,597  ██████████████████████████████████████████████████
     2026-02-02   3,316  ██████████████████████████████████████████████████
-    2026-02-03   1,199  ██████████████████████████████████████████████████
+    2026-02-03   1,379  ██████████████████████████████████████████████████
+    2026-02-04       4  
     2026-02-05       7  
-    2026-02-07   2,020  ██████████████████████████████████████████████████
+    2026-02-07   2,136  ██████████████████████████████████████████████████
     2026-02-08   1,909  ██████████████████████████████████████████████████
-    2026-02-09      47  ██
+    2026-02-09   1,330  ██████████████████████████████████████████████████
+    2026-02-11     189  █████████
     2026-02-16     501  █████████████████████████
-    2026-02-18      55  ██
+    2026-02-18     817  ████████████████████████████████████████
+    2026-02-19     413  ████████████████████
     2026-02-24      12  
     2026-02-25      38  █
     2026-02-26     387  ███████████████████
@@ -499,6 +1652,51 @@ SECTION 7: KNOWN IP DAILY ACTIVITY
     2026-03-02      30  █
     2026-03-03     112  █████
     2026-03-04      39  █
+
+  WordPress Reconnaissance Bots:
+    2026-01-06       8  
+    2026-01-07       2  
+    2026-01-11      24  █
+    2026-01-12     274  █████████████
+    2026-01-13       8  
+    2026-01-14   3,720  ██████████████████████████████████████████████████
+    2026-01-15     441  ██████████████████████
+    2026-01-16       8  
+    2026-01-17     183  █████████
+    2026-01-18   1,047  ██████████████████████████████████████████████████
+    2026-01-19       9  
+    2026-01-23       3  
+    2026-01-24       3  
+    2026-01-26     154  ███████
+    2026-01-27     479  ███████████████████████
+    2026-01-28     261  █████████████
+    2026-01-29     155  ███████
+    2026-01-30   1,085  ██████████████████████████████████████████████████
+    2026-01-31       1  
+    2026-02-01       4  
+    2026-02-02     367  ██████████████████
+    2026-02-04      15  
+    2026-02-05     240  ████████████
+    2026-02-07     621  ███████████████████████████████
+    2026-02-10     249  ████████████
+    2026-02-11     363  ██████████████████
+    2026-02-14     451  ██████████████████████
+    2026-02-15       1  
+    2026-02-17       3  
+    2026-02-18     320  ████████████████
+    2026-02-19     274  █████████████
+    2026-02-20     650  ████████████████████████████████
+    2026-02-21     623  ███████████████████████████████
+    2026-02-22     666  █████████████████████████████████
+    2026-02-23       2  
+    2026-02-24     311  ███████████████
+    2026-02-26   1,344  ██████████████████████████████████████████████████
+    2026-02-27   2,536  ██████████████████████████████████████████████████
+    2026-02-28       2  
+    2026-03-01       2  
+    2026-03-02       1  
+    2026-03-03   2,250  ██████████████████████████████████████████████████
+    2026-03-04       2  
 
 ========================================================================
 END OF FILTERED REPORT

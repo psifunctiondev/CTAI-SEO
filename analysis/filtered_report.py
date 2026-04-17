@@ -8,6 +8,9 @@ Produces a report with three views:
 
 Known IPs are tagged and counted, never removed.
 Catherine's team can verify the IP classifications and see clean organic data.
+
+Uses both the known IP registry (hardcoded, verified) and behavioral
+classification (pattern-matching, adapts to IP changes).
 """
 
 import json
@@ -17,14 +20,18 @@ from datetime import datetime
 from collections import defaultdict, Counter
 
 from log_parser import parse_all_logs, LogEntry
-from known_ips import KNOWN_IPS, get_role_for_ip, get_label_for_ip, ROLE_DESCRIPTIONS
+from known_ips import KNOWN_IPS, ROLE_DESCRIPTIONS
+from ip_classifier import classify_all, EXTENDED_ROLE_DESCRIPTIONS, IPProfile
 
 
-def tag_entries(entries: list[LogEntry]) -> tuple[list[LogEntry], list[LogEntry], dict]:
+def tag_entries(entries):
     """
-    Split entries into organic and known, with accounting.
-    Returns (organic_entries, known_entries, known_summary).
+    Split entries into organic and non-organic using behavioral classifier.
+    Returns (organic_entries, known_entries, known_summary, profiles).
     """
+    # Classify all IPs
+    profiles = classify_all(entries)
+
     organic = []
     known = []
     known_summary = defaultdict(lambda: {
@@ -35,7 +42,8 @@ def tag_entries(entries: list[LogEntry]) -> tuple[list[LogEntry], list[LogEntry]
     })
 
     for e in entries:
-        role = get_role_for_ip(e.ip)
+        p = profiles.get(e.ip)
+        role = p.role if p else "organic"
         if role != "organic":
             known.append(e)
             s = known_summary[role]
@@ -47,7 +55,7 @@ def tag_entries(entries: list[LogEntry]) -> tuple[list[LogEntry], list[LogEntry]
         else:
             organic.append(e)
 
-    return organic, known, known_summary
+    return organic, known, known_summary, profiles
 
 
 def weekly_comparison(entries: list[LogEntry], organic: list[LogEntry]) -> list[dict]:
@@ -137,8 +145,8 @@ def top_pages_comparison(entries: list[LogEntry], organic: list[LogEntry], n: in
     return result[:n]
 
 
-def known_ip_detail_table(known_entries: list[LogEntry]) -> list[dict]:
-    """Detailed breakdown of each known IP for verification."""
+def known_ip_detail_table(known_entries, profiles: dict) -> list[dict]:
+    """Detailed breakdown of each non-organic IP for verification."""
     by_ip = defaultdict(lambda: {
         "requests": 0,
         "page_views": 0,
@@ -166,13 +174,17 @@ def known_ip_detail_table(known_entries: list[LogEntry]) -> list[dict]:
     result = []
     for ip in sorted(by_ip.keys(), key=lambda x: by_ip[x]["requests"], reverse=True):
         d = by_ip[ip]
-        info = KNOWN_IPS.get(ip)
+        p = profiles.get(ip)
+        registry_info = KNOWN_IPS.get(ip)
         result.append({
             "ip": ip,
-            "role": info.role if info else "unknown",
-            "label": info.label if info else "Unknown",
-            "confidence": info.confidence if info else "n/a",
-            "evidence": info.evidence if info else "",
+            "role": p.role if p else "unknown",
+            "label": (registry_info.label if registry_info
+                      else (p.match_reason[:60] if p else "Unknown")),
+            "confidence": p.confidence if p else "n/a",
+            "match_source": p.match_source if p else "unknown",
+            "evidence": (registry_info.evidence if registry_info
+                         else (p.match_reason if p else "")),
             "total_requests": d["requests"],
             "page_views": d["page_views"],
             "active_days": len(d["active_days"]),
@@ -256,14 +268,12 @@ def format_text_report(
     lines.append(f"Known IP entries:           {len(known_entries):>10,}")
     lines.append(f"Organic entries:            {len(organic):>10,}")
     lines.append(f"Known IP share:             {len(known_entries)/len(entries)*100:>9.1f}%")
-    lines.append(f"\nKnown IP breakdown by role:")
-    for role, desc in ROLE_DESCRIPTIONS.items():
-        if role == "organic":
-            continue
-        s = known_summary.get(role)
-        if s:
-            lines.append(f"  {desc:35s}  {s['count']:>8,} requests  "
-                         f"({len(s['ips'])} IPs, {s['page_views']:,} page views)")
+    lines.append(f"\nNon-organic IP breakdown by role:")
+    all_roles = {**ROLE_DESCRIPTIONS, **EXTENDED_ROLE_DESCRIPTIONS}
+    for role, s in sorted(known_summary.items(), key=lambda x: x[1]['count'], reverse=True):
+        desc = all_roles.get(role, role)
+        lines.append(f"  {desc:35s}  {s['count']:>8,} requests  "
+                     f"({len(s['ips'])} IPs, {s['page_views']:,} page views)")
 
     # --- Section 2: Known IP Verification Table ---
     lines.append(f"\n{'─' * 60}")
@@ -271,11 +281,13 @@ def format_text_report(
     lines.append("(For Catherine's team to verify IP classifications)")
     lines.append(f"{'─' * 60}")
     for d in ip_details:
-        role_label = ROLE_DESCRIPTIONS.get(d["role"], d["role"])
+        all_roles = {**ROLE_DESCRIPTIONS, **EXTENDED_ROLE_DESCRIPTIONS}
+        role_label = all_roles.get(d["role"], d["role"])
         lines.append(f"\n  IP: {d['ip']}")
         lines.append(f"    Role:        {role_label}")
+        src_tag = "[registry]" if d.get('match_source') == 'registry' else "[behavioral]"
         lines.append(f"    Label:       {d['label']}")
-        lines.append(f"    Confidence:  {d['confidence']}")
+        lines.append(f"    Matched by:  {src_tag}  Confidence: {d['confidence']}")
         lines.append(f"    Requests:    {d['total_requests']:,}  ({d['page_views']:,} page views)")
         lines.append(f"    Active:      {d['active_days']} days  ({d['first_seen']} → {d['last_seen']})")
         lines.append(f"    Evidence:    {d['evidence'][:120]}")
@@ -355,11 +367,12 @@ def format_text_report(
     lines.append("SECTION 7: KNOWN IP DAILY ACTIVITY")
     lines.append("(Verify these spikes match known work periods)")
     lines.append(f"{'─' * 60}")
-    for role in ["admin_designer", "admin_content"]:
+    all_roles = {**ROLE_DESCRIPTIONS, **EXTENDED_ROLE_DESCRIPTIONS}
+    for role in ["admin_designer", "admin_content", "wp_recon"]:
         s = known_summary.get(role)
         if not s:
             continue
-        desc = ROLE_DESCRIPTIONS[role]
+        desc = all_roles.get(role, role)
         lines.append(f"\n  {desc}:")
         for day, count in sorted(s["daily"].items()):
             bar = "█" * min(count // 20, 50)
@@ -385,15 +398,15 @@ if __name__ == "__main__":
     entries = parse_all_logs(log_dir)
     print(f"Total entries: {len(entries):,}")
 
-    print("\nTagging known IPs...")
-    organic, known_entries, known_summary = tag_entries(entries)
-    print(f"  Known IP entries: {len(known_entries):,}")
-    print(f"  Organic entries:  {len(organic):,}")
+    print("\nClassifying IPs (registry + behavioral)...")
+    organic, known_entries, known_summary, profiles = tag_entries(entries)
+    print(f"  Non-organic entries: {len(known_entries):,}")
+    print(f"  Organic entries:     {len(organic):,}")
 
     print("\nGenerating comparison data...")
     weekly = weekly_comparison(entries, organic)
     pages = top_pages_comparison(entries, organic)
-    ip_details = known_ip_detail_table(known_entries)
+    ip_details = known_ip_detail_table(known_entries, profiles)
     referrers = organic_referrer_analysis(organic)
     daily_uv = daily_comparison(entries, organic)
 
@@ -412,7 +425,8 @@ if __name__ == "__main__":
         },
         "known_ip_breakdown": {
             role: {
-                "description": ROLE_DESCRIPTIONS.get(role, role),
+                "description": EXTENDED_ROLE_DESCRIPTIONS.get(
+                    role, ROLE_DESCRIPTIONS.get(role, role)),
                 "requests": s["count"],
                 "unique_ips": len(s["ips"]),
                 "page_views": s["page_views"],

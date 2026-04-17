@@ -1,20 +1,26 @@
 {
-  "report_generated": "2026-04-17T14:21:00.777156",
+  "report_generated": "2026-04-17T17:24:11.427720",
   "date_range": {
     "start": "2026-01-05",
     "end": "2026-03-04"
   },
   "summary": {
     "total_entries": 441648,
-    "known_ip_entries": 84807,
-    "organic_entries": 356841
+    "known_ip_entries": 135435,
+    "organic_entries": 306213
   },
   "known_ip_breakdown": {
     "hosting": {
       "description": "Hosting Infrastructure",
-      "requests": 3431,
-      "unique_ips": 1,
-      "page_views": 109
+      "requests": 4331,
+      "unique_ips": 2,
+      "page_views": 1001
+    },
+    "scanner": {
+      "description": "Vulnerability Scanners / Bots",
+      "requests": 83047,
+      "unique_ips": 63,
+      "page_views": 8171
     },
     "admin_content": {
       "description": "Content Maintenance Team",
@@ -24,15 +30,15 @@
     },
     "admin_designer": {
       "description": "Web Design / SEO Team",
-      "requests": 18120,
-      "unique_ips": 2,
-      "page_views": 726
+      "requests": 21960,
+      "unique_ips": 4,
+      "page_views": 961
     },
-    "scanner": {
-      "description": "Vulnerability Scanners / Bots",
-      "requests": 56321,
-      "unique_ips": 14,
-      "page_views": 1355
+    "wp_recon": {
+      "description": "WordPress Reconnaissance Bots",
+      "requests": 19162,
+      "unique_ips": 31,
+      "page_views": 2520
     }
   },
   "known_ip_details": [
@@ -41,6 +47,7 @@
       "role": "admin_designer",
       "label": "Web Designer (primary)",
       "confidence": "high",
+      "match_source": "registry",
       "evidence": "14,137 requests over 17 days (peak 3,316 on Feb 2). Mac/Firefox user. Divi Builder activity (?et_fb=1&et_bfb=1). Heavy wp-admin/wp-login access with 200/302 responses.",
       "total_requests": 14137,
       "page_views": 470,
@@ -85,6 +92,7 @@
       "role": "scanner",
       "label": "Vulnerability Scanner A",
       "confidence": "high",
+      "match_source": "registry",
       "evidence": "8,981 requests over 12 days (peak 1,785 on Feb 25). Probing /wp-includes/ID3, /vendor/phpunit, /manager.php, /bless.php. Windows/Chrome UA but attack-pattern paths.",
       "total_requests": 8981,
       "page_views": 50,
@@ -131,6 +139,7 @@
       "role": "scanner",
       "label": "Sitemap Crawler (weekly)",
       "confidence": "high",
+      "match_source": "registry",
       "evidence": "~1,453 requests/week, every Sunday for 5 weeks. Hits /sitemap_index.xml, /robots.txt, then crawls entire site. Automated, not organic.",
       "total_requests": 7294,
       "page_views": 600,
@@ -170,6 +179,7 @@
       "role": "admin_content",
       "label": "Content Manager",
       "confidence": "high",
+      "match_source": "registry",
       "evidence": "6,935 requests over 48 active days. Windows/Chrome user. Consistent daily presence with periodic editing spikes (peak 997 on Feb 19). Pattern matches regular content updates.",
       "total_requests": 6935,
       "page_views": 325,
@@ -213,6 +223,7 @@
       "role": "scanner",
       "label": "Vulnerability Scanner B",
       "confidence": "high",
+      "match_source": "registry",
       "evidence": "6,645 requests over 11 days (peak 1,525 on Feb 27). Probing /.well-known/index.php, /manager.php, /bless.php, /O-Simple.php. Windows/Firefox UA but attack-pattern paths.",
       "total_requests": 6645,
       "page_views": 39,
@@ -258,6 +269,7 @@
       "role": "scanner",
       "label": "Sitemap Crawler (weekly, replaced 202.8.43.0)",
       "confidence": "high",
+      "match_source": "registry",
       "evidence": "Same ~1,450 requests/week pattern starting Feb 9. Took over from 202.8.43.0. Same crawl signature.",
       "total_requests": 5746,
       "page_views": 435,
@@ -297,6 +309,7 @@
       "role": "scanner",
       "label": "Vulnerability Scanner C",
       "confidence": "high",
+      "match_source": "registry",
       "evidence": "4,563 requests over 5 days (peak 2,308 on Feb 2). Probing /.well-known/index.php, /wp-includes/ID3, /manager.php. Burst scan pattern.",
       "total_requests": 4563,
       "page_views": 22,
@@ -342,6 +355,7 @@
       "role": "scanner",
       "label": "Curl Scanner",
       "confidence": "high",
+      "match_source": "registry",
       "evidence": "4,368 requests over 6 days (peak 1,665 on Mar 3). UA is 'curl/8.7.1'. Automated scanning tool.",
       "total_requests": 4368,
       "page_views": 19,
@@ -387,6 +401,7 @@
       "role": "scanner",
       "label": "Vulnerability Scanner E",
       "confidence": "high",
+      "match_source": "registry",
       "evidence": "4,179 requests over 3 days (peak 3,024 on Feb 10). Probing /wp-content/uploads, /wp-content/plugins, /wp-includes. Directory enumeration pattern.",
       "total_requests": 4179,
       "page_views": 18,
@@ -433,6 +448,7 @@
       "role": "admin_designer",
       "label": "Web Designer (secondary)",
       "confidence": "high",
+      "match_source": "registry",
       "evidence": "3,983 requests over 4 days (peak 2,020 on Feb 7). Mac/Firefox user. Heavy Divi Builder + about-us page editing. Burst pattern matches design work sessions.",
       "total_requests": 3983,
       "page_views": 256,
@@ -474,6 +490,7 @@
       "role": "scanner",
       "label": "Vulnerability Scanner D",
       "confidence": "high",
+      "match_source": "registry",
       "evidence": "3,464 requests \u2014 3,462 on single day (Jan 25). Probing /.well-known/index.php, /wp-includes/ID3, /manager.php. Single massive burst scan.",
       "total_requests": 3464,
       "page_views": 13,
@@ -519,6 +536,7 @@
       "role": "hosting",
       "label": "Hosting Server (cron/monitoring)",
       "confidence": "high",
+      "match_source": "registry",
       "evidence": "3,431 requests over all 59 days. Perfectly steady ~55-60/day. WordPress self-pings (wp-cron.php), internal monitoring. IP belongs to 1&1/IONOS hosting infrastructure.",
       "total_requests": 3431,
       "page_views": 109,
@@ -554,10 +572,55 @@
       }
     },
     {
+      "ip": "103.178.154.0",
+      "role": "admin_designer",
+      "label": "Divi Builder activity (10 requests) + authenticated wp-admin",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "Divi Builder activity (10 requests) + authenticated wp-admin (498 HTTP 200s)",
+      "total_requests": 2457,
+      "page_views": 141,
+      "active_days": 8,
+      "first_seen": "2026-01-20",
+      "last_seen": "2026-02-19",
+      "top_paths": [
+        [
+          "/wp-admin/admin-ajax.php",
+          289
+        ],
+        [
+          "/",
+          17
+        ],
+        [
+          "/about-us",
+          17
+        ],
+        [
+          "/wp-content/themes/Divi/core/admin/js/common.js?ver=4.27.5",
+          14
+        ],
+        [
+          "/wp-content/uploads/2024/08/favicon-196x196-1-150x150.png",
+          14
+        ]
+      ],
+      "status_codes": {
+        "200": 2413,
+        "304": 18,
+        "302": 16,
+        "500": 4,
+        "404": 2,
+        "206": 2,
+        "301": 2
+      }
+    },
+    {
       "ip": "212.30.33.0",
       "role": "scanner",
       "label": "Vulnerability Scanner F",
       "confidence": "high",
+      "match_source": "registry",
       "evidence": "2,442 requests over 3 days (peak 2,308 on Feb 21). Same attack patterns as 212.30.36.0 \u2014 likely same operator. /.well-known/index.php, /manager.php probes.",
       "total_requests": 2442,
       "page_views": 3,
@@ -596,10 +659,180 @@
       }
     },
     {
+      "ip": "94.26.106.0",
+      "role": "wp_recon",
+      "label": "WP recon bot: wp-login (801 hits), wp-admin 0 authenticated,",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "WP recon bot: wp-login (801 hits), wp-admin 0 authenticated, 1600 redirected, user enum (?author=N: 18)",
+      "total_requests": 2431,
+      "page_views": 137,
+      "active_days": 4,
+      "first_seen": "2026-01-14",
+      "last_seen": "2026-03-04",
+      "top_paths": [
+        [
+          "/wp-admin/index.php",
+          588
+        ],
+        [
+          "/wp-admin/profile.php",
+          340
+        ],
+        [
+          "/wp-admin/edit.php",
+          338
+        ],
+        [
+          "/wp-admin/plugins.php",
+          332
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%2Fwp-admin%2Findex.php&reauth=1",
+          294
+        ]
+      ],
+      "status_codes": {
+        "301": 814,
+        "302": 800,
+        "503": 667,
+        "200": 138,
+        "404": 8,
+        "403": 4
+      }
+    },
+    {
+      "ip": "45.130.203.0",
+      "role": "scanner",
+      "label": "52 attack-path probes (2.3% of requests)",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "52 attack-path probes (2.3% of requests)",
+      "total_requests": 2308,
+      "page_views": 0,
+      "active_days": 2,
+      "first_seen": "2026-02-15",
+      "last_seen": "2026-02-23",
+      "top_paths": [
+        [
+          "/.well-known/index.php",
+          4
+        ],
+        [
+          "/wordpress/wp-admin/includes",
+          4
+        ],
+        [
+          "/wp-includes/ID3",
+          4
+        ],
+        [
+          "/manager.php",
+          2
+        ],
+        [
+          "/bless.php",
+          2
+        ]
+      ],
+      "status_codes": {
+        "404": 2242,
+        "300": 44,
+        "503": 14,
+        "302": 4,
+        "301": 4
+      }
+    },
+    {
+      "ip": "104.248.185.0",
+      "role": "wp_recon",
+      "label": "WP recon bot: wp-login (763 hits), wp-admin 0 authenticated,",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "WP recon bot: wp-login (763 hits), wp-admin 0 authenticated, 1526 redirected, user enum (?author=N: 10)",
+      "total_requests": 2304,
+      "page_views": 164,
+      "active_days": 1,
+      "first_seen": "2026-02-27",
+      "last_seen": "2026-02-27",
+      "top_paths": [
+        [
+          "/wp-admin/index.php",
+          1524
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%2Fwp-admin%2Findex.php&reauth=1",
+          762
+        ],
+        [
+          "/wp-admin",
+          2
+        ],
+        [
+          "/?author=1",
+          2
+        ],
+        [
+          "/?author=2",
+          2
+        ]
+      ],
+      "status_codes": {
+        "301": 772,
+        "302": 763,
+        "503": 602,
+        "200": 165,
+        "404": 2
+      }
+    },
+    {
+      "ip": "206.189.190.0",
+      "role": "wp_recon",
+      "label": "WP recon bot: wp-login (745 hits), wp-admin 0 authenticated,",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "WP recon bot: wp-login (745 hits), wp-admin 0 authenticated, 1490 redirected, user enum (?author=N: 10)",
+      "total_requests": 2250,
+      "page_views": 163,
+      "active_days": 1,
+      "first_seen": "2026-03-03",
+      "last_seen": "2026-03-03",
+      "top_paths": [
+        [
+          "/wp-admin/index.php",
+          1488
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%2Fwp-admin%2Findex.php&reauth=1",
+          744
+        ],
+        [
+          "/wp-admin",
+          2
+        ],
+        [
+          "/?author=1",
+          2
+        ],
+        [
+          "/?author=2",
+          2
+        ]
+      ],
+      "status_codes": {
+        "301": 754,
+        "302": 745,
+        "503": 585,
+        "200": 164,
+        "404": 2
+      }
+    },
+    {
       "ip": "85.203.15.0",
       "role": "scanner",
       "label": "Vulnerability Scanner G",
       "confidence": "high",
+      "match_source": "registry",
       "evidence": "2,223 requests over 5 days. Short UA ('Mozilla/5.0'). Probing /.well-known/index.php, /wp-includes/ID3, /manager.php.",
       "total_requests": 2223,
       "page_views": 90,
@@ -644,6 +877,7 @@
       "role": "scanner",
       "label": "Vulnerability Scanner I",
       "confidence": "high",
+      "match_source": "registry",
       "evidence": "2,188 requests over 3 days (peak 1,072 on Feb 15). Burst scanning pattern.",
       "total_requests": 2188,
       "page_views": 24,
@@ -688,6 +922,7 @@
       "role": "scanner",
       "label": "Vulnerability Scanner H (same /16 as G)",
       "confidence": "high",
+      "match_source": "registry",
       "evidence": "1,781 requests over 3 days. Same 85.203.x.x range. Same attack patterns.",
       "total_requests": 1781,
       "page_views": 9,
@@ -726,10 +961,138 @@
       }
     },
     {
+      "ip": "136.144.17.0",
+      "role": "admin_designer",
+      "label": "Divi Builder activity (14 requests) + authenticated wp-admin",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "Divi Builder activity (14 requests) + authenticated wp-admin (402 HTTP 200s)",
+      "total_requests": 1383,
+      "page_views": 94,
+      "active_days": 3,
+      "first_seen": "2026-01-22",
+      "last_seen": "2026-02-09",
+      "top_paths": [
+        [
+          "/wp-admin/admin-ajax.php",
+          272
+        ],
+        [
+          "/wp-admin/admin-ajax.php?lang=en_US",
+          14
+        ],
+        [
+          "/about-us",
+          12
+        ],
+        [
+          "/wp-admin/post.php",
+          8
+        ],
+        [
+          "/",
+          7
+        ]
+      ],
+      "status_codes": {
+        "200": 1164,
+        "301": 179,
+        "302": 17,
+        "404": 16,
+        "304": 4,
+        "503": 3
+      }
+    },
+    {
+      "ip": "167.172.76.0",
+      "role": "wp_recon",
+      "label": "WP recon bot: wp-login (667 hits), wp-admin 0 authenticated,",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "WP recon bot: wp-login (667 hits), wp-admin 0 authenticated, 663 redirected, user enum (?author=N: 9)",
+      "total_requests": 1344,
+      "page_views": 211,
+      "active_days": 1,
+      "first_seen": "2026-02-26",
+      "last_seen": "2026-02-26",
+      "top_paths": [
+        [
+          "/wp-admin/index.php",
+          311
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%2Fwp-admin%2Findex.php&reauth=1",
+          311
+        ],
+        [
+          "/wp-admin/edit.php",
+          120
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%2Fwp-admin%2Fedit.php&reauth=1",
+          120
+        ],
+        [
+          "/wp-admin/profile.php",
+          119
+        ]
+      ],
+      "status_codes": {
+        "302": 663,
+        "503": 460,
+        "200": 212,
+        "404": 6,
+        "301": 3
+      }
+    },
+    {
+      "ip": "129.150.33.0",
+      "role": "wp_recon",
+      "label": "WP recon bot: wp-login (428 hits), wp-admin 0 authenticated,",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "WP recon bot: wp-login (428 hits), wp-admin 0 authenticated, 850 redirected, user enum (?author=N: 10)",
+      "total_requests": 1295,
+      "page_views": 216,
+      "active_days": 1,
+      "first_seen": "2026-01-14",
+      "last_seen": "2026-01-14",
+      "top_paths": [
+        [
+          "/wp-admin/index.php",
+          520
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%2Fwp-admin%2Findex.php&reauth=1",
+          260
+        ],
+        [
+          "/wp-admin/profile.php",
+          112
+        ],
+        [
+          "/wp-admin/edit.php",
+          112
+        ],
+        [
+          "/wp-admin/plugins.php",
+          104
+        ]
+      ],
+      "status_codes": {
+        "301": 438,
+        "302": 425,
+        "200": 217,
+        "503": 213,
+        "404": 2
+      }
+    },
+    {
       "ip": "103.125.146.0",
       "role": "scanner",
       "label": "Vulnerability Scanner J",
       "confidence": "medium",
+      "match_source": "registry",
       "evidence": "~1,057 requests on Feb 18. Probing /wp-includes/Requests/about.php, /wp-content/themes/ enumeration.",
       "total_requests": 1294,
       "page_views": 20,
@@ -771,10 +1134,349 @@
       }
     },
     {
+      "ip": "91.230.225.0",
+      "role": "scanner",
+      "label": "28 attack-path probes (2.4% of requests)",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "28 attack-path probes (2.4% of requests)",
+      "total_requests": 1161,
+      "page_views": 0,
+      "active_days": 3,
+      "first_seen": "2026-02-19",
+      "last_seen": "2026-02-27",
+      "top_paths": [
+        [
+          "/vendor/phpunit/phpunit/phpunit.xsd",
+          2
+        ],
+        [
+          "/.well-known/index.php",
+          2
+        ],
+        [
+          "/wordpress/wp-admin/includes",
+          2
+        ],
+        [
+          "/wp-includes/ID3",
+          2
+        ],
+        [
+          "/txets.php",
+          1
+        ]
+      ],
+      "status_codes": {
+        "404": 1122,
+        "300": 22,
+        "503": 12,
+        "301": 3,
+        "302": 2
+      }
+    },
+    {
+      "ip": "185.192.71.0",
+      "role": "scanner",
+      "label": "27 attack-path probes (2.3% of requests)",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "27 attack-path probes (2.3% of requests)",
+      "total_requests": 1160,
+      "page_views": 0,
+      "active_days": 3,
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-27",
+      "top_paths": [
+        [
+          "/.well-known/index.php",
+          2
+        ],
+        [
+          "/wordpress/wp-admin/includes",
+          2
+        ],
+        [
+          "/wp-includes/ID3",
+          2
+        ],
+        [
+          "/txets.php",
+          1
+        ],
+        [
+          "/wp-content/txets.php",
+          1
+        ]
+      ],
+      "status_codes": {
+        "301": 1141,
+        "503": 12,
+        "404": 7
+      }
+    },
+    {
+      "ip": "194.32.120.0",
+      "role": "scanner",
+      "label": "26 attack-path probes (2.2% of requests)",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "26 attack-path probes (2.2% of requests)",
+      "total_requests": 1156,
+      "page_views": 2,
+      "active_days": 3,
+      "first_seen": "2026-01-06",
+      "last_seen": "2026-02-18",
+      "top_paths": [
+        [
+          "/",
+          2
+        ],
+        [
+          "/.well-known/index.php",
+          2
+        ],
+        [
+          "/wordpress/wp-admin/includes",
+          2
+        ],
+        [
+          "/wp-includes/ID3",
+          2
+        ],
+        [
+          "/manager.php",
+          1
+        ]
+      ],
+      "status_codes": {
+        "301": 1141,
+        "503": 7,
+        "404": 6,
+        "200": 2
+      }
+    },
+    {
+      "ip": "173.239.196.0",
+      "role": "scanner",
+      "label": "26 attack-path probes (2.3% of requests)",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "26 attack-path probes (2.3% of requests)",
+      "total_requests": 1154,
+      "page_views": 13,
+      "active_days": 1,
+      "first_seen": "2026-02-08",
+      "last_seen": "2026-02-08",
+      "top_paths": [
+        [
+          "/.well-known/index.php",
+          2
+        ],
+        [
+          "/wordpress/wp-admin/includes",
+          2
+        ],
+        [
+          "/wp-includes/ID3",
+          2
+        ],
+        [
+          "/manager.php",
+          1
+        ],
+        [
+          "/bless.php",
+          1
+        ]
+      ],
+      "status_codes": {
+        "404": 951,
+        "301": 88,
+        "403": 79,
+        "302": 14,
+        "200": 13,
+        "503": 7,
+        "500": 1,
+        "409": 1
+      }
+    },
+    {
+      "ip": "193.176.211.0",
+      "role": "scanner",
+      "label": "26 attack-path probes (2.3% of requests)",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "26 attack-path probes (2.3% of requests)",
+      "total_requests": 1154,
+      "page_views": 0,
+      "active_days": 1,
+      "first_seen": "2026-02-08",
+      "last_seen": "2026-02-08",
+      "top_paths": [
+        [
+          "/.well-known/index.php",
+          2
+        ],
+        [
+          "/wordpress/wp-admin/includes",
+          2
+        ],
+        [
+          "/wp-includes/ID3",
+          2
+        ],
+        [
+          "/manager.php",
+          1
+        ],
+        [
+          "/bless.php",
+          1
+        ]
+      ],
+      "status_codes": {
+        "301": 1141,
+        "503": 7,
+        "404": 6
+      }
+    },
+    {
+      "ip": "45.133.4.0",
+      "role": "scanner",
+      "label": "26 attack-path probes (2.3% of requests)",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "26 attack-path probes (2.3% of requests)",
+      "total_requests": 1154,
+      "page_views": 13,
+      "active_days": 1,
+      "first_seen": "2026-02-15",
+      "last_seen": "2026-02-15",
+      "top_paths": [
+        [
+          "/.well-known/index.php",
+          2
+        ],
+        [
+          "/wordpress/wp-admin/includes",
+          2
+        ],
+        [
+          "/wp-includes/ID3",
+          2
+        ],
+        [
+          "/manager.php",
+          1
+        ],
+        [
+          "/bless.php",
+          1
+        ]
+      ],
+      "status_codes": {
+        "404": 951,
+        "301": 88,
+        "403": 79,
+        "302": 14,
+        "200": 13,
+        "503": 7,
+        "500": 1,
+        "409": 1
+      }
+    },
+    {
+      "ip": "85.203.47.0",
+      "role": "scanner",
+      "label": "26 attack-path probes (2.3% of requests)",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "26 attack-path probes (2.3% of requests)",
+      "total_requests": 1154,
+      "page_views": 0,
+      "active_days": 1,
+      "first_seen": "2026-02-22",
+      "last_seen": "2026-02-22",
+      "top_paths": [
+        [
+          "/.well-known/index.php",
+          2
+        ],
+        [
+          "/wordpress/wp-admin/includes",
+          2
+        ],
+        [
+          "/wp-includes/ID3",
+          2
+        ],
+        [
+          "/manager.php",
+          1
+        ],
+        [
+          "/bless.php",
+          1
+        ]
+      ],
+      "status_codes": {
+        "301": 1141,
+        "503": 7,
+        "404": 6
+      }
+    },
+    {
+      "ip": "45.86.200.0",
+      "role": "scanner",
+      "label": "26 attack-path probes (2.3% of requests)",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "26 attack-path probes (2.3% of requests)",
+      "total_requests": 1154,
+      "page_views": 13,
+      "active_days": 1,
+      "first_seen": "2026-03-01",
+      "last_seen": "2026-03-01",
+      "top_paths": [
+        [
+          "/.well-known/index.php",
+          2
+        ],
+        [
+          "/wordpress/wp-admin/includes",
+          2
+        ],
+        [
+          "/wp-includes/ID3",
+          2
+        ],
+        [
+          "/manager.php",
+          1
+        ],
+        [
+          "/bless.php",
+          1
+        ]
+      ],
+      "status_codes": {
+        "404": 951,
+        "301": 88,
+        "403": 79,
+        "302": 14,
+        "200": 13,
+        "503": 7,
+        "500": 1,
+        "409": 1
+      }
+    },
+    {
       "ip": "185.221.132.0",
       "role": "scanner",
       "label": "Vulnerability Scanner K",
       "confidence": "medium",
+      "match_source": "registry",
       "evidence": "~909 requests on Feb 7. /.well-known/index.php, /manager.php probes.",
       "total_requests": 1153,
       "page_views": 13,
@@ -813,6 +1515,2718 @@
         "500": 1,
         "409": 1
       }
+    },
+    {
+      "ip": "136.144.33.0",
+      "role": "scanner",
+      "label": "Login probing: 1093 wp-login attempts, zero authenticated wp",
+      "confidence": "medium",
+      "match_source": "behavioral",
+      "evidence": "Login probing: 1093 wp-login attempts, zero authenticated wp-admin access",
+      "total_requests": 1145,
+      "page_views": 1036,
+      "active_days": 21,
+      "first_seen": "2026-01-06",
+      "last_seen": "2026-02-20",
+      "top_paths": [
+        [
+          "/wp-login.php",
+          1093
+        ],
+        [
+          "/?rest_route=/wp/v2/users",
+          12
+        ],
+        [
+          "/xmlrpc.php",
+          9
+        ],
+        [
+          "/?author=1",
+          3
+        ],
+        [
+          "/?author=2",
+          3
+        ]
+      ],
+      "status_codes": {
+        "200": 1036,
+        "403": 67,
+        "404": 18,
+        "301": 14,
+        "503": 9,
+        "302": 1
+      }
+    },
+    {
+      "ip": "85.237.194.0",
+      "role": "scanner",
+      "label": "20 attack-path probes (1.8% of requests)",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "20 attack-path probes (1.8% of requests)",
+      "total_requests": 1083,
+      "page_views": 12,
+      "active_days": 1,
+      "first_seen": "2026-02-02",
+      "last_seen": "2026-02-02",
+      "top_paths": [
+        [
+          "/.well-known/index.php",
+          2
+        ],
+        [
+          "/wordpress/wp-admin/includes",
+          2
+        ],
+        [
+          "/wp-includes/ID3",
+          2
+        ],
+        [
+          "/wp-admin/js/index.php",
+          1
+        ],
+        [
+          "/wp-includes/js/jquery/jquery.php",
+          1
+        ]
+      ],
+      "status_codes": {
+        "404": 883,
+        "301": 86,
+        "403": 79,
+        "302": 14,
+        "200": 12,
+        "503": 7,
+        "500": 1,
+        "409": 1
+      }
+    },
+    {
+      "ip": "216.73.162.0",
+      "role": "scanner",
+      "label": "25 attack-path probes (2.3% of requests)",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "25 attack-path probes (2.3% of requests)",
+      "total_requests": 1074,
+      "page_views": 6,
+      "active_days": 3,
+      "first_seen": "2026-01-21",
+      "last_seen": "2026-02-09",
+      "top_paths": [
+        [
+          "/wp-admin/admin-ajax.php",
+          37
+        ],
+        [
+          "//wp-login.php",
+          3
+        ],
+        [
+          "//xmlrpc.php",
+          3
+        ],
+        [
+          "/.well-known/index.php",
+          2
+        ],
+        [
+          "/about-us",
+          2
+        ]
+      ],
+      "status_codes": {
+        "301": 970,
+        "200": 90,
+        "503": 7,
+        "404": 5,
+        "403": 1,
+        "304": 1
+      }
+    },
+    {
+      "ip": "109.205.211.0",
+      "role": "wp_recon",
+      "label": "WP recon bot: wp-login (530 hits), wp-admin 0 authenticated,",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "WP recon bot: wp-login (530 hits), wp-admin 0 authenticated, 526 redirected, user enum (?author=N: 9)",
+      "total_requests": 1070,
+      "page_views": 119,
+      "active_days": 1,
+      "first_seen": "2026-01-30",
+      "last_seen": "2026-01-30",
+      "top_paths": [
+        [
+          "/wp-admin/index.php",
+          213
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%2Fwp-admin%2Findex.php&reauth=1",
+          213
+        ],
+        [
+          "/wp-admin/profile.php",
+          106
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%2Fwp-admin%2Fprofile.php&reauth=1",
+          106
+        ],
+        [
+          "/wp-admin/edit.php",
+          104
+        ]
+      ],
+      "status_codes": {
+        "302": 526,
+        "503": 415,
+        "200": 120,
+        "404": 6,
+        "301": 3
+      }
+    },
+    {
+      "ip": "193.36.225.0",
+      "role": "scanner",
+      "label": "Login probing: 938 wp-login attempts, zero authenticated wp-",
+      "confidence": "medium",
+      "match_source": "behavioral",
+      "evidence": "Login probing: 938 wp-login attempts, zero authenticated wp-admin access",
+      "total_requests": 988,
+      "page_views": 954,
+      "active_days": 17,
+      "first_seen": "2026-01-12",
+      "last_seen": "2026-02-20",
+      "top_paths": [
+        [
+          "/wp-login.php",
+          936
+        ],
+        [
+          "/?rest_route=/wp/v2/users",
+          20
+        ],
+        [
+          "/?author=1",
+          5
+        ],
+        [
+          "/?author=2",
+          5
+        ],
+        [
+          "/?author=3",
+          5
+        ]
+      ],
+      "status_codes": {
+        "200": 954,
+        "301": 21,
+        "503": 6,
+        "404": 5,
+        "302": 1,
+        "403": 1
+      }
+    },
+    {
+      "ip": "139.180.180.0",
+      "role": "hosting",
+      "label": "Steady pattern (CV=0.29) over 59 days, avg 15/day",
+      "confidence": "medium",
+      "match_source": "behavioral",
+      "evidence": "Steady pattern (CV=0.29) over 59 days, avg 15/day",
+      "total_requests": 900,
+      "page_views": 892,
+      "active_days": 59,
+      "first_seen": "2026-01-05",
+      "last_seen": "2026-03-04",
+      "top_paths": [
+        [
+          "/",
+          10
+        ],
+        [
+          "/wp-load.php?9b08d3=63508",
+          1
+        ],
+        [
+          "/wp-load.php?3d704e=23183",
+          1
+        ],
+        [
+          "/wp-load.php?bbd214=97834",
+          1
+        ],
+        [
+          "/wp-load.php?043b31=88544",
+          1
+        ]
+      ],
+      "status_codes": {
+        "200": 898,
+        "500": 2
+      }
+    },
+    {
+      "ip": "37.140.223.0",
+      "role": "scanner",
+      "label": "Login probing: 851 wp-login attempts, zero authenticated wp-",
+      "confidence": "medium",
+      "match_source": "behavioral",
+      "evidence": "Login probing: 851 wp-login attempts, zero authenticated wp-admin access",
+      "total_requests": 894,
+      "page_views": 859,
+      "active_days": 19,
+      "first_seen": "2026-01-06",
+      "last_seen": "2026-02-20",
+      "top_paths": [
+        [
+          "/wp-login.php",
+          851
+        ],
+        [
+          "/xmlrpc.php",
+          20
+        ],
+        [
+          "/?rest_route=/wp/v2/users",
+          9
+        ],
+        [
+          "/",
+          3
+        ],
+        [
+          "/?author=1",
+          2
+        ]
+      ],
+      "status_codes": {
+        "200": 859,
+        "503": 22,
+        "301": 9,
+        "403": 2,
+        "404": 2
+      }
+    },
+    {
+      "ip": "45.131.195.0",
+      "role": "scanner",
+      "label": "8 attack-path probes (1.2% of requests)",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "8 attack-path probes (1.2% of requests)",
+      "total_requests": 685,
+      "page_views": 324,
+      "active_days": 11,
+      "first_seen": "2026-01-09",
+      "last_seen": "2026-03-02",
+      "top_paths": [
+        [
+          "/wp-login.php",
+          309
+        ],
+        [
+          "/?rest_route=/wp/v2/users",
+          12
+        ],
+        [
+          "/?author=1",
+          3
+        ],
+        [
+          "/?author=2",
+          3
+        ],
+        [
+          "/?author=3",
+          3
+        ]
+      ],
+      "status_codes": {
+        "200": 324,
+        "404": 265,
+        "403": 61,
+        "301": 28,
+        "302": 4,
+        "503": 3
+      }
+    },
+    {
+      "ip": "213.35.118.0",
+      "role": "wp_recon",
+      "label": "WP recon bot: wp-login (315 hits), wp-admin 0 authenticated,",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "WP recon bot: wp-login (315 hits), wp-admin 0 authenticated, 314 redirected, user enum (?author=N: 5)",
+      "total_requests": 638,
+      "page_views": 94,
+      "active_days": 1,
+      "first_seen": "2026-01-18",
+      "last_seen": "2026-01-18",
+      "top_paths": [
+        [
+          "/wp-admin/index.php",
+          314
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%2Fwp-admin%2Findex.php&reauth=1",
+          314
+        ],
+        [
+          "/wp-login.php",
+          1
+        ],
+        [
+          "/?author=1",
+          1
+        ],
+        [
+          "/author/catherinearumanarchitects",
+          1
+        ]
+      ],
+      "status_codes": {
+        "302": 314,
+        "503": 224,
+        "200": 95,
+        "301": 3,
+        "404": 2
+      }
+    },
+    {
+      "ip": "142.170.89.0",
+      "role": "wp_recon",
+      "label": "WP recon bot: wp-login (305 hits), wp-admin 0 authenticated,",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "WP recon bot: wp-login (305 hits), wp-admin 0 authenticated, 305 redirected, user enum (?author=N: 7)",
+      "total_requests": 621,
+      "page_views": 53,
+      "active_days": 1,
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "top_paths": [
+        [
+          "/wp-admin/index.php",
+          111
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.com%2Fwp-admin%2Findex.php&reauth=1",
+          111
+        ],
+        [
+          "/wp-admin/profile.php",
+          66
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.com%2Fwp-admin%2Fprofile.php&reauth=1",
+          66
+        ],
+        [
+          "/wp-admin/edit.php",
+          65
+        ]
+      ],
+      "status_codes": {
+        "302": 305,
+        "503": 255,
+        "200": 54,
+        "301": 5,
+        "404": 2
+      }
+    },
+    {
+      "ip": "209.87.169.0",
+      "role": "scanner",
+      "label": "Login probing: 568 wp-login attempts, zero authenticated wp-",
+      "confidence": "medium",
+      "match_source": "behavioral",
+      "evidence": "Login probing: 568 wp-login attempts, zero authenticated wp-admin access",
+      "total_requests": 595,
+      "page_views": 580,
+      "active_days": 8,
+      "first_seen": "2026-01-12",
+      "last_seen": "2026-03-04",
+      "top_paths": [
+        [
+          "/wp-login.php",
+          568
+        ],
+        [
+          "/?rest_route=/wp/v2/users",
+          12
+        ],
+        [
+          "/?author=1",
+          3
+        ],
+        [
+          "/?author=2",
+          3
+        ],
+        [
+          "/?author=3",
+          3
+        ]
+      ],
+      "status_codes": {
+        "200": 580,
+        "301": 9,
+        "404": 6
+      }
+    },
+    {
+      "ip": "185.223.152.0",
+      "role": "scanner",
+      "label": "Login probing: 534 wp-login attempts, zero authenticated wp-",
+      "confidence": "medium",
+      "match_source": "behavioral",
+      "evidence": "Login probing: 534 wp-login attempts, zero authenticated wp-admin access",
+      "total_requests": 552,
+      "page_views": 440,
+      "active_days": 8,
+      "first_seen": "2026-01-07",
+      "last_seen": "2026-02-21",
+      "top_paths": [
+        [
+          "/wp-login.php",
+          534
+        ],
+        [
+          "/?rest_route=/wp/v2/users",
+          4
+        ],
+        [
+          "/wp-admin",
+          3
+        ],
+        [
+          "/?author=1",
+          1
+        ],
+        [
+          "/?author=2",
+          1
+        ]
+      ],
+      "status_codes": {
+        "200": 440,
+        "403": 96,
+        "301": 10,
+        "404": 6
+      }
+    },
+    {
+      "ip": "4.197.75.0",
+      "role": "scanner",
+      "label": "6 attack-path probes (1.2% of requests)",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "6 attack-path probes (1.2% of requests)",
+      "total_requests": 499,
+      "page_views": 18,
+      "active_days": 2,
+      "first_seen": "2026-01-14",
+      "last_seen": "2026-03-02",
+      "top_paths": [
+        [
+          "/wp-content/plugins/hellopress/wp_filemanager.php",
+          4
+        ],
+        [
+          "/themes.php",
+          4
+        ],
+        [
+          "/admin.php",
+          4
+        ],
+        [
+          "/403.php",
+          4
+        ],
+        [
+          "/css.php",
+          4
+        ]
+      ],
+      "status_codes": {
+        "301": 248,
+        "403": 228,
+        "200": 18,
+        "503": 3,
+        "500": 2
+      }
+    },
+    {
+      "ip": "170.64.181.0",
+      "role": "scanner",
+      "label": "6 attack-path probes (1.2% of requests)",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "6 attack-path probes (1.2% of requests)",
+      "total_requests": 493,
+      "page_views": 6,
+      "active_days": 3,
+      "first_seen": "2026-01-05",
+      "last_seen": "2026-01-14",
+      "top_paths": [
+        [
+          "//wp-2019.php",
+          6
+        ],
+        [
+          "//themes.php",
+          6
+        ],
+        [
+          "//.well-known/admin.php",
+          6
+        ],
+        [
+          "//wp-admin/js/about.php",
+          6
+        ],
+        [
+          "//wp-includes/Text/about.php",
+          6
+        ]
+      ],
+      "status_codes": {
+        "403": 475,
+        "404": 6,
+        "200": 6,
+        "503": 3,
+        "500": 3
+      }
+    },
+    {
+      "ip": "4.213.174.0",
+      "role": "scanner",
+      "label": "7 attack-path probes (1.4% of requests)",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "7 attack-path probes (1.4% of requests)",
+      "total_requests": 488,
+      "page_views": 1,
+      "active_days": 2,
+      "first_seen": "2026-01-11",
+      "last_seen": "2026-01-20",
+      "top_paths": [
+        [
+          "/wp-content/plugins/hellopress/wp_filemanager.php",
+          3
+        ],
+        [
+          "/dox.php",
+          3
+        ],
+        [
+          "/alfa.php",
+          3
+        ],
+        [
+          "/elp.php",
+          3
+        ],
+        [
+          "/simple.php",
+          3
+        ]
+      ],
+      "status_codes": {
+        "301": 182,
+        "403": 181,
+        "404": 124,
+        "200": 1
+      }
+    },
+    {
+      "ip": "207.180.220.0",
+      "role": "wp_recon",
+      "label": "WP recon bot: wp-login (235 hits), wp-admin 0 authenticated,",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "WP recon bot: wp-login (235 hits), wp-admin 0 authenticated, 235 redirected",
+      "total_requests": 485,
+      "page_views": 50,
+      "active_days": 2,
+      "first_seen": "2026-01-27",
+      "last_seen": "2026-02-04",
+      "top_paths": [
+        [
+          "/wp-admin/index.php",
+          95
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%2Fwp-admin%2Findex.php&reauth=1",
+          95
+        ],
+        [
+          "/wp-admin/profile.php",
+          47
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%2Fwp-admin%2Fprofile.php&reauth=1",
+          47
+        ],
+        [
+          "/wp-admin/edit.php",
+          46
+        ]
+      ],
+      "status_codes": {
+        "302": 235,
+        "503": 185,
+        "200": 52,
+        "403": 13
+      }
+    },
+    {
+      "ip": "155.94.150.0",
+      "role": "wp_recon",
+      "label": "WP recon bot: wp-login (201 hits), wp-admin 0 authenticated,",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "WP recon bot: wp-login (201 hits), wp-admin 0 authenticated, 199 redirected, user enum (?author=N: 5)",
+      "total_requests": 482,
+      "page_views": 51,
+      "active_days": 8,
+      "first_seen": "2026-01-06",
+      "last_seen": "2026-01-30",
+      "top_paths": [
+        [
+          "/wp-admin/index.php",
+          84
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%2Fwp-admin%2Findex.php&reauth=1",
+          84
+        ],
+        [
+          "/wp-admin/profile.php",
+          39
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%2Fwp-admin%2Fprofile.php&reauth=1",
+          39
+        ],
+        [
+          "/wp-admin/edit.php",
+          38
+        ]
+      ],
+      "status_codes": {
+        "302": 199,
+        "503": 153,
+        "403": 73,
+        "200": 52,
+        "301": 3,
+        "404": 2
+      }
+    },
+    {
+      "ip": "173.239.214.0",
+      "role": "scanner",
+      "label": "Login probing: 411 wp-login attempts, zero authenticated wp-",
+      "confidence": "medium",
+      "match_source": "behavioral",
+      "evidence": "Login probing: 411 wp-login attempts, zero authenticated wp-admin access",
+      "total_requests": 460,
+      "page_views": 410,
+      "active_days": 9,
+      "first_seen": "2026-01-09",
+      "last_seen": "2026-02-14",
+      "top_paths": [
+        [
+          "/wp-login.php",
+          411
+        ],
+        [
+          "/?rest_route=/wp/v2/users",
+          4
+        ],
+        [
+          "/?author=1",
+          1
+        ],
+        [
+          "/?author=2",
+          1
+        ],
+        [
+          "/?author=3",
+          1
+        ]
+      ],
+      "status_codes": {
+        "200": 447,
+        "301": 5,
+        "403": 4,
+        "404": 3,
+        "503": 1
+      }
+    },
+    {
+      "ip": "95.214.55.0",
+      "role": "wp_recon",
+      "label": "WP recon bot: wp-login (221 hits), wp-admin 0 authenticated,",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "WP recon bot: wp-login (221 hits), wp-admin 0 authenticated, 220 redirected, user enum (?author=N: 5)",
+      "total_requests": 451,
+      "page_views": 43,
+      "active_days": 2,
+      "first_seen": "2026-02-14",
+      "last_seen": "2026-02-15",
+      "top_paths": [
+        [
+          "/wp-admin/index.php",
+          83
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%2Fwp-admin%2Findex.php&reauth=1",
+          83
+        ],
+        [
+          "/wp-admin/profile.php",
+          47
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%2Fwp-admin%2Fprofile.php&reauth=1",
+          47
+        ],
+        [
+          "/wp-admin/edit.php",
+          46
+        ]
+      ],
+      "status_codes": {
+        "302": 220,
+        "503": 181,
+        "200": 44,
+        "301": 3,
+        "404": 2,
+        "403": 1
+      }
+    },
+    {
+      "ip": "13.79.87.0",
+      "role": "scanner",
+      "label": "6 attack-path probes (1.3% of requests)",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "6 attack-path probes (1.3% of requests)",
+      "total_requests": 448,
+      "page_views": 0,
+      "active_days": 2,
+      "first_seen": "2026-01-12",
+      "last_seen": "2026-01-19",
+      "top_paths": [
+        [
+          "//adminfuns.php",
+          5
+        ],
+        [
+          "/css.php",
+          4
+        ],
+        [
+          "/wp-content/plugins/hellopress/wp_filemanager.php",
+          3
+        ],
+        [
+          "//wp-admin/images/wp-conflg.php?p=",
+          3
+        ],
+        [
+          "//cgi-bin/index.php",
+          3
+        ]
+      ],
+      "status_codes": {
+        "429": 448
+      }
+    },
+    {
+      "ip": "178.128.220.0",
+      "role": "wp_recon",
+      "label": "WP recon bot: wp-login (142 hits), wp-admin 0 authenticated,",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "WP recon bot: wp-login (142 hits), wp-admin 0 authenticated, 284 redirected, user enum (?author=N: 10)",
+      "total_requests": 441,
+      "page_views": 75,
+      "active_days": 1,
+      "first_seen": "2026-01-15",
+      "last_seen": "2026-01-15",
+      "top_paths": [
+        [
+          "/wp-admin/index.php",
+          172
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%2Fwp-admin%2Findex.php&reauth=1",
+          86
+        ],
+        [
+          "/wp-admin/profile.php",
+          40
+        ],
+        [
+          "/wp-admin/edit.php",
+          36
+        ],
+        [
+          "/wp-admin/plugins.php",
+          34
+        ]
+      ],
+      "status_codes": {
+        "301": 151,
+        "302": 142,
+        "200": 76,
+        "503": 70,
+        "404": 2
+      }
+    },
+    {
+      "ip": "193.19.109.0",
+      "role": "scanner",
+      "label": "Login probing: 413 wp-login attempts, zero authenticated wp-",
+      "confidence": "medium",
+      "match_source": "behavioral",
+      "evidence": "Login probing: 413 wp-login attempts, zero authenticated wp-admin access",
+      "total_requests": 421,
+      "page_views": 417,
+      "active_days": 2,
+      "first_seen": "2026-02-21",
+      "last_seen": "2026-02-22",
+      "top_paths": [
+        [
+          "/wp-login.php",
+          413
+        ],
+        [
+          "/?rest_route=/wp/v2/users",
+          4
+        ],
+        [
+          "/?author=1",
+          1
+        ],
+        [
+          "/?author=2",
+          1
+        ],
+        [
+          "/?author=3",
+          1
+        ]
+      ],
+      "status_codes": {
+        "200": 417,
+        "301": 3,
+        "404": 1
+      }
+    },
+    {
+      "ip": "4.217.180.0",
+      "role": "scanner",
+      "label": "6 attack-path probes (1.4% of requests)",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "6 attack-path probes (1.4% of requests)",
+      "total_requests": 416,
+      "page_views": 0,
+      "active_days": 4,
+      "first_seen": "2026-01-21",
+      "last_seen": "2026-02-18",
+      "top_paths": [
+        [
+          "/wp-content/plugins/hellopress/wp_filemanager.php",
+          4
+        ],
+        [
+          "/wen.php",
+          3
+        ],
+        [
+          "/index.php",
+          3
+        ],
+        [
+          "/",
+          3
+        ],
+        [
+          "/galex.php",
+          2
+        ]
+      ],
+      "status_codes": {
+        "404": 284,
+        "403": 127,
+        "302": 3,
+        "301": 2
+      }
+    },
+    {
+      "ip": "172.190.142.0",
+      "role": "scanner",
+      "label": "6 attack-path probes (1.5% of requests)",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "6 attack-path probes (1.5% of requests)",
+      "total_requests": 412,
+      "page_views": 0,
+      "active_days": 2,
+      "first_seen": "2026-01-05",
+      "last_seen": "2026-02-17",
+      "top_paths": [
+        [
+          "/f35.php",
+          3
+        ],
+        [
+          "/wp-content/plugins/hellopress/wp_filemanager.php",
+          2
+        ],
+        [
+          "/xa.php",
+          2
+        ],
+        [
+          "/xxxx.php",
+          2
+        ],
+        [
+          "/xx.php",
+          2
+        ]
+      ],
+      "status_codes": {
+        "429": 412
+      }
+    },
+    {
+      "ip": "172.245.102.0",
+      "role": "scanner",
+      "label": "Login probing: 381 wp-login attempts, zero authenticated wp-",
+      "confidence": "medium",
+      "match_source": "behavioral",
+      "evidence": "Login probing: 381 wp-login attempts, zero authenticated wp-admin access",
+      "total_requests": 391,
+      "page_views": 373,
+      "active_days": 19,
+      "first_seen": "2026-01-06",
+      "last_seen": "2026-02-20",
+      "top_paths": [
+        [
+          "/wp-login.php",
+          381
+        ],
+        [
+          "/?rest_route=/wp/v2/users",
+          4
+        ],
+        [
+          "/xmlrpc.php",
+          1
+        ],
+        [
+          "/wp-admin",
+          1
+        ],
+        [
+          "/?author=1",
+          1
+        ]
+      ],
+      "status_codes": {
+        "200": 373,
+        "403": 11,
+        "301": 5,
+        "503": 1,
+        "404": 1
+      }
+    },
+    {
+      "ip": "149.22.83.0",
+      "role": "wp_recon",
+      "label": "WP recon bot: wp-login (179 hits), wp-admin 0 authenticated,",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "WP recon bot: wp-login (179 hits), wp-admin 0 authenticated, 179 redirected, user enum (?author=N: 5)",
+      "total_requests": 367,
+      "page_views": 59,
+      "active_days": 1,
+      "first_seen": "2026-02-02",
+      "last_seen": "2026-02-02",
+      "top_paths": [
+        [
+          "/wp-admin/index.php",
+          84
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%2Fwp-admin%2Findex.php&reauth=1",
+          84
+        ],
+        [
+          "/wp-admin/profile.php",
+          32
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%2Fwp-admin%2Fprofile.php&reauth=1",
+          32
+        ],
+        [
+          "/wp-admin/edit.php",
+          31
+        ]
+      ],
+      "status_codes": {
+        "302": 179,
+        "503": 123,
+        "200": 60,
+        "301": 3,
+        "404": 2
+      }
+    },
+    {
+      "ip": "152.42.244.0",
+      "role": "wp_recon",
+      "label": "WP recon bot: wp-login (176 hits), wp-admin 0 authenticated,",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "WP recon bot: wp-login (176 hits), wp-admin 0 authenticated, 176 redirected, user enum (?author=N: 7)",
+      "total_requests": 363,
+      "page_views": 72,
+      "active_days": 1,
+      "first_seen": "2026-02-11",
+      "last_seen": "2026-02-11",
+      "top_paths": [
+        [
+          "/wp-admin/index.php",
+          92
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.com%2Fwp-admin%2Findex.php&reauth=1",
+          92
+        ],
+        [
+          "/wp-admin/profile.php",
+          33
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.com%2Fwp-admin%2Fprofile.php&reauth=1",
+          33
+        ],
+        [
+          "/wp-admin/edit.php",
+          25
+        ]
+      ],
+      "status_codes": {
+        "302": 176,
+        "503": 107,
+        "200": 73,
+        "301": 5,
+        "404": 2
+      }
+    },
+    {
+      "ip": "152.42.220.0",
+      "role": "wp_recon",
+      "label": "WP recon bot: wp-login (167 hits), wp-admin 0 authenticated,",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "WP recon bot: wp-login (167 hits), wp-admin 0 authenticated, 167 redirected, user enum (?author=N: 7)",
+      "total_requests": 346,
+      "page_views": 100,
+      "active_days": 2,
+      "first_seen": "2026-02-19",
+      "last_seen": "2026-02-22",
+      "top_paths": [
+        [
+          "/wp-admin/index.php",
+          111
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.com%2Fwp-admin%2Findex.php&reauth=1",
+          111
+        ],
+        [
+          "/wp-admin/profile.php",
+          19
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.com%2Fwp-admin%2Fprofile.php&reauth=1",
+          19
+        ],
+        [
+          "/wp-admin/edit.php",
+          18
+        ]
+      ],
+      "status_codes": {
+        "302": 167,
+        "200": 101,
+        "503": 70,
+        "301": 5,
+        "404": 3
+      }
+    },
+    {
+      "ip": "152.42.200.0",
+      "role": "wp_recon",
+      "label": "WP recon bot: wp-login (163 hits), wp-admin 0 authenticated,",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "WP recon bot: wp-login (163 hits), wp-admin 0 authenticated, 163 redirected, user enum (?author=N: 7)",
+      "total_requests": 338,
+      "page_views": 51,
+      "active_days": 2,
+      "first_seen": "2026-02-19",
+      "last_seen": "2026-02-20",
+      "top_paths": [
+        [
+          "/wp-admin/index.php",
+          75
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.com%2Fwp-admin%2Findex.php&reauth=1",
+          75
+        ],
+        [
+          "/wp-admin/profile.php",
+          29
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.com%2Fwp-admin%2Fprofile.php&reauth=1",
+          29
+        ],
+        [
+          "/wp-admin/edit.php",
+          29
+        ]
+      ],
+      "status_codes": {
+        "302": 163,
+        "503": 115,
+        "200": 52,
+        "301": 5,
+        "404": 3
+      }
+    },
+    {
+      "ip": "165.245.183.0",
+      "role": "wp_recon",
+      "label": "WP recon bot: wp-login (159 hits), wp-admin 0 authenticated,",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "WP recon bot: wp-login (159 hits), wp-admin 0 authenticated, 159 redirected, user enum (?author=N: 7)",
+      "total_requests": 329,
+      "page_views": 90,
+      "active_days": 1,
+      "first_seen": "2026-02-21",
+      "last_seen": "2026-02-21",
+      "top_paths": [
+        [
+          "/wp-admin/index.php",
+          103
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.com%2Fwp-admin%2Findex.php&reauth=1",
+          103
+        ],
+        [
+          "/wp-admin/profile.php",
+          19
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.com%2Fwp-admin%2Fprofile.php&reauth=1",
+          19
+        ],
+        [
+          "/wp-admin/edit.php",
+          18
+        ]
+      ],
+      "status_codes": {
+        "302": 159,
+        "200": 91,
+        "503": 72,
+        "301": 5,
+        "404": 2
+      }
+    },
+    {
+      "ip": "68.218.117.0",
+      "role": "scanner",
+      "label": "8 attack-path probes (2.5% of requests)",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "8 attack-path probes (2.5% of requests)",
+      "total_requests": 326,
+      "page_views": 4,
+      "active_days": 1,
+      "first_seen": "2026-01-11",
+      "last_seen": "2026-01-11",
+      "top_paths": [
+        [
+          "/images/wso.php",
+          8
+        ],
+        [
+          "/server.php",
+          4
+        ],
+        [
+          "/about.php",
+          4
+        ],
+        [
+          "/admin.php",
+          4
+        ],
+        [
+          "/adminfuns.php",
+          4
+        ]
+      ],
+      "status_codes": {
+        "301": 162,
+        "404": 132,
+        "403": 24,
+        "302": 4,
+        "200": 4
+      }
+    },
+    {
+      "ip": "178.128.27.0",
+      "role": "wp_recon",
+      "label": "WP recon bot: wp-login (153 hits), wp-admin 0 authenticated,",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "WP recon bot: wp-login (153 hits), wp-admin 0 authenticated, 153 redirected, user enum (?author=N: 7)",
+      "total_requests": 317,
+      "page_views": 96,
+      "active_days": 1,
+      "first_seen": "2026-02-18",
+      "last_seen": "2026-02-18",
+      "top_paths": [
+        [
+          "/wp-admin/index.php",
+          105
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.com%2Fwp-admin%2Findex.php&reauth=1",
+          105
+        ],
+        [
+          "/wp-admin/profile.php",
+          18
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.com%2Fwp-admin%2Fprofile.php&reauth=1",
+          18
+        ],
+        [
+          "/wp-admin/edit.php",
+          16
+        ]
+      ],
+      "status_codes": {
+        "302": 153,
+        "200": 97,
+        "503": 60,
+        "301": 5,
+        "404": 2
+      }
+    },
+    {
+      "ip": "157.245.63.0",
+      "role": "wp_recon",
+      "label": "WP recon bot: wp-login (153 hits), wp-admin 0 authenticated,",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "WP recon bot: wp-login (153 hits), wp-admin 0 authenticated, 153 redirected, user enum (?author=N: 7)",
+      "total_requests": 317,
+      "page_views": 89,
+      "active_days": 1,
+      "first_seen": "2026-02-22",
+      "last_seen": "2026-02-22",
+      "top_paths": [
+        [
+          "/wp-admin/index.php",
+          99
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.com%2Fwp-admin%2Findex.php&reauth=1",
+          99
+        ],
+        [
+          "/wp-admin/profile.php",
+          20
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.com%2Fwp-admin%2Fprofile.php&reauth=1",
+          20
+        ],
+        [
+          "/wp-admin/edit.php",
+          17
+        ]
+      ],
+      "status_codes": {
+        "302": 153,
+        "200": 90,
+        "503": 67,
+        "301": 5,
+        "404": 2
+      }
+    },
+    {
+      "ip": "2a03:cfc0:8000::",
+      "role": "wp_recon",
+      "label": "WP recon bot: wp-login (90 hits), wp-admin 0 authenticated, ",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "WP recon bot: wp-login (90 hits), wp-admin 0 authenticated, 68 redirected, user enum (?author=N: 5)",
+      "total_requests": 315,
+      "page_views": 19,
+      "active_days": 4,
+      "first_seen": "2026-02-24",
+      "last_seen": "2026-03-02",
+      "top_paths": [
+        [
+          "/wp-admin/index.php",
+          59
+        ],
+        [
+          "/wp-admin/profile.php",
+          51
+        ],
+        [
+          "/wp-admin/edit.php",
+          51
+        ],
+        [
+          "/wp-admin/plugins.php",
+          51
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%2Fwp-admin%2Findex.php&reauth=1",
+          23
+        ]
+      ],
+      "status_codes": {
+        "403": 144,
+        "503": 75,
+        "302": 68,
+        "200": 20,
+        "301": 6,
+        "404": 2
+      }
+    },
+    {
+      "ip": "178.128.119.0",
+      "role": "wp_recon",
+      "label": "WP recon bot: wp-login (150 hits), wp-admin 0 authenticated,",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "WP recon bot: wp-login (150 hits), wp-admin 0 authenticated, 150 redirected, user enum (?author=N: 7)",
+      "total_requests": 312,
+      "page_views": 58,
+      "active_days": 1,
+      "first_seen": "2026-02-20",
+      "last_seen": "2026-02-20",
+      "top_paths": [
+        [
+          "/wp-admin/index.php",
+          75
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.com%2Fwp-admin%2Findex.php&reauth=1",
+          75
+        ],
+        [
+          "/wp-admin/profile.php",
+          27
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.com%2Fwp-admin%2Fprofile.php&reauth=1",
+          27
+        ],
+        [
+          "/wp-admin/edit.php",
+          24
+        ]
+      ],
+      "status_codes": {
+        "302": 150,
+        "503": 95,
+        "200": 59,
+        "301": 5,
+        "404": 3
+      }
+    },
+    {
+      "ip": "98.159.37.0",
+      "role": "scanner",
+      "label": "Login probing: 129 wp-login attempts, zero authenticated wp-",
+      "confidence": "medium",
+      "match_source": "behavioral",
+      "evidence": "Login probing: 129 wp-login attempts, zero authenticated wp-admin access",
+      "total_requests": 308,
+      "page_views": 135,
+      "active_days": 6,
+      "first_seen": "2026-01-08",
+      "last_seen": "2026-02-24",
+      "top_paths": [
+        [
+          "/wp-login.php",
+          129
+        ],
+        [
+          "/",
+          4
+        ],
+        [
+          "/?rest_route=/wp/v2/users",
+          4
+        ],
+        [
+          "/xmlrpc.php",
+          1
+        ],
+        [
+          "/?author=1",
+          1
+        ]
+      ],
+      "status_codes": {
+        "200": 171,
+        "503": 130,
+        "301": 6,
+        "404": 1
+      }
+    },
+    {
+      "ip": "4.194.217.0",
+      "role": "scanner",
+      "label": "8 attack-path probes (2.6% of requests)",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "8 attack-path probes (2.6% of requests)",
+      "total_requests": 306,
+      "page_views": 0,
+      "active_days": 3,
+      "first_seen": "2026-01-20",
+      "last_seen": "2026-02-03",
+      "top_paths": [
+        [
+          "/wp-content/plugins/hellopress/wp_filemanager.php",
+          4
+        ],
+        [
+          "/tinyfilemanager.php",
+          3
+        ],
+        [
+          "/87.php",
+          3
+        ],
+        [
+          "/img.php",
+          3
+        ],
+        [
+          "/menu.php",
+          3
+        ]
+      ],
+      "status_codes": {
+        "404": 170,
+        "301": 133,
+        "403": 1,
+        "503": 1,
+        "300": 1
+      }
+    },
+    {
+      "ip": "165.245.181.0",
+      "role": "wp_recon",
+      "label": "WP recon bot: wp-login (141 hits), wp-admin 0 authenticated,",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "WP recon bot: wp-login (141 hits), wp-admin 0 authenticated, 141 redirected, user enum (?author=N: 7)",
+      "total_requests": 298,
+      "page_views": 82,
+      "active_days": 2,
+      "first_seen": "2026-02-21",
+      "last_seen": "2026-02-27",
+      "top_paths": [
+        [
+          "/wp-admin/index.php",
+          91
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.com%2Fwp-admin%2Findex.php&reauth=1",
+          91
+        ],
+        [
+          "/wp-admin/profile.php",
+          19
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.com%2Fwp-admin%2Fprofile.php&reauth=1",
+          19
+        ],
+        [
+          "/wp-admin/edit.php",
+          16
+        ]
+      ],
+      "status_codes": {
+        "302": 141,
+        "200": 84,
+        "503": 62,
+        "404": 6,
+        "301": 5
+      }
+    },
+    {
+      "ip": "45.133.5.0",
+      "role": "scanner",
+      "label": "Login probing: 273 wp-login attempts, zero authenticated wp-",
+      "confidence": "medium",
+      "match_source": "behavioral",
+      "evidence": "Login probing: 273 wp-login attempts, zero authenticated wp-admin access",
+      "total_requests": 281,
+      "page_views": 277,
+      "active_days": 2,
+      "first_seen": "2026-02-02",
+      "last_seen": "2026-02-03",
+      "top_paths": [
+        [
+          "/wp-login.php",
+          273
+        ],
+        [
+          "/?rest_route=/wp/v2/users",
+          4
+        ],
+        [
+          "/?author=1",
+          1
+        ],
+        [
+          "/?author=2",
+          1
+        ],
+        [
+          "/?author=3",
+          1
+        ]
+      ],
+      "status_codes": {
+        "200": 277,
+        "301": 3,
+        "404": 1
+      }
+    },
+    {
+      "ip": "4.189.120.0",
+      "role": "scanner",
+      "label": "8 attack-path probes (2.9% of requests)",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "8 attack-path probes (2.9% of requests)",
+      "total_requests": 276,
+      "page_views": 5,
+      "active_days": 1,
+      "first_seen": "2026-01-12",
+      "last_seen": "2026-01-12",
+      "top_paths": [
+        [
+          "/new.php",
+          4
+        ],
+        [
+          "/modules/mod_simplefileuploadv1.3/elements",
+          3
+        ],
+        [
+          "/wp-includes/rest-api",
+          3
+        ],
+        [
+          "/wp-admin/autoload_classmap.php",
+          2
+        ],
+        [
+          "/autoload_classmap/function.php",
+          2
+        ]
+      ],
+      "status_codes": {
+        "301": 147,
+        "404": 89,
+        "403": 32,
+        "200": 5,
+        "302": 3
+      }
+    },
+    {
+      "ip": "94.72.106.0",
+      "role": "wp_recon",
+      "label": "WP recon bot: wp-login (132 hits), wp-admin 0 authenticated,",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "WP recon bot: wp-login (132 hits), wp-admin 0 authenticated, 132 redirected, user enum (?author=N: 5)",
+      "total_requests": 274,
+      "page_views": 77,
+      "active_days": 1,
+      "first_seen": "2026-01-12",
+      "last_seen": "2026-01-12",
+      "top_paths": [
+        [
+          "/wp-admin/index.php",
+          86
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%2Fwp-admin%2Findex.php&reauth=1",
+          86
+        ],
+        [
+          "/wp-admin/profile.php",
+          18
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%2Fwp-admin%2Fprofile.php&reauth=1",
+          18
+        ],
+        [
+          "/wp-admin/edit.php",
+          14
+        ]
+      ],
+      "status_codes": {
+        "302": 132,
+        "200": 78,
+        "503": 58,
+        "301": 3,
+        "404": 2,
+        "403": 1
+      }
+    },
+    {
+      "ip": "167.71.198.0",
+      "role": "wp_recon",
+      "label": "WP recon bot: wp-login (130 hits), wp-admin 0 authenticated,",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "WP recon bot: wp-login (130 hits), wp-admin 0 authenticated, 130 redirected, user enum (?author=N: 7)",
+      "total_requests": 272,
+      "page_views": 84,
+      "active_days": 2,
+      "first_seen": "2026-02-19",
+      "last_seen": "2026-02-21",
+      "top_paths": [
+        [
+          "/wp-admin/index.php",
+          91
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.com%2Fwp-admin%2Findex.php&reauth=1",
+          91
+        ],
+        [
+          "/wp-admin/profile.php",
+          13
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.com%2Fwp-admin%2Fprofile.php&reauth=1",
+          13
+        ],
+        [
+          "/wp-admin/edit.php",
+          13
+        ]
+      ],
+      "status_codes": {
+        "302": 130,
+        "200": 85,
+        "503": 49,
+        "301": 5,
+        "404": 3
+      }
+    },
+    {
+      "ip": "52.169.148.0",
+      "role": "scanner",
+      "label": "7 attack-path probes (2.6% of requests)",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "7 attack-path probes (2.6% of requests)",
+      "total_requests": 269,
+      "page_views": 0,
+      "active_days": 2,
+      "first_seen": "2026-01-28",
+      "last_seen": "2026-02-01",
+      "top_paths": [
+        [
+          "/cong.php",
+          3
+        ],
+        [
+          "/wp-content/plugins/hellopress/wp_filemanager.php",
+          2
+        ],
+        [
+          "/zwso.php",
+          2
+        ],
+        [
+          "/wp-admin/css/colors/blue/index.php",
+          2
+        ],
+        [
+          "/class19.php",
+          2
+        ]
+      ],
+      "status_codes": {
+        "429": 269
+      }
+    },
+    {
+      "ip": "91.217.249.0",
+      "role": "scanner",
+      "label": "7 attack-path probes (2.6% of requests)",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "7 attack-path probes (2.6% of requests)",
+      "total_requests": 267,
+      "page_views": 5,
+      "active_days": 1,
+      "first_seen": "2026-02-24",
+      "last_seen": "2026-02-24",
+      "top_paths": [
+        [
+          "/wordpress/wp-admin/includes",
+          2
+        ],
+        [
+          "/wp-includes/ID3",
+          2
+        ],
+        [
+          "/manager.php",
+          1
+        ],
+        [
+          "/bless.php",
+          1
+        ],
+        [
+          "/O-Simple.php",
+          1
+        ]
+      ],
+      "status_codes": {
+        "404": 192,
+        "403": 57,
+        "301": 6,
+        "200": 5,
+        "302": 4,
+        "503": 3
+      }
+    },
+    {
+      "ip": "2605:aa80::",
+      "role": "wp_recon",
+      "label": "WP recon bot: wp-login (83 hits), wp-admin 0 authenticated, ",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "WP recon bot: wp-login (83 hits), wp-admin 0 authenticated, 164 redirected, user enum (?author=N: 10)",
+      "total_requests": 264,
+      "page_views": 32,
+      "active_days": 3,
+      "first_seen": "2026-01-28",
+      "last_seen": "2026-02-01",
+      "top_paths": [
+        [
+          "/wp-admin/index.php",
+          82
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%2Fwp-admin%2Findex.php&reauth=1",
+          41
+        ],
+        [
+          "/wp-admin/profile.php",
+          28
+        ],
+        [
+          "/wp-admin/edit.php",
+          26
+        ],
+        [
+          "/wp-admin/plugins.php",
+          26
+        ]
+      ],
+      "status_codes": {
+        "301": 91,
+        "302": 82,
+        "503": 53,
+        "200": 33,
+        "403": 3,
+        "404": 2
+      }
+    },
+    {
+      "ip": "173.239.216.0",
+      "role": "scanner",
+      "label": "8 attack-path probes (3.1% of requests)",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "8 attack-path probes (3.1% of requests)",
+      "total_requests": 254,
+      "page_views": 2,
+      "active_days": 1,
+      "first_seen": "2026-02-20",
+      "last_seen": "2026-02-20",
+      "top_paths": [
+        [
+          "/manager.php",
+          1
+        ],
+        [
+          "/bless.php",
+          1
+        ],
+        [
+          "/O-Simple.php",
+          1
+        ],
+        [
+          "/lock360.php",
+          1
+        ],
+        [
+          "/zwso.php",
+          1
+        ]
+      ],
+      "status_codes": {
+        "404": 200,
+        "403": 27,
+        "301": 22,
+        "302": 3,
+        "200": 2
+      }
+    },
+    {
+      "ip": "157.245.206.0",
+      "role": "wp_recon",
+      "label": "WP recon bot: wp-login (118 hits), wp-admin 0 authenticated,",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "WP recon bot: wp-login (118 hits), wp-admin 0 authenticated, 118 redirected, user enum (?author=N: 7)",
+      "total_requests": 248,
+      "page_views": 59,
+      "active_days": 2,
+      "first_seen": "2026-02-10",
+      "last_seen": "2026-02-14",
+      "top_paths": [
+        [
+          "/wp-admin/index.php",
+          68
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.com%2Fwp-admin%2Findex.php&reauth=1",
+          68
+        ],
+        [
+          "/wp-admin/profile.php",
+          17
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fwww.catherinetrumanarchitects.com%2Fwp-admin%2Fprofile.php&reauth=1",
+          17
+        ],
+        [
+          "/wp-admin/edit.php",
+          17
+        ]
+      ],
+      "status_codes": {
+        "302": 118,
+        "503": 62,
+        "200": 60,
+        "301": 5,
+        "404": 3
+      }
+    },
+    {
+      "ip": "68.183.187.0",
+      "role": "wp_recon",
+      "label": "WP recon bot: wp-login (116 hits), wp-admin 0 authenticated,",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "WP recon bot: wp-login (116 hits), wp-admin 0 authenticated, 115 redirected, user enum (?author=N: 5)",
+      "total_requests": 240,
+      "page_views": 75,
+      "active_days": 1,
+      "first_seen": "2026-02-05",
+      "last_seen": "2026-02-05",
+      "top_paths": [
+        [
+          "/wp-admin/index.php",
+          76
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%2Fwp-admin%2Findex.php&reauth=1",
+          76
+        ],
+        [
+          "/wp-admin/profile.php",
+          15
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%2Fwp-admin%2Fprofile.php&reauth=1",
+          15
+        ],
+        [
+          "/wp-admin/edit.php",
+          12
+        ]
+      ],
+      "status_codes": {
+        "302": 115,
+        "200": 76,
+        "503": 44,
+        "301": 3,
+        "404": 2
+      }
+    },
+    {
+      "ip": "173.239.240.0",
+      "role": "scanner",
+      "label": "Login probing: 225 wp-login attempts, zero authenticated wp-",
+      "confidence": "medium",
+      "match_source": "behavioral",
+      "evidence": "Login probing: 225 wp-login attempts, zero authenticated wp-admin access",
+      "total_requests": 233,
+      "page_views": 226,
+      "active_days": 2,
+      "first_seen": "2026-01-15",
+      "last_seen": "2026-01-16",
+      "top_paths": [
+        [
+          "/wp-login.php",
+          225
+        ],
+        [
+          "/?rest_route=/wp/v2/users",
+          4
+        ],
+        [
+          "/?author=1",
+          1
+        ],
+        [
+          "/?author=2",
+          1
+        ],
+        [
+          "/?author=3",
+          1
+        ]
+      ],
+      "status_codes": {
+        "200": 226,
+        "301": 3,
+        "403": 3,
+        "404": 1
+      }
+    },
+    {
+      "ip": "144.91.119.0",
+      "role": "wp_recon",
+      "label": "WP recon bot: wp-login (113 hits), wp-admin 0 authenticated,",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "WP recon bot: wp-login (113 hits), wp-admin 0 authenticated, 113 redirected",
+      "total_requests": 227,
+      "page_views": 22,
+      "active_days": 2,
+      "first_seen": "2026-02-27",
+      "last_seen": "2026-02-28",
+      "top_paths": [
+        [
+          "/wp-admin/index.php",
+          43
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%2Fwp-admin%2Findex.php&reauth=1",
+          43
+        ],
+        [
+          "/wp-admin/profile.php",
+          23
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%2Fwp-admin%2Fprofile.php&reauth=1",
+          23
+        ],
+        [
+          "/wp-admin/edit.php",
+          23
+        ]
+      ],
+      "status_codes": {
+        "302": 113,
+        "503": 91,
+        "200": 22,
+        "403": 1
+      }
+    },
+    {
+      "ip": "85.11.167.0",
+      "role": "wp_recon",
+      "label": "WP recon bot: wp-login (61 hits), wp-admin 0 authenticated, ",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "WP recon bot: wp-login (61 hits), wp-admin 0 authenticated, 117 redirected, user enum (?author=N: 10)",
+      "total_requests": 206,
+      "page_views": 19,
+      "active_days": 11,
+      "first_seen": "2026-01-07",
+      "last_seen": "2026-02-27",
+      "top_paths": [
+        [
+          "/wp-admin/index.php",
+          50
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%2Fwp-admin%2Findex.php&reauth=1",
+          25
+        ],
+        [
+          "/wp-admin/profile.php",
+          20
+        ],
+        [
+          "/wp-admin/edit.php",
+          20
+        ],
+        [
+          "/wp-admin/plugins.php",
+          20
+        ]
+      ],
+      "status_codes": {
+        "301": 76,
+        "302": 56,
+        "503": 40,
+        "200": 20,
+        "403": 12,
+        "404": 2
+      }
+    },
+    {
+      "ip": "20.41.98.0",
+      "role": "scanner",
+      "label": "8 attack-path probes (4.8% of requests)",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "8 attack-path probes (4.8% of requests)",
+      "total_requests": 168,
+      "page_views": 0,
+      "active_days": 2,
+      "first_seen": "2026-02-25",
+      "last_seen": "2026-02-26",
+      "top_paths": [
+        [
+          "/.tmb/dropdown.php",
+          4
+        ],
+        [
+          "/.well-known",
+          4
+        ],
+        [
+          "/.well-known/about/function.php",
+          4
+        ],
+        [
+          "/.well-known/admin.php",
+          4
+        ],
+        [
+          "/.well-known/autoload_classmap.php",
+          4
+        ]
+      ],
+      "status_codes": {
+        "301": 84,
+        "404": 69,
+        "300": 15
+      }
+    },
+    {
+      "ip": "144.91.126.0",
+      "role": "wp_recon",
+      "label": "WP recon bot: wp-login (76 hits), wp-admin 0 authenticated, ",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "WP recon bot: wp-login (76 hits), wp-admin 0 authenticated, 76 redirected",
+      "total_requests": 162,
+      "page_views": 20,
+      "active_days": 5,
+      "first_seen": "2026-01-26",
+      "last_seen": "2026-02-22",
+      "top_paths": [
+        [
+          "/wp-admin/index.php",
+          33
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%2Fwp-admin%2Findex.php&reauth=1",
+          33
+        ],
+        [
+          "/wp-admin/profile.php",
+          14
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%2Fwp-admin%2Fprofile.php&reauth=1",
+          14
+        ],
+        [
+          "/wp-admin/edit.php",
+          14
+        ]
+      ],
+      "status_codes": {
+        "302": 76,
+        "503": 56,
+        "200": 21,
+        "403": 9
+      }
+    },
+    {
+      "ip": "157.230.34.0",
+      "role": "wp_recon",
+      "label": "WP recon bot: wp-login (73 hits), wp-admin 0 authenticated, ",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "WP recon bot: wp-login (73 hits), wp-admin 0 authenticated, 73 redirected, user enum (?author=N: 5)",
+      "total_requests": 155,
+      "page_views": 40,
+      "active_days": 1,
+      "first_seen": "2026-01-29",
+      "last_seen": "2026-01-29",
+      "top_paths": [
+        [
+          "/wp-admin/index.php",
+          45
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%2Fwp-admin%2Findex.php&reauth=1",
+          45
+        ],
+        [
+          "/wp-admin/profile.php",
+          9
+        ],
+        [
+          "/wp-login.php?redirect_to=https%3A%2F%2Fcatherinetrumanarchitects.com%2Fwp-admin%2Fprofile.php&reauth=1",
+          9
+        ],
+        [
+          "/wp-admin/edit.php",
+          9
+        ]
+      ],
+      "status_codes": {
+        "302": 73,
+        "200": 41,
+        "503": 36,
+        "301": 3,
+        "404": 2
+      }
+    },
+    {
+      "ip": "45.133.6.0",
+      "role": "scanner",
+      "label": "7 attack-path probes (4.6% of requests)",
+      "confidence": "high",
+      "match_source": "behavioral",
+      "evidence": "7 attack-path probes (4.6% of requests)",
+      "total_requests": 152,
+      "page_views": 1,
+      "active_days": 1,
+      "first_seen": "2026-02-22",
+      "last_seen": "2026-02-22",
+      "top_paths": [
+        [
+          "/manager.php",
+          1
+        ],
+        [
+          "/bless.php",
+          1
+        ],
+        [
+          "/O-Simple.php",
+          1
+        ],
+        [
+          "/lock360.php",
+          1
+        ],
+        [
+          "/zwso.php",
+          1
+        ]
+      ],
+      "status_codes": {
+        "404": 132,
+        "301": 12,
+        "403": 6,
+        "200": 1,
+        "302": 1
+      }
+    },
+    {
+      "ip": "192.42.116.0",
+      "role": "scanner",
+      "label": "Login probing: 135 wp-login attempts, zero authenticated wp-",
+      "confidence": "medium",
+      "match_source": "behavioral",
+      "evidence": "Login probing: 135 wp-login attempts, zero authenticated wp-admin access",
+      "total_requests": 144,
+      "page_views": 14,
+      "active_days": 22,
+      "first_seen": "2026-01-08",
+      "last_seen": "2026-03-04",
+      "top_paths": [
+        [
+          "/wp-login.php",
+          89
+        ],
+        [
+          "/store/wp-login.php",
+          16
+        ],
+        [
+          "/shop/wp-login.php",
+          14
+        ],
+        [
+          "/blog/wp-login.php",
+          12
+        ],
+        [
+          "/wp-admin",
+          5
+        ]
+      ],
+      "status_codes": {
+        "301": 69,
+        "403": 46,
+        "200": 15,
+        "404": 14
+      }
+    },
+    {
+      "ip": "216.24.210.0",
+      "role": "scanner",
+      "label": "Login probing: 118 wp-login attempts, zero authenticated wp-",
+      "confidence": "medium",
+      "match_source": "behavioral",
+      "evidence": "Login probing: 118 wp-login attempts, zero authenticated wp-admin access",
+      "total_requests": 139,
+      "page_views": 118,
+      "active_days": 5,
+      "first_seen": "2026-01-08",
+      "last_seen": "2026-02-24",
+      "top_paths": [
+        [
+          "/wp-login.php",
+          118
+        ],
+        [
+          "/about-us",
+          1
+        ],
+        [
+          "/wp-content/et-cache/655/et-divi-dynamic-tb-28-655.css?ver=1771433644",
+          1
+        ],
+        [
+          "/wp-content/uploads/2023/11/Steven-Aldridge_ORIG-DSCF3369-FINAL.jpg",
+          1
+        ],
+        [
+          "/wp-content/uploads/2023/11/Catherine-Truman_ORIG-DSCF3385-FINAL.jpg",
+          1
+        ]
+      ],
+      "status_codes": {
+        "200": 138,
+        "403": 1
+      }
+    },
+    {
+      "ip": "2a09:bac1:b00::",
+      "role": "scanner",
+      "label": "Login probing: 136 wp-login attempts, zero authenticated wp-",
+      "confidence": "medium",
+      "match_source": "behavioral",
+      "evidence": "Login probing: 136 wp-login attempts, zero authenticated wp-admin access",
+      "total_requests": 136,
+      "page_views": 22,
+      "active_days": 1,
+      "first_seen": "2026-02-25",
+      "last_seen": "2026-02-25",
+      "top_paths": [
+        [
+          "/wp-login.php",
+          136
+        ]
+      ],
+      "status_codes": {
+        "403": 114,
+        "200": 22
+      }
+    },
+    {
+      "ip": "136.144.43.0",
+      "role": "scanner",
+      "label": "Login probing: 120 wp-login attempts, zero authenticated wp-",
+      "confidence": "medium",
+      "match_source": "behavioral",
+      "evidence": "Login probing: 120 wp-login attempts, zero authenticated wp-admin access",
+      "total_requests": 131,
+      "page_views": 124,
+      "active_days": 3,
+      "first_seen": "2026-01-06",
+      "last_seen": "2026-02-27",
+      "top_paths": [
+        [
+          "/wp-login.php",
+          120
+        ],
+        [
+          "/?rest_route=/wp/v2/users",
+          4
+        ],
+        [
+          "/txets.php",
+          1
+        ],
+        [
+          "/wp-content/txets.php",
+          1
+        ],
+        [
+          "/wp-admin/txets.php",
+          1
+        ]
+      ],
+      "status_codes": {
+        "200": 124,
+        "503": 3,
+        "301": 3,
+        "404": 1
+      }
+    },
+    {
+      "ip": "194.33.32.0",
+      "role": "scanner",
+      "label": "Login probing: 82 wp-login attempts, zero authenticated wp-a",
+      "confidence": "medium",
+      "match_source": "behavioral",
+      "evidence": "Login probing: 82 wp-login attempts, zero authenticated wp-admin access",
+      "total_requests": 126,
+      "page_views": 59,
+      "active_days": 1,
+      "first_seen": "2026-01-14",
+      "last_seen": "2026-01-14",
+      "top_paths": [
+        [
+          "/wp-login.php",
+          82
+        ],
+        [
+          "/?rest_route=/wp/v2/users",
+          44
+        ]
+      ],
+      "status_codes": {
+        "301": 59,
+        "200": 59,
+        "503": 8
+      }
+    },
+    {
+      "ip": "104.234.53.0",
+      "role": "scanner",
+      "label": "Login probing: 89 wp-login attempts, zero authenticated wp-a",
+      "confidence": "medium",
+      "match_source": "behavioral",
+      "evidence": "Login probing: 89 wp-login attempts, zero authenticated wp-admin access",
+      "total_requests": 119,
+      "page_views": 94,
+      "active_days": 3,
+      "first_seen": "2026-01-27",
+      "last_seen": "2026-02-08",
+      "top_paths": [
+        [
+          "/wp-login.php",
+          89
+        ],
+        [
+          "/?rest_route=/wp/v2/users",
+          4
+        ],
+        [
+          "/?author=1",
+          1
+        ],
+        [
+          "/?author=2",
+          1
+        ],
+        [
+          "/?author=3",
+          1
+        ]
+      ],
+      "status_codes": {
+        "200": 115,
+        "301": 3,
+        "404": 1
+      }
+    },
+    {
+      "ip": "66.175.44.0",
+      "role": "scanner",
+      "label": "Login probing: 90 wp-login attempts, zero authenticated wp-a",
+      "confidence": "medium",
+      "match_source": "behavioral",
+      "evidence": "Login probing: 90 wp-login attempts, zero authenticated wp-admin access",
+      "total_requests": 110,
+      "page_views": 0,
+      "active_days": 3,
+      "first_seen": "2026-01-23",
+      "last_seen": "2026-02-05",
+      "top_paths": [
+        [
+          "/wp-login.php",
+          90
+        ],
+        [
+          "/?rest_route=%2Fwp%2Fv2%2Fusers&_jsonp=cb&timeout=15&follow_redirects=true&decode=auto-html",
+          6
+        ],
+        [
+          "/?timeout=15&follow_redirects=true&decode=auto-html",
+          2
+        ],
+        [
+          "/wp-json/wp/v2/users?context=edit&timeout=15&follow_redirects=true&decode=auto-html",
+          2
+        ],
+        [
+          "/wp-json/batch/v1",
+          2
+        ]
+      ],
+      "status_codes": {
+        "301": 69,
+        "403": 41
+      }
+    },
+    {
+      "ip": "185.198.240.0",
+      "role": "scanner",
+      "label": "Login probing: 107 wp-login attempts, zero authenticated wp-",
+      "confidence": "medium",
+      "match_source": "behavioral",
+      "evidence": "Login probing: 107 wp-login attempts, zero authenticated wp-admin access",
+      "total_requests": 108,
+      "page_views": 106,
+      "active_days": 6,
+      "first_seen": "2026-01-09",
+      "last_seen": "2026-01-28",
+      "top_paths": [
+        [
+          "/wp-login.php",
+          107
+        ],
+        [
+          "/wp-admin",
+          1
+        ]
+      ],
+      "status_codes": {
+        "200": 106,
+        "301": 2
+      }
+    },
+    {
+      "ip": "173.239.218.0",
+      "role": "scanner",
+      "label": "Login probing: 83 wp-login attempts, zero authenticated wp-a",
+      "confidence": "medium",
+      "match_source": "behavioral",
+      "evidence": "Login probing: 83 wp-login attempts, zero authenticated wp-admin access",
+      "total_requests": 85,
+      "page_views": 83,
+      "active_days": 4,
+      "first_seen": "2026-01-08",
+      "last_seen": "2026-01-12",
+      "top_paths": [
+        [
+          "/wp-login.php",
+          83
+        ],
+        [
+          "/readme.html",
+          1
+        ],
+        [
+          "/license.txt",
+          1
+        ]
+      ],
+      "status_codes": {
+        "200": 83,
+        "301": 2
+      }
+    },
+    {
+      "ip": "45.84.107.0",
+      "role": "scanner",
+      "label": "Login probing: 56 wp-login attempts, zero authenticated wp-a",
+      "confidence": "medium",
+      "match_source": "behavioral",
+      "evidence": "Login probing: 56 wp-login attempts, zero authenticated wp-admin access",
+      "total_requests": 73,
+      "page_views": 2,
+      "active_days": 19,
+      "first_seen": "2026-01-05",
+      "last_seen": "2026-02-26",
+      "top_paths": [
+        [
+          "/wp-login.php",
+          52
+        ],
+        [
+          "/",
+          5
+        ],
+        [
+          "/wordpress/wp-login.php",
+          4
+        ],
+        [
+          "/wp-admin",
+          4
+        ],
+        [
+          "/xmlrpc.php?rsd",
+          2
+        ]
+      ],
+      "status_codes": {
+        "403": 46,
+        "301": 23,
+        "200": 2,
+        "404": 1,
+        "429": 1
+      }
+    },
+    {
+      "ip": "146.190.54.0",
+      "role": "scanner",
+      "label": "Login probing: 51 wp-login attempts, zero authenticated wp-a",
+      "confidence": "medium",
+      "match_source": "behavioral",
+      "evidence": "Login probing: 51 wp-login attempts, zero authenticated wp-admin access",
+      "total_requests": 59,
+      "page_views": 55,
+      "active_days": 1,
+      "first_seen": "2026-01-24",
+      "last_seen": "2026-01-24",
+      "top_paths": [
+        [
+          "/wp-login.php",
+          51
+        ],
+        [
+          "/?rest_route=/wp/v2/users",
+          4
+        ],
+        [
+          "/?author=1",
+          1
+        ],
+        [
+          "/?author=2",
+          1
+        ],
+        [
+          "/?author=3",
+          1
+        ]
+      ],
+      "status_codes": {
+        "200": 55,
+        "301": 3,
+        "404": 1
+      }
+    },
+    {
+      "ip": "69.49.112.0",
+      "role": "scanner",
+      "label": "Login probing: 55 wp-login attempts, zero authenticated wp-a",
+      "confidence": "medium",
+      "match_source": "behavioral",
+      "evidence": "Login probing: 55 wp-login attempts, zero authenticated wp-admin access",
+      "total_requests": 57,
+      "page_views": 7,
+      "active_days": 3,
+      "first_seen": "2026-02-20",
+      "last_seen": "2026-03-01",
+      "top_paths": [
+        [
+          "/wp-login.php",
+          55
+        ],
+        [
+          "/feed",
+          2
+        ]
+      ],
+      "status_codes": {
+        "301": 40,
+        "403": 10,
+        "200": 7
+      }
     }
   ],
   "weekly_comparison": [
@@ -821,99 +4235,99 @@
       "total_requests": 38140,
       "total_human_pv": 2073,
       "total_unique_visitors": 1858,
-      "organic_requests": 34314,
-      "organic_human_pv": 1922,
-      "organic_unique_visitors": 1853,
-      "filtered_requests": 3826,
-      "filtered_pv": 151
+      "organic_requests": 32218,
+      "organic_human_pv": 1910,
+      "organic_unique_visitors": 1842,
+      "filtered_requests": 5922,
+      "filtered_pv": 163
     },
     {
       "week": "2026-W03",
       "total_requests": 47257,
       "total_human_pv": 2335,
       "total_unique_visitors": 1660,
-      "organic_requests": 42422,
-      "organic_human_pv": 2178,
-      "organic_unique_visitors": 1654,
-      "filtered_requests": 4835,
-      "filtered_pv": 157
+      "organic_requests": 32962,
+      "organic_human_pv": 2095,
+      "organic_unique_visitors": 1638,
+      "filtered_requests": 14295,
+      "filtered_pv": 240
     },
     {
       "week": "2026-W04",
       "total_requests": 43493,
       "total_human_pv": 2344,
       "total_unique_visitors": 1867,
-      "organic_requests": 35068,
-      "organic_human_pv": 2166,
-      "organic_unique_visitors": 1863,
-      "filtered_requests": 8425,
-      "filtered_pv": 178
+      "organic_requests": 32902,
+      "organic_human_pv": 2149,
+      "organic_unique_visitors": 1853,
+      "filtered_requests": 10591,
+      "filtered_pv": 195
     },
     {
       "week": "2026-W05",
       "total_requests": 50660,
       "total_human_pv": 2423,
       "total_unique_visitors": 1832,
-      "organic_requests": 38673,
-      "organic_human_pv": 2275,
-      "organic_unique_visitors": 1828,
-      "filtered_requests": 11987,
-      "filtered_pv": 148
+      "organic_requests": 34926,
+      "organic_human_pv": 2242,
+      "organic_unique_visitors": 1818,
+      "filtered_requests": 15734,
+      "filtered_pv": 181
     },
     {
       "week": "2026-W06",
       "total_requests": 73698,
       "total_human_pv": 2836,
       "total_unique_visitors": 1670,
-      "organic_requests": 52472,
-      "organic_human_pv": 2482,
-      "organic_unique_visitors": 1660,
-      "filtered_requests": 21226,
-      "filtered_pv": 354
+      "organic_requests": 45436,
+      "organic_human_pv": 2431,
+      "organic_unique_visitors": 1645,
+      "filtered_requests": 28262,
+      "filtered_pv": 405
     },
     {
       "week": "2026-W07",
       "total_requests": 57451,
       "total_human_pv": 2354,
       "total_unique_visitors": 1845,
-      "organic_requests": 47596,
-      "organic_human_pv": 2183,
-      "organic_unique_visitors": 1838,
-      "filtered_requests": 9855,
-      "filtered_pv": 171
+      "organic_requests": 41494,
+      "organic_human_pv": 2096,
+      "organic_unique_visitors": 1824,
+      "filtered_requests": 15957,
+      "filtered_pv": 258
     },
     {
       "week": "2026-W08",
       "total_requests": 56834,
       "total_human_pv": 2469,
       "total_unique_visitors": 1578,
-      "organic_requests": 46533,
-      "organic_human_pv": 2255,
-      "organic_unique_visitors": 1571,
-      "filtered_requests": 10301,
-      "filtered_pv": 214
+      "organic_requests": 39164,
+      "organic_human_pv": 2194,
+      "organic_unique_visitors": 1555,
+      "filtered_requests": 17670,
+      "filtered_pv": 275
     },
     {
       "week": "2026-W09",
       "total_requests": 52083,
       "total_human_pv": 2095,
       "total_unique_visitors": 1500,
-      "organic_requests": 41682,
-      "organic_human_pv": 1932,
-      "organic_unique_visitors": 1493,
-      "filtered_requests": 10401,
-      "filtered_pv": 163
+      "organic_requests": 31656,
+      "organic_human_pv": 1889,
+      "organic_unique_visitors": 1476,
+      "filtered_requests": 20427,
+      "filtered_pv": 206
     },
     {
       "week": "2026-W10",
       "total_requests": 22032,
       "total_human_pv": 950,
       "total_unique_visitors": 685,
-      "organic_requests": 18081,
-      "organic_human_pv": 830,
-      "organic_unique_visitors": 679,
-      "filtered_requests": 3951,
-      "filtered_pv": 120
+      "organic_requests": 15455,
+      "organic_human_pv": 818,
+      "organic_unique_visitors": 673,
+      "filtered_requests": 6577,
+      "filtered_pv": 132
     }
   ],
   "daily_unique_visitors": {
@@ -980,84 +4394,84 @@
     },
     "organic_only": {
       "2026-01-05": 330,
-      "2026-01-06": 344,
-      "2026-01-07": 369,
-      "2026-01-08": 421,
-      "2026-01-09": 346,
-      "2026-01-10": 309,
-      "2026-01-11": 279,
-      "2026-01-12": 365,
-      "2026-01-13": 358,
-      "2026-01-14": 309,
-      "2026-01-15": 318,
-      "2026-01-16": 288,
-      "2026-01-17": 350,
-      "2026-01-18": 282,
-      "2026-01-19": 405,
-      "2026-01-20": 371,
-      "2026-01-21": 423,
-      "2026-01-22": 355,
+      "2026-01-06": 341,
+      "2026-01-07": 366,
+      "2026-01-08": 419,
+      "2026-01-09": 344,
+      "2026-01-10": 308,
+      "2026-01-11": 277,
+      "2026-01-12": 361,
+      "2026-01-13": 355,
+      "2026-01-14": 305,
+      "2026-01-15": 316,
+      "2026-01-16": 286,
+      "2026-01-17": 349,
+      "2026-01-18": 278,
+      "2026-01-19": 404,
+      "2026-01-20": 368,
+      "2026-01-21": 421,
+      "2026-01-22": 354,
       "2026-01-23": 347,
-      "2026-01-24": 275,
+      "2026-01-24": 272,
       "2026-01-25": 270,
-      "2026-01-26": 310,
-      "2026-01-27": 315,
-      "2026-01-28": 353,
-      "2026-01-29": 460,
-      "2026-01-30": 341,
-      "2026-01-31": 264,
-      "2026-02-01": 304,
-      "2026-02-02": 361,
-      "2026-02-03": 289,
-      "2026-02-04": 351,
-      "2026-02-05": 325,
-      "2026-02-06": 307,
-      "2026-02-07": 264,
-      "2026-02-08": 275,
-      "2026-02-09": 306,
-      "2026-02-10": 307,
-      "2026-02-11": 370,
+      "2026-01-26": 308,
+      "2026-01-27": 312,
+      "2026-01-28": 352,
+      "2026-01-29": 459,
+      "2026-01-30": 338,
+      "2026-01-31": 262,
+      "2026-02-01": 302,
+      "2026-02-02": 357,
+      "2026-02-03": 287,
+      "2026-02-04": 349,
+      "2026-02-05": 324,
+      "2026-02-06": 306,
+      "2026-02-07": 261,
+      "2026-02-08": 270,
+      "2026-02-09": 303,
+      "2026-02-10": 305,
+      "2026-02-11": 364,
       "2026-02-12": 359,
-      "2026-02-13": 421,
-      "2026-02-14": 324,
-      "2026-02-15": 291,
+      "2026-02-13": 420,
+      "2026-02-14": 321,
+      "2026-02-15": 288,
       "2026-02-16": 346,
-      "2026-02-17": 344,
-      "2026-02-18": 328,
-      "2026-02-19": 326,
-      "2026-02-20": 245,
-      "2026-02-21": 235,
-      "2026-02-22": 245,
-      "2026-02-23": 260,
-      "2026-02-24": 259,
-      "2026-02-25": 268,
-      "2026-02-26": 347,
-      "2026-02-27": 278,
-      "2026-02-28": 263,
-      "2026-03-01": 299,
-      "2026-03-02": 327,
-      "2026-03-03": 338,
-      "2026-03-04": 84
+      "2026-02-17": 343,
+      "2026-02-18": 324,
+      "2026-02-19": 324,
+      "2026-02-20": 242,
+      "2026-02-21": 232,
+      "2026-02-22": 241,
+      "2026-02-23": 255,
+      "2026-02-24": 255,
+      "2026-02-25": 267,
+      "2026-02-26": 344,
+      "2026-02-27": 273,
+      "2026-02-28": 261,
+      "2026-03-01": 296,
+      "2026-03-02": 324,
+      "2026-03-03": 337,
+      "2026-03-04": 82
     }
   },
   "top_pages_comparison": [
     {
       "path": "/",
       "total_views": 8745,
-      "organic_views": 8658,
-      "known_ip_views": 87
+      "organic_views": 8612,
+      "known_ip_views": 133
     },
     {
       "path": "/projects",
       "total_views": 956,
-      "organic_views": 883,
-      "known_ip_views": 73
+      "organic_views": 877,
+      "known_ip_views": 79
     },
     {
       "path": "/about-us",
       "total_views": 849,
-      "organic_views": 784,
-      "known_ip_views": 65
+      "organic_views": 753,
+      "known_ip_views": 96
     },
     {
       "path": "/project/barn-with-a-view",
@@ -1066,16 +4480,16 @@
       "known_ip_views": 14
     },
     {
-      "path": "/project/new-castle-town-hall",
-      "total_views": 199,
-      "organic_views": 189,
-      "known_ip_views": 10
-    },
-    {
       "path": "/project/mid-century-home",
       "total_views": 200,
       "organic_views": 189,
       "known_ip_views": 11
+    },
+    {
+      "path": "/project/new-castle-town-hall",
+      "total_views": 199,
+      "organic_views": 189,
+      "known_ip_views": 10
     },
     {
       "path": "/project/berkshire-farmhouse",
@@ -1090,12 +4504,6 @@
       "known_ip_views": 13
     },
     {
-      "path": "/press",
-      "total_views": 193,
-      "organic_views": 172,
-      "known_ip_views": 21
-    },
-    {
       "path": "/project/camberville-chefs-kitchen-and-renovation",
       "total_views": 194,
       "organic_views": 170,
@@ -1108,16 +4516,16 @@
       "known_ip_views": 13
     },
     {
+      "path": "/press",
+      "total_views": 193,
+      "organic_views": 167,
+      "known_ip_views": 26
+    },
+    {
       "path": "/project/classic-townhouse",
       "total_views": 171,
       "organic_views": 158,
       "known_ip_views": 13
-    },
-    {
-      "path": "/project/bullfinch-house",
-      "total_views": 165,
-      "organic_views": 154,
-      "known_ip_views": 11
     },
     {
       "path": "/project/nantucket-kitchen",
@@ -1126,10 +4534,10 @@
       "known_ip_views": 11
     },
     {
-      "path": "/?rest_route=/wp/v2/users",
-      "total_views": 155,
+      "path": "/project/bullfinch-house",
+      "total_views": 165,
       "organic_views": 154,
-      "known_ip_views": 1
+      "known_ip_views": 11
     },
     {
       "path": "/project/st-pauls-school-chapels",
@@ -1168,43 +4576,49 @@
       "known_ip_views": 12
     },
     {
-      "path": "/project/maker-space-art-studio",
-      "total_views": 134,
-      "organic_views": 121,
-      "known_ip_views": 13
-    },
-    {
       "path": "/project/boston-apartment-for-a-young-family",
       "total_views": 133,
       "organic_views": 121,
       "known_ip_views": 12
     },
     {
+      "path": "/project/maker-space-art-studio",
+      "total_views": 134,
+      "organic_views": 121,
+      "known_ip_views": 13
+    },
+    {
       "path": "/project/heritage-condominium-renovation",
       "total_views": 139,
-      "organic_views": 120,
-      "known_ip_views": 19
+      "organic_views": 118,
+      "known_ip_views": 21
     },
     {
       "path": "/project/wellesley-renovation",
       "total_views": 126,
       "organic_views": 116,
       "known_ip_views": 10
+    },
+    {
+      "path": "/project/firestone-and-parson",
+      "total_views": 120,
+      "organic_views": 110,
+      "known_ip_views": 10
     }
   ],
   "organic_referrers": {
-    "direct_or_internal": 16174,
+    "direct_or_internal": 15850,
     "search_engines": {
-      "Google": 1179,
-      "Bing": 51,
-      "Duckduckgo": 28,
+      "Google": 1140,
+      "Bing": 45,
+      "Duckduckgo": 22,
       "Yahoo": 19,
       "Ecosia": 1
     },
     "social": {
       "Pinterest": 145,
-      "Facebook": 35,
       "Instagram": 25,
+      "Facebook": 24,
       "Linkedin": 12,
       "Twitter": 2,
       "Reddit": 1
@@ -1235,10 +4649,6 @@
         "count": 12
       },
       {
-        "url": "https://t.co/",
-        "count": 12
-      },
-      {
         "url": "https://vavilon-ritual.com.ua/ru/uslugi/krematorij-krematsiya-tela.html",
         "count": 11
       },
@@ -1263,11 +4673,15 @@
         "count": 7
       },
       {
-        "url": "https://wordpress.org/",
+        "url": "https://www.prjadko.kiev.ua/ritualnye-uslugi.html",
         "count": 6
       },
       {
-        "url": "https://www.prjadko.kiev.ua/ritualnye-uslugi.html",
+        "url": "https://myrockshows.com/",
+        "count": 6
+      },
+      {
+        "url": "https://www.bostonmagazine.com/",
         "count": 6
       }
     ]
