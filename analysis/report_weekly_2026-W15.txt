@@ -1,0 +1,165 @@
+========================================================================
+CTAI WEEKLY SEO TRAFFIC REPORT
+Catherine Truman Architects & Interiors
+Week: 2026-W15
+Generated: 2026-04-17 18:02
+========================================================================
+
+────────────────────────────────────────────────────────────
+HEADLINE NUMBERS
+────────────────────────────────────────────────────────────
+  Organic Page Views:      2,253  (prev:  2,124)  ▲ +129 (+6.1%)
+  Organic Unique Visitors: 1,857  (prev:  1,824)  ▲ +33 (+1.8%)
+  Total Requests:         65,587  (organic: 42,801, non-organic: 22,786)
+
+────────────────────────────────────────────────────────────
+DAILY BREAKDOWN (organic)
+────────────────────────────────────────────────────────────
+                     Day      PV      UV     Reqs
+        2026-04-06 (Mon)     308     305    5,748  ██████████████████████████████
+        2026-04-07 (Tue)     398     337    7,657  ██████████████████████████████
+        2026-04-08 (Wed)     401     375    7,412  ██████████████████████████████
+        2026-04-09 (Thu)     295     408    5,046  ██████████████████████████████
+        2026-04-10 (Fri)     307     459    7,726  ██████████████████████████████
+        2026-04-11 (Sat)     279     298    3,257  ██████████████████████████████
+        2026-04-12 (Sun)     265     309    5,955  ██████████████████████████████
+
+────────────────────────────────────────────────────────────
+TOP PAGES (organic page views)
+────────────────────────────────────────────────────────────
+    #    This   Prev    Chg  Path
+    1.  1,093  1,084     +9  /
+    2.     95    102     -7  /projects
+    3.     89    108    -19  /about-us
+    4.     36     47    -11  /project/barn-with-a-view
+    5.     35     25    +10  /project/st-pauls-school-chapels
+    6.     24     18     +6  /project/berkshire-farmhouse
+    7.     24     26     -2  /feed
+    8.     24     17     +7  /project/new-castle-town-hall
+    9.     23      0    new  /project/nantucket-kitchen
+   10.     22     24     -2  /comments/feed
+   11.     21     15     +6  /project/pool-house-in-an-olmstead-landscape
+   12.     21     15     +6  /project/maker-space-art-studio
+   13.     20     24     -4  /project/modern-townhouse
+   14.     20     30    -10  /project/classic-townhouse
+   15.     19     25     -6  /project/camberville-chefs-kitchen-and-renovation
+   16.     19      0    new  /project/mid-century-home
+   17.     19     20     -1  /project/bullfinch-house
+   18.     18      0    new  /project/heritage-condominium-renovation
+   19.     18      0    new  /project/great-camp-bunkhouse
+   20.     17     15     +2  /project/west-cedar-street-renovation
+
+────────────────────────────────────────────────────────────
+TRAFFIC SOURCES (organic page views)
+────────────────────────────────────────────────────────────
+
+  Direct / Internal:   2,041  (prev:  1,918)
+
+  Search Engines:
+    Google             123  (prev:  122)  ▲1
+    Yahoo                5  (prev:    1)  ▲4
+    Bing                 3  (prev:    2)  ▲1
+    Duckduckgo           1  (prev:    1)  
+
+  Social:
+    Pinterest            9  (prev:   15)  ▼6
+    Linkedin             3  (prev:    1)  ▲2
+    Instagram            3  (prev:    2)  ▲1
+
+  Other External Referrers:
+         4  https://nskokna.ru/
+         3  https://www.bostondesignguide.com/
+         3  https://foto-na-pamjatnyk.com.ua/foto-dlya-vyiskovyh.html
+         3  https://brookesandhill.com/
+         2  https://sochi.vet/
+         2  https://velesritual.com.ua/flowers.html
+         2  https://velesritual.com.ua/funeral.html
+         2  https://vavilon-ritual.com.ua/poslugy/orhanyzatsiia-pokhoron.html
+
+────────────────────────────────────────────────────────────
+SEARCH CRAWLER ACTIVITY
+────────────────────────────────────────────────────────────
+  Baidu            1,095  (prev:  859)  ▲236
+  Googlebot          906  (prev:  383)  ▲523
+  Yandex             476  (prev:  523)  ▼47
+  Bingbot            435  (prev:  429)  ▲6
+  Applebot           245  (prev:  189)  ▲56
+  Petalbot           194  (prev:  204)  ▼10
+  Other              113  (prev:   22)  ▲91
+  DuckDuckBot         41  (prev:   26)  ▲15
+
+────────────────────────────────────────────────────────────
+NON-ORGANIC TRAFFIC BREAKDOWN
+────────────────────────────────────────────────────────────
+  Vulnerability Scanners / Bots         21,525 reqs  (148 IPs)
+  WordPress Reconnaissance Bots            596 reqs  (4 IPs)
+  Hosting Infrastructure                   423 reqs  (2 IPs)
+  Content Maintenance Team                 174 reqs  (1 IPs)
+  Web Design / SEO Team                     68 reqs  (1 IPs)
+
+────────────────────────────────────────────────────────────
+NEW NON-ORGANIC IPs THIS WEEK
+────────────────────────────────────────────────────────────
+        91.217.249.0  3,391 reqs  Vulnerability Scanners / Bots
+    → 160 attack-path probes (1.7% of requests)
+       173.239.218.0  2,247 reqs  Vulnerability Scanners / Bots
+    → 82 attack-path probes (1.8% of requests)
+       173.239.236.0  1,589 reqs  Vulnerability Scanners / Bots
+    → 12 attack-path probes (0.5% of requests)
+          89.251.0.0  1,264 reqs  Vulnerability Scanners / Bots
+    → 113 attack-path probes (1.6% of requests)
+          84.17.35.0  1,264 reqs  Vulnerability Scanners / Bots
+    → 21 attack-path probes (1.7% of requests)
+        193.19.207.0  1,264 reqs  Vulnerability Scanners / Bots
+    → 21 attack-path probes (1.7% of requests)
+        45.131.194.0  1,264 reqs  Vulnerability Scanners / Bots
+    → 21 attack-path probes (1.7% of requests)
+        216.24.210.0    583 reqs  Vulnerability Scanners / Bots
+    → 31 attack-path probes (1.6% of requests)
+         85.203.23.0    508 reqs  Vulnerability Scanners / Bots
+    → 7 attack-path probes (0.7% of requests)
+         45.13.227.0    403 reqs  WordPress Reconnaissance Bots
+    → WP recon bot: wp-login (197 hits), wp-admin 0 authenticated, 197 redirected, use
+        91.230.225.0    332 reqs  Vulnerability Scanners / Bots
+    → 58 attack-path probes (2.1% of requests)
+         98.159.37.0    172 reqs  Vulnerability Scanners / Bots
+    → Login probing: 184 wp-login attempts, zero authenticated wp-admin access
+        62.197.145.0    120 reqs  Vulnerability Scanners / Bots
+    → 6 attack-path probes (5.0% of requests)
+       103.178.154.0     68 reqs  Web Design / SEO Team
+    → Divi Builder activity (10 requests) + authenticated wp-admin (571 HTTP 200s)
+           45.8.19.0     22 reqs  Vulnerability Scanners / Bots
+    → Login probing: 95 wp-login attempts, zero authenticated wp-admin access
+         194.99.24.0     18 reqs  Vulnerability Scanners / Bots
+    → Login probing: 69 wp-login attempts, zero authenticated wp-admin access
+        93.177.118.0      9 reqs  Vulnerability Scanners / Bots
+    → Login probing: 69 wp-login attempts, zero authenticated wp-admin access
+          45.135.1.0      6 reqs  Vulnerability Scanners / Bots
+    → Login probing: 77 wp-login attempts, zero authenticated wp-admin access
+       165.245.183.0      5 reqs  WordPress Reconnaissance Bots
+    → WP recon bot: wp-login (159 hits), wp-admin 0 authenticated, 159 redirected, use
+        147.78.182.0      3 reqs  Vulnerability Scanners / Bots
+    → Login probing: 56 wp-login attempts, zero authenticated wp-admin access
+
+────────────────────────────────────────────────────────────
+TOP 404 ERRORS
+────────────────────────────────────────────────────────────
+      79  /robots.txt
+      43  /administrator
+      32  /AutoDiscover/autodiscover.xml
+      31  /cgi-bin
+      28  /backup
+      26  /blog
+      26  /apple-touch-icon.png
+      26  /apple-touch-icon-precomposed.png
+      25  /.well-known/traffic-advice
+      22  /inputs.php
+      22  /simple.php
+      21  /th1s_1s_a_4o4.html
+      20  /wp-content/plugins/fix/up.php
+      20  /classwithtostring.php
+      20  /wp
+
+========================================================================
+END OF WEEKLY REPORT
+========================================================================

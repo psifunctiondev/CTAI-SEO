@@ -1,0 +1,498 @@
+{
+  "target_week": "2026-W15",
+  "week_requests": 65587,
+  "week_organic_requests": 42801,
+  "week_known_requests": 22786,
+  "prev_requests": 54357,
+  "prev_organic_requests": 41239,
+  "week_organic_pv": 2253,
+  "prev_organic_pv": 2124,
+  "pv_change": 129,
+  "pv_change_pct": 6.073446327683616,
+  "week_organic_uv": 1857,
+  "prev_organic_uv": 1824,
+  "uv_change": 33,
+  "uv_change_pct": 1.8092105263157896,
+  "daily": {
+    "2026-04-06 (Mon)": {
+      "requests": 5748,
+      "page_views": 308,
+      "unique_visitors": 305
+    },
+    "2026-04-07 (Tue)": {
+      "requests": 7657,
+      "page_views": 398,
+      "unique_visitors": 337
+    },
+    "2026-04-08 (Wed)": {
+      "requests": 7412,
+      "page_views": 401,
+      "unique_visitors": 375
+    },
+    "2026-04-09 (Thu)": {
+      "requests": 5046,
+      "page_views": 295,
+      "unique_visitors": 408
+    },
+    "2026-04-10 (Fri)": {
+      "requests": 7726,
+      "page_views": 307,
+      "unique_visitors": 459
+    },
+    "2026-04-11 (Sat)": {
+      "requests": 3257,
+      "page_views": 279,
+      "unique_visitors": 298
+    },
+    "2026-04-12 (Sun)": {
+      "requests": 5955,
+      "page_views": 265,
+      "unique_visitors": 309
+    }
+  },
+  "top_pages": [
+    [
+      "/",
+      1093
+    ],
+    [
+      "/projects",
+      95
+    ],
+    [
+      "/about-us",
+      89
+    ],
+    [
+      "/project/barn-with-a-view",
+      36
+    ],
+    [
+      "/project/st-pauls-school-chapels",
+      35
+    ],
+    [
+      "/project/berkshire-farmhouse",
+      24
+    ],
+    [
+      "/feed",
+      24
+    ],
+    [
+      "/project/new-castle-town-hall",
+      24
+    ],
+    [
+      "/project/nantucket-kitchen",
+      23
+    ],
+    [
+      "/comments/feed",
+      22
+    ],
+    [
+      "/project/pool-house-in-an-olmstead-landscape",
+      21
+    ],
+    [
+      "/project/maker-space-art-studio",
+      21
+    ],
+    [
+      "/project/modern-townhouse",
+      20
+    ],
+    [
+      "/project/classic-townhouse",
+      20
+    ],
+    [
+      "/project/camberville-chefs-kitchen-and-renovation",
+      19
+    ],
+    [
+      "/project/mid-century-home",
+      19
+    ],
+    [
+      "/project/bullfinch-house",
+      19
+    ],
+    [
+      "/project/heritage-condominium-renovation",
+      18
+    ],
+    [
+      "/project/great-camp-bunkhouse",
+      18
+    ],
+    [
+      "/project/west-cedar-street-renovation",
+      17
+    ]
+  ],
+  "prev_top_pages": [
+    [
+      "/",
+      1084
+    ],
+    [
+      "/about-us",
+      108
+    ],
+    [
+      "/projects",
+      102
+    ],
+    [
+      "/project/barn-with-a-view",
+      47
+    ],
+    [
+      "/project/classic-townhouse",
+      30
+    ],
+    [
+      "/feed",
+      26
+    ],
+    [
+      "/project/camberville-chefs-kitchen-and-renovation",
+      25
+    ],
+    [
+      "/project/st-pauls-school-chapels",
+      25
+    ],
+    [
+      "/project/modern-townhouse",
+      24
+    ],
+    [
+      "/comments/feed",
+      24
+    ],
+    [
+      "/project/bullfinch-house",
+      20
+    ],
+    [
+      "/press",
+      18
+    ],
+    [
+      "/project/berkshire-farmhouse",
+      18
+    ],
+    [
+      "/project/new-castle-town-hall",
+      17
+    ],
+    [
+      "/project/great-camp-barn",
+      16
+    ],
+    [
+      "/project/net-zero-barn",
+      16
+    ],
+    [
+      "/hello-world",
+      16
+    ],
+    [
+      "/project/maker-space-art-studio",
+      15
+    ],
+    [
+      "/project/west-cedar-street-renovation",
+      15
+    ],
+    [
+      "/project/pool-house-in-an-olmstead-landscape",
+      15
+    ]
+  ],
+  "referrers": {
+    "direct": 2041,
+    "search": {
+      "google": 123,
+      "yahoo": 5,
+      "bing": 3,
+      "duckduckgo": 1
+    },
+    "social": {
+      "pinterest": 9,
+      "linkedin": 3,
+      "instagram": 3
+    },
+    "other": {
+      "https://nskokna.ru/": 4,
+      "https://www.bostondesignguide.com/": 3,
+      "https://foto-na-pamjatnyk.com.ua/foto-dlya-vyiskovyh.html": 3,
+      "https://brookesandhill.com/": 3,
+      "https://sochi.vet/": 2,
+      "https://velesritual.com.ua/flowers.html": 2,
+      "https://velesritual.com.ua/funeral.html": 2,
+      "https://vavilon-ritual.com.ua/poslugy/orhanyzatsiia-pokhoron.html": 2,
+      "https://ua.velesritual.com.ua/cremation.html": 2,
+      "https://sochi.vet/diagnostika": 2
+    }
+  },
+  "prev_referrers": {
+    "direct": 1918,
+    "search": {
+      "google": 122,
+      "bing": 2,
+      "baidu": 2,
+      "yahoo": 1,
+      "duckduckgo": 1
+    },
+    "social": {
+      "pinterest": 15,
+      "instagram": 2,
+      "linkedin": 1,
+      "facebook": 1,
+      "reddit": 1
+    },
+    "other": {
+      "https://www.bostondesignguide.com/": 4,
+      "https://bywwo.shop/": 3,
+      "https://ua.velesritual.com.ua/mistse-na-tsvyntari.html": 3,
+      "https://www.c2mgbuilders.com/": 2,
+      "https://vavilon-ritual.com.ua/ru/uslugi/krematorij-krematsiya-tela.html": 2,
+      "https://velesritual.com.ua/flowers.html": 2,
+      "https://velesritual.com.ua/cargo200.html": 2,
+      "https://ua.velesritual.com.ua/cremation.html": 2,
+      "https://foto-na-pamjatnyk.com.ua/store/category/foto-v-skli-na-pamiatnyk.html": 2,
+      "https://www.houzz.com/": 1
+    }
+  },
+  "known_breakdown": {
+    "scanner": {
+      "requests": 21525,
+      "unique_ips": 148
+    },
+    "wp_recon": {
+      "requests": 596,
+      "unique_ips": 4
+    },
+    "hosting": {
+      "requests": 423,
+      "unique_ips": 2
+    },
+    "admin_content": {
+      "requests": 174,
+      "unique_ips": 1
+    },
+    "admin_designer": {
+      "requests": 68,
+      "unique_ips": 1
+    }
+  },
+  "new_classified_ips": [
+    {
+      "ip": "91.217.249.0",
+      "role": "scanner",
+      "requests": 3391,
+      "reason": "160 attack-path probes (1.7% of requests)"
+    },
+    {
+      "ip": "173.239.218.0",
+      "role": "scanner",
+      "requests": 2247,
+      "reason": "82 attack-path probes (1.8% of requests)"
+    },
+    {
+      "ip": "173.239.236.0",
+      "role": "scanner",
+      "requests": 1589,
+      "reason": "12 attack-path probes (0.5% of requests)"
+    },
+    {
+      "ip": "89.251.0.0",
+      "role": "scanner",
+      "requests": 1264,
+      "reason": "113 attack-path probes (1.6% of requests)"
+    },
+    {
+      "ip": "84.17.35.0",
+      "role": "scanner",
+      "requests": 1264,
+      "reason": "21 attack-path probes (1.7% of requests)"
+    },
+    {
+      "ip": "193.19.207.0",
+      "role": "scanner",
+      "requests": 1264,
+      "reason": "21 attack-path probes (1.7% of requests)"
+    },
+    {
+      "ip": "45.131.194.0",
+      "role": "scanner",
+      "requests": 1264,
+      "reason": "21 attack-path probes (1.7% of requests)"
+    },
+    {
+      "ip": "216.24.210.0",
+      "role": "scanner",
+      "requests": 583,
+      "reason": "31 attack-path probes (1.6% of requests)"
+    },
+    {
+      "ip": "85.203.23.0",
+      "role": "scanner",
+      "requests": 508,
+      "reason": "7 attack-path probes (0.7% of requests)"
+    },
+    {
+      "ip": "45.13.227.0",
+      "role": "wp_recon",
+      "requests": 403,
+      "reason": "WP recon bot: wp-login (197 hits), wp-admin 0 authenticated, 197 redirected, use"
+    },
+    {
+      "ip": "91.230.225.0",
+      "role": "scanner",
+      "requests": 332,
+      "reason": "58 attack-path probes (2.1% of requests)"
+    },
+    {
+      "ip": "98.159.37.0",
+      "role": "scanner",
+      "requests": 172,
+      "reason": "Login probing: 184 wp-login attempts, zero authenticated wp-admin access"
+    },
+    {
+      "ip": "62.197.145.0",
+      "role": "scanner",
+      "requests": 120,
+      "reason": "6 attack-path probes (5.0% of requests)"
+    },
+    {
+      "ip": "103.178.154.0",
+      "role": "admin_designer",
+      "requests": 68,
+      "reason": "Divi Builder activity (10 requests) + authenticated wp-admin (571 HTTP 200s)"
+    },
+    {
+      "ip": "45.8.19.0",
+      "role": "scanner",
+      "requests": 22,
+      "reason": "Login probing: 95 wp-login attempts, zero authenticated wp-admin access"
+    },
+    {
+      "ip": "194.99.24.0",
+      "role": "scanner",
+      "requests": 18,
+      "reason": "Login probing: 69 wp-login attempts, zero authenticated wp-admin access"
+    },
+    {
+      "ip": "93.177.118.0",
+      "role": "scanner",
+      "requests": 9,
+      "reason": "Login probing: 69 wp-login attempts, zero authenticated wp-admin access"
+    },
+    {
+      "ip": "45.135.1.0",
+      "role": "scanner",
+      "requests": 6,
+      "reason": "Login probing: 77 wp-login attempts, zero authenticated wp-admin access"
+    },
+    {
+      "ip": "165.245.183.0",
+      "role": "wp_recon",
+      "requests": 5,
+      "reason": "WP recon bot: wp-login (159 hits), wp-admin 0 authenticated, 159 redirected, use"
+    },
+    {
+      "ip": "147.78.182.0",
+      "role": "scanner",
+      "requests": 3,
+      "reason": "Login probing: 56 wp-login attempts, zero authenticated wp-admin access"
+    }
+  ],
+  "top_404s": [
+    [
+      "/robots.txt",
+      79
+    ],
+    [
+      "/administrator",
+      43
+    ],
+    [
+      "/AutoDiscover/autodiscover.xml",
+      32
+    ],
+    [
+      "/cgi-bin",
+      31
+    ],
+    [
+      "/backup",
+      28
+    ],
+    [
+      "/blog",
+      26
+    ],
+    [
+      "/apple-touch-icon.png",
+      26
+    ],
+    [
+      "/apple-touch-icon-precomposed.png",
+      26
+    ],
+    [
+      "/.well-known/traffic-advice",
+      25
+    ],
+    [
+      "/inputs.php",
+      22
+    ],
+    [
+      "/simple.php",
+      22
+    ],
+    [
+      "/th1s_1s_a_4o4.html",
+      21
+    ],
+    [
+      "/wp-content/plugins/fix/up.php",
+      20
+    ],
+    [
+      "/classwithtostring.php",
+      20
+    ],
+    [
+      "/wp",
+      20
+    ]
+  ],
+  "crawlers": {
+    "Baidu": 1095,
+    "Googlebot": 906,
+    "Yandex": 476,
+    "Bingbot": 435,
+    "Applebot": 245,
+    "Petalbot": 194,
+    "Other": 113,
+    "DuckDuckBot": 41
+  },
+  "prev_crawlers": {
+    "Baidu": 859,
+    "Yandex": 523,
+    "Bingbot": 429,
+    "Googlebot": 383,
+    "Petalbot": 204,
+    "Applebot": 189,
+    "DuckDuckBot": 26,
+    "Other": 22
+  }
+}
