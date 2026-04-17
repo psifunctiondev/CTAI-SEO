@@ -1,0 +1,1275 @@
+{
+  "report_generated": "2026-04-17T14:21:00.777156",
+  "date_range": {
+    "start": "2026-01-05",
+    "end": "2026-03-04"
+  },
+  "summary": {
+    "total_entries": 441648,
+    "known_ip_entries": 84807,
+    "organic_entries": 356841
+  },
+  "known_ip_breakdown": {
+    "hosting": {
+      "description": "Hosting Infrastructure",
+      "requests": 3431,
+      "unique_ips": 1,
+      "page_views": 109
+    },
+    "admin_content": {
+      "description": "Content Maintenance Team",
+      "requests": 6935,
+      "unique_ips": 1,
+      "page_views": 325
+    },
+    "admin_designer": {
+      "description": "Web Design / SEO Team",
+      "requests": 18120,
+      "unique_ips": 2,
+      "page_views": 726
+    },
+    "scanner": {
+      "description": "Vulnerability Scanners / Bots",
+      "requests": 56321,
+      "unique_ips": 14,
+      "page_views": 1355
+    }
+  },
+  "known_ip_details": [
+    {
+      "ip": "163.252.150.0",
+      "role": "admin_designer",
+      "label": "Web Designer (primary)",
+      "confidence": "high",
+      "evidence": "14,137 requests over 17 days (peak 3,316 on Feb 2). Mac/Firefox user. Divi Builder activity (?et_fb=1&et_bfb=1). Heavy wp-admin/wp-login access with 200/302 responses.",
+      "total_requests": 14137,
+      "page_views": 470,
+      "active_days": 17,
+      "first_seen": "2026-01-05",
+      "last_seen": "2026-02-26",
+      "top_paths": [
+        [
+          "/wp-admin/admin-ajax.php",
+          5473
+        ],
+        [
+          "/wp-json/wp/v2/users/me?context=edit&_locale=user",
+          286
+        ],
+        [
+          "/wp-admin/post.php",
+          88
+        ],
+        [
+          "/wp-admin/edit.php?post_type=project",
+          62
+        ],
+        [
+          "/wp-content/uploads/2024/08/favicon-196x196-1.png",
+          43
+        ]
+      ],
+      "status_codes": {
+        "200": 13837,
+        "304": 187,
+        "302": 104,
+        "206": 4,
+        "403": 2,
+        "301": 1,
+        "404": 1,
+        "400": 1
+      }
+    },
+    {
+      "ip": "194.5.82.0",
+      "role": "scanner",
+      "label": "Vulnerability Scanner A",
+      "confidence": "high",
+      "evidence": "8,981 requests over 12 days (peak 1,785 on Feb 25). Probing /wp-includes/ID3, /vendor/phpunit, /manager.php, /bless.php. Windows/Chrome UA but attack-pattern paths.",
+      "total_requests": 8981,
+      "page_views": 50,
+      "active_days": 12,
+      "first_seen": "2026-01-15",
+      "last_seen": "2026-03-03",
+      "top_paths": [
+        [
+          "/wp-content",
+          20
+        ],
+        [
+          "/file.php",
+          16
+        ],
+        [
+          "/wp-includes/ID3",
+          16
+        ],
+        [
+          "/wp-admin/css",
+          14
+        ],
+        [
+          "/wp-admin/images",
+          14
+        ]
+      ],
+      "status_codes": {
+        "404": 4749,
+        "301": 3341,
+        "403": 670,
+        "503": 65,
+        "302": 58,
+        "200": 53,
+        "300": 35,
+        "500": 5,
+        "405": 4,
+        "409": 1
+      }
+    },
+    {
+      "ip": "202.8.43.0",
+      "role": "scanner",
+      "label": "Sitemap Crawler (weekly)",
+      "confidence": "high",
+      "evidence": "~1,453 requests/week, every Sunday for 5 weeks. Hits /sitemap_index.xml, /robots.txt, then crawls entire site. Automated, not organic.",
+      "total_requests": 7294,
+      "page_views": 600,
+      "active_days": 8,
+      "first_seen": "2026-01-05",
+      "last_seen": "2026-02-19",
+      "top_paths": [
+        [
+          "/sitemap_index.xml",
+          25
+        ],
+        [
+          "/robots.txt",
+          23
+        ],
+        [
+          "/",
+          20
+        ],
+        [
+          "/sitemap.xml",
+          10
+        ],
+        [
+          "/projects",
+          10
+        ]
+      ],
+      "status_codes": {
+        "200": 7249,
+        "301": 40,
+        "404": 5
+      }
+    },
+    {
+      "ip": "148.76.189.0",
+      "role": "admin_content",
+      "label": "Content Manager",
+      "confidence": "high",
+      "evidence": "6,935 requests over 48 active days. Windows/Chrome user. Consistent daily presence with periodic editing spikes (peak 997 on Feb 19). Pattern matches regular content updates.",
+      "total_requests": 6935,
+      "page_views": 325,
+      "active_days": 48,
+      "first_seen": "2026-01-05",
+      "last_seen": "2026-03-04",
+      "top_paths": [
+        [
+          "/AutoDiscover/autodiscover.xml",
+          495
+        ],
+        [
+          "/wp-admin/admin-ajax.php",
+          388
+        ],
+        [
+          "/projects",
+          54
+        ],
+        [
+          "/",
+          43
+        ],
+        [
+          "/wp-content/plugins/popups-for-divi/styles/front.min.css?ver=3.2.3",
+          36
+        ]
+      ],
+      "status_codes": {
+        "200": 6284,
+        "301": 274,
+        "404": 269,
+        "304": 72,
+        "302": 32,
+        "500": 2,
+        "400": 2
+      }
+    },
+    {
+      "ip": "193.37.32.0",
+      "role": "scanner",
+      "label": "Vulnerability Scanner B",
+      "confidence": "high",
+      "evidence": "6,645 requests over 11 days (peak 1,525 on Feb 27). Probing /.well-known/index.php, /manager.php, /bless.php, /O-Simple.php. Windows/Firefox UA but attack-pattern paths.",
+      "total_requests": 6645,
+      "page_views": 39,
+      "active_days": 11,
+      "first_seen": "2026-01-15",
+      "last_seen": "2026-03-03",
+      "top_paths": [
+        [
+          "/wp-includes/ID3",
+          18
+        ],
+        [
+          "/wordpress/wp-admin/includes",
+          14
+        ],
+        [
+          "/wp-admin/network",
+          11
+        ],
+        [
+          "/wp-admin",
+          11
+        ],
+        [
+          "/wp-admin/css/colors/blue",
+          11
+        ]
+      ],
+      "status_codes": {
+        "404": 2894,
+        "503": 1949,
+        "403": 1385,
+        "301": 324,
+        "200": 39,
+        "302": 28,
+        "300": 22,
+        "500": 2,
+        "409": 2
+      }
+    },
+    {
+      "ip": "168.100.149.0",
+      "role": "scanner",
+      "label": "Sitemap Crawler (weekly, replaced 202.8.43.0)",
+      "confidence": "high",
+      "evidence": "Same ~1,450 requests/week pattern starting Feb 9. Took over from 202.8.43.0. Same crawl signature.",
+      "total_requests": 5746,
+      "page_views": 435,
+      "active_days": 5,
+      "first_seen": "2026-02-09",
+      "last_seen": "2026-03-02",
+      "top_paths": [
+        [
+          "/sitemap_index.xml",
+          20
+        ],
+        [
+          "/robots.txt",
+          18
+        ],
+        [
+          "/",
+          16
+        ],
+        [
+          "/sitemap.xml",
+          8
+        ],
+        [
+          "/projects",
+          8
+        ]
+      ],
+      "status_codes": {
+        "200": 5676,
+        "301": 66,
+        "404": 4
+      }
+    },
+    {
+      "ip": "194.61.40.0",
+      "role": "scanner",
+      "label": "Vulnerability Scanner C",
+      "confidence": "high",
+      "evidence": "4,563 requests over 5 days (peak 2,308 on Feb 2). Probing /.well-known/index.php, /wp-includes/ID3, /manager.php. Burst scan pattern.",
+      "total_requests": 4563,
+      "page_views": 22,
+      "active_days": 5,
+      "first_seen": "2026-01-29",
+      "last_seen": "2026-03-03",
+      "top_paths": [
+        [
+          "/wordpress/wp-admin/includes",
+          9
+        ],
+        [
+          "/wp-includes/ID3",
+          9
+        ],
+        [
+          "/.well-known/index.php",
+          7
+        ],
+        [
+          "/wp-includes/css/dist",
+          5
+        ],
+        [
+          "/wp-includes/assets",
+          5
+        ]
+      ],
+      "status_codes": {
+        "404": 2653,
+        "301": 1660,
+        "403": 147,
+        "302": 28,
+        "503": 28,
+        "200": 22,
+        "300": 22,
+        "500": 2,
+        "409": 1
+      }
+    },
+    {
+      "ip": "185.177.72.0",
+      "role": "scanner",
+      "label": "Curl Scanner",
+      "confidence": "high",
+      "evidence": "4,368 requests over 6 days (peak 1,665 on Mar 3). UA is 'curl/8.7.1'. Automated scanning tool.",
+      "total_requests": 4368,
+      "page_views": 19,
+      "active_days": 6,
+      "first_seen": "2026-01-13",
+      "last_seen": "2026-03-03",
+      "top_paths": [
+        [
+          "/",
+          32
+        ],
+        [
+          "/wp-content/themes/Divi/js/html5.js",
+          17
+        ],
+        [
+          "/.env",
+          8
+        ],
+        [
+          "/.aws/credentials",
+          7
+        ],
+        [
+          "/phpinfo.php",
+          7
+        ]
+      ],
+      "status_codes": {
+        "403": 3235,
+        "404": 715,
+        "301": 304,
+        "300": 38,
+        "200": 32,
+        "503": 24,
+        "401": 10,
+        "500": 6,
+        "302": 4
+      }
+    },
+    {
+      "ip": "103.163.220.0",
+      "role": "scanner",
+      "label": "Vulnerability Scanner E",
+      "confidence": "high",
+      "evidence": "4,179 requests over 3 days (peak 3,024 on Feb 10). Probing /wp-content/uploads, /wp-content/plugins, /wp-includes. Directory enumeration pattern.",
+      "total_requests": 4179,
+      "page_views": 18,
+      "active_days": 3,
+      "first_seen": "2026-01-08",
+      "last_seen": "2026-02-10",
+      "top_paths": [
+        [
+          "/wp-content/uploads",
+          6
+        ],
+        [
+          "/wp-admin/css/colors/blue",
+          6
+        ],
+        [
+          "/wp-content/plugins",
+          6
+        ],
+        [
+          "/wp-content/themes/pridmag/db.php?u",
+          5
+        ],
+        [
+          "/wp-includes/Requests/about.php",
+          5
+        ]
+      ],
+      "status_codes": {
+        "404": 2566,
+        "301": 1339,
+        "403": 146,
+        "503": 62,
+        "302": 24,
+        "200": 18,
+        "300": 18,
+        "500": 4,
+        "409": 1,
+        "405": 1
+      }
+    },
+    {
+      "ip": "158.41.240.0",
+      "role": "admin_designer",
+      "label": "Web Designer (secondary)",
+      "confidence": "high",
+      "evidence": "3,983 requests over 4 days (peak 2,020 on Feb 7). Mac/Firefox user. Heavy Divi Builder + about-us page editing. Burst pattern matches design work sessions.",
+      "total_requests": 3983,
+      "page_views": 256,
+      "active_days": 4,
+      "first_seen": "2026-02-05",
+      "last_seen": "2026-02-09",
+      "top_paths": [
+        [
+          "/wp-admin/admin-ajax.php",
+          1207
+        ],
+        [
+          "/wp-json/wp/v2/users/me?context=edit&_locale=user",
+          115
+        ],
+        [
+          "/wp-admin/admin-ajax.php?lang=en_US",
+          39
+        ],
+        [
+          "/wp-admin/edit.php?post_type=page",
+          33
+        ],
+        [
+          "/about-us",
+          30
+        ]
+      ],
+      "status_codes": {
+        "200": 3677,
+        "304": 266,
+        "302": 32,
+        "301": 4,
+        "404": 4
+      }
+    },
+    {
+      "ip": "212.30.36.0",
+      "role": "scanner",
+      "label": "Vulnerability Scanner D",
+      "confidence": "high",
+      "evidence": "3,464 requests \u2014 3,462 on single day (Jan 25). Probing /.well-known/index.php, /wp-includes/ID3, /manager.php. Single massive burst scan.",
+      "total_requests": 3464,
+      "page_views": 13,
+      "active_days": 2,
+      "first_seen": "2026-01-25",
+      "last_seen": "2026-02-14",
+      "top_paths": [
+        [
+          "/.well-known/index.php",
+          6
+        ],
+        [
+          "/wordpress/wp-admin/includes",
+          6
+        ],
+        [
+          "/wp-includes/ID3",
+          6
+        ],
+        [
+          "/manager.php",
+          3
+        ],
+        [
+          "/bless.php",
+          3
+        ]
+      ],
+      "status_codes": {
+        "404": 2079,
+        "301": 1232,
+        "403": 79,
+        "300": 22,
+        "503": 21,
+        "302": 16,
+        "200": 13,
+        "500": 1,
+        "409": 1
+      }
+    },
+    {
+      "ip": "74.208.59.0",
+      "role": "hosting",
+      "label": "Hosting Server (cron/monitoring)",
+      "confidence": "high",
+      "evidence": "3,431 requests over all 59 days. Perfectly steady ~55-60/day. WordPress self-pings (wp-cron.php), internal monitoring. IP belongs to 1&1/IONOS hosting infrastructure.",
+      "total_requests": 3431,
+      "page_views": 109,
+      "active_days": 59,
+      "first_seen": "2026-01-05",
+      "last_seen": "2026-03-04",
+      "top_paths": [
+        [
+          "/?et_check_mod_pagespeed=on",
+          70
+        ],
+        [
+          "/",
+          36
+        ],
+        [
+          "/wp-cron.php",
+          9
+        ],
+        [
+          "/wp-login.php",
+          5
+        ],
+        [
+          "/xmlrpc.php",
+          2
+        ]
+      ],
+      "status_codes": {
+        "200": 3426,
+        "301": 4,
+        "405": 1
+      }
+    },
+    {
+      "ip": "212.30.33.0",
+      "role": "scanner",
+      "label": "Vulnerability Scanner F",
+      "confidence": "high",
+      "evidence": "2,442 requests over 3 days (peak 2,308 on Feb 21). Same attack patterns as 212.30.36.0 \u2014 likely same operator. /.well-known/index.php, /manager.php probes.",
+      "total_requests": 2442,
+      "page_views": 3,
+      "active_days": 3,
+      "first_seen": "2026-01-14",
+      "last_seen": "2026-02-21",
+      "top_paths": [
+        [
+          "/.well-known/index.php",
+          4
+        ],
+        [
+          "/wordpress/wp-admin/includes",
+          4
+        ],
+        [
+          "/wp-includes/ID3",
+          4
+        ],
+        [
+          "/",
+          3
+        ],
+        [
+          "/manager.php",
+          2
+        ]
+      ],
+      "status_codes": {
+        "301": 1144,
+        "404": 1132,
+        "503": 139,
+        "300": 22,
+        "200": 3,
+        "302": 2
+      }
+    },
+    {
+      "ip": "85.203.15.0",
+      "role": "scanner",
+      "label": "Vulnerability Scanner G",
+      "confidence": "high",
+      "evidence": "2,223 requests over 5 days. Short UA ('Mozilla/5.0'). Probing /.well-known/index.php, /wp-includes/ID3, /manager.php.",
+      "total_requests": 2223,
+      "page_views": 90,
+      "active_days": 5,
+      "first_seen": "2026-01-07",
+      "last_seen": "2026-02-14",
+      "top_paths": [
+        [
+          "/wp-login.php",
+          81
+        ],
+        [
+          "/.well-known/index.php",
+          4
+        ],
+        [
+          "//xmlrpc.php",
+          3
+        ],
+        [
+          "/manager.php",
+          2
+        ],
+        [
+          "/bless.php",
+          2
+        ]
+      ],
+      "status_codes": {
+        "301": 1234,
+        "404": 839,
+        "200": 92,
+        "403": 32,
+        "503": 13,
+        "302": 11,
+        "500": 1,
+        "409": 1
+      }
+    },
+    {
+      "ip": "45.132.224.0",
+      "role": "scanner",
+      "label": "Vulnerability Scanner I",
+      "confidence": "high",
+      "evidence": "2,188 requests over 3 days (peak 1,072 on Feb 15). Burst scanning pattern.",
+      "total_requests": 2188,
+      "page_views": 24,
+      "active_days": 3,
+      "first_seen": "2026-02-14",
+      "last_seen": "2026-02-23",
+      "top_paths": [
+        [
+          "/.well-known/index.php",
+          4
+        ],
+        [
+          "/wordpress/wp-admin/includes",
+          3
+        ],
+        [
+          "/wp-includes/ID3",
+          3
+        ],
+        [
+          "/manager.php",
+          2
+        ],
+        [
+          "/bless.php",
+          2
+        ]
+      ],
+      "status_codes": {
+        "404": 1816,
+        "301": 174,
+        "403": 130,
+        "302": 28,
+        "200": 24,
+        "503": 12,
+        "500": 2,
+        "409": 2
+      }
+    },
+    {
+      "ip": "85.203.21.0",
+      "role": "scanner",
+      "label": "Vulnerability Scanner H (same /16 as G)",
+      "confidence": "high",
+      "evidence": "1,781 requests over 3 days. Same 85.203.x.x range. Same attack patterns.",
+      "total_requests": 1781,
+      "page_views": 9,
+      "active_days": 3,
+      "first_seen": "2026-02-04",
+      "last_seen": "2026-02-28",
+      "top_paths": [
+        [
+          "/.well-known/index.php",
+          3
+        ],
+        [
+          "/manager.php",
+          2
+        ],
+        [
+          "/bless.php",
+          2
+        ],
+        [
+          "/O-Simple.php",
+          2
+        ],
+        [
+          "/lock360.php",
+          2
+        ]
+      ],
+      "status_codes": {
+        "301": 1034,
+        "404": 644,
+        "403": 70,
+        "503": 12,
+        "302": 12,
+        "200": 9
+      }
+    },
+    {
+      "ip": "103.125.146.0",
+      "role": "scanner",
+      "label": "Vulnerability Scanner J",
+      "confidence": "medium",
+      "evidence": "~1,057 requests on Feb 18. Probing /wp-includes/Requests/about.php, /wp-content/themes/ enumeration.",
+      "total_requests": 1294,
+      "page_views": 20,
+      "active_days": 2,
+      "first_seen": "2026-01-12",
+      "last_seen": "2026-02-18",
+      "top_paths": [
+        [
+          "/xmlrpc.php",
+          29
+        ],
+        [
+          "/",
+          4
+        ],
+        [
+          "/wp-includes/Requests/about.php",
+          2
+        ],
+        [
+          "/wp-content/themes/pridmag/db.php?u",
+          2
+        ],
+        [
+          "/wp-admin/css/colors/blue",
+          2
+        ]
+      ],
+      "status_codes": {
+        "404": 670,
+        "403": 478,
+        "301": 74,
+        "503": 35,
+        "200": 21,
+        "302": 11,
+        "500": 3,
+        "405": 1,
+        "409": 1
+      }
+    },
+    {
+      "ip": "185.221.132.0",
+      "role": "scanner",
+      "label": "Vulnerability Scanner K",
+      "confidence": "medium",
+      "evidence": "~909 requests on Feb 7. /.well-known/index.php, /manager.php probes.",
+      "total_requests": 1153,
+      "page_views": 13,
+      "active_days": 1,
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "top_paths": [
+        [
+          "/.well-known/index.php",
+          2
+        ],
+        [
+          "/wordpress/wp-admin/includes",
+          2
+        ],
+        [
+          "/wp-includes/ID3",
+          2
+        ],
+        [
+          "/manager.php",
+          1
+        ],
+        [
+          "/bless.php",
+          1
+        ]
+      ],
+      "status_codes": {
+        "404": 951,
+        "301": 88,
+        "403": 79,
+        "200": 13,
+        "302": 13,
+        "503": 7,
+        "500": 1,
+        "409": 1
+      }
+    }
+  ],
+  "weekly_comparison": [
+    {
+      "week": "2026-W02",
+      "total_requests": 38140,
+      "total_human_pv": 2073,
+      "total_unique_visitors": 1858,
+      "organic_requests": 34314,
+      "organic_human_pv": 1922,
+      "organic_unique_visitors": 1853,
+      "filtered_requests": 3826,
+      "filtered_pv": 151
+    },
+    {
+      "week": "2026-W03",
+      "total_requests": 47257,
+      "total_human_pv": 2335,
+      "total_unique_visitors": 1660,
+      "organic_requests": 42422,
+      "organic_human_pv": 2178,
+      "organic_unique_visitors": 1654,
+      "filtered_requests": 4835,
+      "filtered_pv": 157
+    },
+    {
+      "week": "2026-W04",
+      "total_requests": 43493,
+      "total_human_pv": 2344,
+      "total_unique_visitors": 1867,
+      "organic_requests": 35068,
+      "organic_human_pv": 2166,
+      "organic_unique_visitors": 1863,
+      "filtered_requests": 8425,
+      "filtered_pv": 178
+    },
+    {
+      "week": "2026-W05",
+      "total_requests": 50660,
+      "total_human_pv": 2423,
+      "total_unique_visitors": 1832,
+      "organic_requests": 38673,
+      "organic_human_pv": 2275,
+      "organic_unique_visitors": 1828,
+      "filtered_requests": 11987,
+      "filtered_pv": 148
+    },
+    {
+      "week": "2026-W06",
+      "total_requests": 73698,
+      "total_human_pv": 2836,
+      "total_unique_visitors": 1670,
+      "organic_requests": 52472,
+      "organic_human_pv": 2482,
+      "organic_unique_visitors": 1660,
+      "filtered_requests": 21226,
+      "filtered_pv": 354
+    },
+    {
+      "week": "2026-W07",
+      "total_requests": 57451,
+      "total_human_pv": 2354,
+      "total_unique_visitors": 1845,
+      "organic_requests": 47596,
+      "organic_human_pv": 2183,
+      "organic_unique_visitors": 1838,
+      "filtered_requests": 9855,
+      "filtered_pv": 171
+    },
+    {
+      "week": "2026-W08",
+      "total_requests": 56834,
+      "total_human_pv": 2469,
+      "total_unique_visitors": 1578,
+      "organic_requests": 46533,
+      "organic_human_pv": 2255,
+      "organic_unique_visitors": 1571,
+      "filtered_requests": 10301,
+      "filtered_pv": 214
+    },
+    {
+      "week": "2026-W09",
+      "total_requests": 52083,
+      "total_human_pv": 2095,
+      "total_unique_visitors": 1500,
+      "organic_requests": 41682,
+      "organic_human_pv": 1932,
+      "organic_unique_visitors": 1493,
+      "filtered_requests": 10401,
+      "filtered_pv": 163
+    },
+    {
+      "week": "2026-W10",
+      "total_requests": 22032,
+      "total_human_pv": 950,
+      "total_unique_visitors": 685,
+      "organic_requests": 18081,
+      "organic_human_pv": 830,
+      "organic_unique_visitors": 679,
+      "filtered_requests": 3951,
+      "filtered_pv": 120
+    }
+  ],
+  "daily_unique_visitors": {
+    "all_traffic": {
+      "2026-01-05": 333,
+      "2026-01-06": 345,
+      "2026-01-07": 371,
+      "2026-01-08": 423,
+      "2026-01-09": 347,
+      "2026-01-10": 310,
+      "2026-01-11": 279,
+      "2026-01-12": 369,
+      "2026-01-13": 360,
+      "2026-01-14": 312,
+      "2026-01-15": 320,
+      "2026-01-16": 289,
+      "2026-01-17": 351,
+      "2026-01-18": 282,
+      "2026-01-19": 407,
+      "2026-01-20": 372,
+      "2026-01-21": 424,
+      "2026-01-22": 357,
+      "2026-01-23": 348,
+      "2026-01-24": 275,
+      "2026-01-25": 271,
+      "2026-01-26": 312,
+      "2026-01-27": 317,
+      "2026-01-28": 355,
+      "2026-01-29": 463,
+      "2026-01-30": 343,
+      "2026-01-31": 266,
+      "2026-02-01": 305,
+      "2026-02-02": 365,
+      "2026-02-03": 293,
+      "2026-02-04": 355,
+      "2026-02-05": 329,
+      "2026-02-06": 310,
+      "2026-02-07": 267,
+      "2026-02-08": 276,
+      "2026-02-09": 309,
+      "2026-02-10": 309,
+      "2026-02-11": 372,
+      "2026-02-12": 360,
+      "2026-02-13": 423,
+      "2026-02-14": 327,
+      "2026-02-15": 293,
+      "2026-02-16": 349,
+      "2026-02-17": 346,
+      "2026-02-18": 331,
+      "2026-02-19": 327,
+      "2026-02-20": 246,
+      "2026-02-21": 236,
+      "2026-02-22": 246,
+      "2026-02-23": 264,
+      "2026-02-24": 261,
+      "2026-02-25": 271,
+      "2026-02-26": 349,
+      "2026-02-27": 281,
+      "2026-02-28": 265,
+      "2026-03-01": 300,
+      "2026-03-02": 329,
+      "2026-03-03": 343,
+      "2026-03-04": 85
+    },
+    "organic_only": {
+      "2026-01-05": 330,
+      "2026-01-06": 344,
+      "2026-01-07": 369,
+      "2026-01-08": 421,
+      "2026-01-09": 346,
+      "2026-01-10": 309,
+      "2026-01-11": 279,
+      "2026-01-12": 365,
+      "2026-01-13": 358,
+      "2026-01-14": 309,
+      "2026-01-15": 318,
+      "2026-01-16": 288,
+      "2026-01-17": 350,
+      "2026-01-18": 282,
+      "2026-01-19": 405,
+      "2026-01-20": 371,
+      "2026-01-21": 423,
+      "2026-01-22": 355,
+      "2026-01-23": 347,
+      "2026-01-24": 275,
+      "2026-01-25": 270,
+      "2026-01-26": 310,
+      "2026-01-27": 315,
+      "2026-01-28": 353,
+      "2026-01-29": 460,
+      "2026-01-30": 341,
+      "2026-01-31": 264,
+      "2026-02-01": 304,
+      "2026-02-02": 361,
+      "2026-02-03": 289,
+      "2026-02-04": 351,
+      "2026-02-05": 325,
+      "2026-02-06": 307,
+      "2026-02-07": 264,
+      "2026-02-08": 275,
+      "2026-02-09": 306,
+      "2026-02-10": 307,
+      "2026-02-11": 370,
+      "2026-02-12": 359,
+      "2026-02-13": 421,
+      "2026-02-14": 324,
+      "2026-02-15": 291,
+      "2026-02-16": 346,
+      "2026-02-17": 344,
+      "2026-02-18": 328,
+      "2026-02-19": 326,
+      "2026-02-20": 245,
+      "2026-02-21": 235,
+      "2026-02-22": 245,
+      "2026-02-23": 260,
+      "2026-02-24": 259,
+      "2026-02-25": 268,
+      "2026-02-26": 347,
+      "2026-02-27": 278,
+      "2026-02-28": 263,
+      "2026-03-01": 299,
+      "2026-03-02": 327,
+      "2026-03-03": 338,
+      "2026-03-04": 84
+    }
+  },
+  "top_pages_comparison": [
+    {
+      "path": "/",
+      "total_views": 8745,
+      "organic_views": 8658,
+      "known_ip_views": 87
+    },
+    {
+      "path": "/projects",
+      "total_views": 956,
+      "organic_views": 883,
+      "known_ip_views": 73
+    },
+    {
+      "path": "/about-us",
+      "total_views": 849,
+      "organic_views": 784,
+      "known_ip_views": 65
+    },
+    {
+      "path": "/project/barn-with-a-view",
+      "total_views": 424,
+      "organic_views": 410,
+      "known_ip_views": 14
+    },
+    {
+      "path": "/project/new-castle-town-hall",
+      "total_views": 199,
+      "organic_views": 189,
+      "known_ip_views": 10
+    },
+    {
+      "path": "/project/mid-century-home",
+      "total_views": 200,
+      "organic_views": 189,
+      "known_ip_views": 11
+    },
+    {
+      "path": "/project/berkshire-farmhouse",
+      "total_views": 193,
+      "organic_views": 182,
+      "known_ip_views": 11
+    },
+    {
+      "path": "/project/net-zero-barn",
+      "total_views": 186,
+      "organic_views": 173,
+      "known_ip_views": 13
+    },
+    {
+      "path": "/press",
+      "total_views": 193,
+      "organic_views": 172,
+      "known_ip_views": 21
+    },
+    {
+      "path": "/project/camberville-chefs-kitchen-and-renovation",
+      "total_views": 194,
+      "organic_views": 170,
+      "known_ip_views": 24
+    },
+    {
+      "path": "/project/modern-townhouse",
+      "total_views": 181,
+      "organic_views": 168,
+      "known_ip_views": 13
+    },
+    {
+      "path": "/project/classic-townhouse",
+      "total_views": 171,
+      "organic_views": 158,
+      "known_ip_views": 13
+    },
+    {
+      "path": "/project/bullfinch-house",
+      "total_views": 165,
+      "organic_views": 154,
+      "known_ip_views": 11
+    },
+    {
+      "path": "/project/nantucket-kitchen",
+      "total_views": 165,
+      "organic_views": 154,
+      "known_ip_views": 11
+    },
+    {
+      "path": "/?rest_route=/wp/v2/users",
+      "total_views": 155,
+      "organic_views": 154,
+      "known_ip_views": 1
+    },
+    {
+      "path": "/project/st-pauls-school-chapels",
+      "total_views": 163,
+      "organic_views": 153,
+      "known_ip_views": 10
+    },
+    {
+      "path": "/project/island-renovation-and-expansion",
+      "total_views": 160,
+      "organic_views": 149,
+      "known_ip_views": 11
+    },
+    {
+      "path": "/project/pool-house-in-an-olmstead-landscape",
+      "total_views": 168,
+      "organic_views": 145,
+      "known_ip_views": 23
+    },
+    {
+      "path": "/project/great-camp-bunkhouse",
+      "total_views": 141,
+      "organic_views": 131,
+      "known_ip_views": 10
+    },
+    {
+      "path": "/project/mountain-retreat",
+      "total_views": 141,
+      "organic_views": 127,
+      "known_ip_views": 14
+    },
+    {
+      "path": "/project/south-end-townhouse",
+      "total_views": 135,
+      "organic_views": 123,
+      "known_ip_views": 12
+    },
+    {
+      "path": "/project/maker-space-art-studio",
+      "total_views": 134,
+      "organic_views": 121,
+      "known_ip_views": 13
+    },
+    {
+      "path": "/project/boston-apartment-for-a-young-family",
+      "total_views": 133,
+      "organic_views": 121,
+      "known_ip_views": 12
+    },
+    {
+      "path": "/project/heritage-condominium-renovation",
+      "total_views": 139,
+      "organic_views": 120,
+      "known_ip_views": 19
+    },
+    {
+      "path": "/project/wellesley-renovation",
+      "total_views": 126,
+      "organic_views": 116,
+      "known_ip_views": 10
+    }
+  ],
+  "organic_referrers": {
+    "direct_or_internal": 16174,
+    "search_engines": {
+      "Google": 1179,
+      "Bing": 51,
+      "Duckduckgo": 28,
+      "Yahoo": 19,
+      "Ecosia": 1
+    },
+    "social": {
+      "Pinterest": 145,
+      "Facebook": 35,
+      "Instagram": 25,
+      "Linkedin": 12,
+      "Twitter": 2,
+      "Reddit": 1
+    },
+    "top_other_referrers": [
+      {
+        "url": "https://www.bostondesignguide.com/",
+        "count": 26
+      },
+      {
+        "url": "https://thephilosopher.net/",
+        "count": 21
+      },
+      {
+        "url": "https://visapedia.ru/",
+        "count": 16
+      },
+      {
+        "url": "android-app://com.pinterest/",
+        "count": 15
+      },
+      {
+        "url": "https://crimeatravels.ru/",
+        "count": 13
+      },
+      {
+        "url": "https://nehomemag.com/",
+        "count": 12
+      },
+      {
+        "url": "https://t.co/",
+        "count": 12
+      },
+      {
+        "url": "https://vavilon-ritual.com.ua/ru/uslugi/krematorij-krematsiya-tela.html",
+        "count": 11
+      },
+      {
+        "url": "https://topkinopro.com/",
+        "count": 9
+      },
+      {
+        "url": "https://pamjatnik.com.ua/uslugi-info/mesto-baykovoe-kolumbariy",
+        "count": 9
+      },
+      {
+        "url": "https://t4k.info/",
+        "count": 8
+      },
+      {
+        "url": "https://foto-na-pamjatnyk.com.ua/fotosteklo.html",
+        "count": 7
+      },
+      {
+        "url": "https://pamjatnik.com.ua/ua/poslugy/mistse-baykove-kolumbariy",
+        "count": 7
+      },
+      {
+        "url": "https://wordpress.org/",
+        "count": 6
+      },
+      {
+        "url": "https://www.prjadko.kiev.ua/ritualnye-uslugi.html",
+        "count": 6
+      }
+    ]
+  }
+}

@@ -1,0 +1,505 @@
+========================================================================
+CTAI TRAFFIC ANALYSIS — FILTERED REPORT
+Catherine Truman Architects & Interiors
+Period: 2026-01-05 to 2026-03-04
+Report generated: 2026-04-17T14:21:00.780166
+========================================================================
+
+────────────────────────────────────────────────────────────
+SECTION 1: TRAFFIC OVERVIEW
+────────────────────────────────────────────────────────────
+Total log entries:             441,648
+Known IP entries:               84,807
+Organic entries:               356,841
+Known IP share:                  19.2%
+
+Known IP breakdown by role:
+  Web Design / SEO Team                  18,120 requests  (2 IPs, 726 page views)
+  Content Maintenance Team                6,935 requests  (1 IPs, 325 page views)
+  Hosting Infrastructure                  3,431 requests  (1 IPs, 109 page views)
+  Vulnerability Scanners / Bots          56,321 requests  (14 IPs, 1,355 page views)
+
+────────────────────────────────────────────────────────────
+SECTION 2: KNOWN IP VERIFICATION TABLE
+(For Catherine's team to verify IP classifications)
+────────────────────────────────────────────────────────────
+
+  IP: 163.252.150.0
+    Role:        Web Design / SEO Team
+    Label:       Web Designer (primary)
+    Confidence:  high
+    Requests:    14,137  (470 page views)
+    Active:      17 days  (2026-01-05 → 2026-02-26)
+    Evidence:    14,137 requests over 17 days (peak 3,316 on Feb 2). Mac/Firefox user. Divi Builder activity (?et_fb=1&et_bfb=1). Heavy w
+    Top paths:
+      5,473  /wp-admin/admin-ajax.php
+        286  /wp-json/wp/v2/users/me?context=edit&_locale=user
+         88  /wp-admin/post.php
+         62  /wp-admin/edit.php?post_type=project
+         43  /wp-content/uploads/2024/08/favicon-196x196-1.png
+
+  IP: 194.5.82.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       Vulnerability Scanner A
+    Confidence:  high
+    Requests:    8,981  (50 page views)
+    Active:      12 days  (2026-01-15 → 2026-03-03)
+    Evidence:    8,981 requests over 12 days (peak 1,785 on Feb 25). Probing /wp-includes/ID3, /vendor/phpunit, /manager.php, /bless.php.
+    Top paths:
+         20  /wp-content
+         16  /file.php
+         16  /wp-includes/ID3
+         14  /wp-admin/css
+         14  /wp-admin/images
+
+  IP: 202.8.43.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       Sitemap Crawler (weekly)
+    Confidence:  high
+    Requests:    7,294  (600 page views)
+    Active:      8 days  (2026-01-05 → 2026-02-19)
+    Evidence:    ~1,453 requests/week, every Sunday for 5 weeks. Hits /sitemap_index.xml, /robots.txt, then crawls entire site. Automated
+    Top paths:
+         25  /sitemap_index.xml
+         23  /robots.txt
+         20  /
+         10  /sitemap.xml
+         10  /projects
+
+  IP: 148.76.189.0
+    Role:        Content Maintenance Team
+    Label:       Content Manager
+    Confidence:  high
+    Requests:    6,935  (325 page views)
+    Active:      48 days  (2026-01-05 → 2026-03-04)
+    Evidence:    6,935 requests over 48 active days. Windows/Chrome user. Consistent daily presence with periodic editing spikes (peak 99
+    Top paths:
+        495  /AutoDiscover/autodiscover.xml
+        388  /wp-admin/admin-ajax.php
+         54  /projects
+         43  /
+         36  /wp-content/plugins/popups-for-divi/styles/front.min.css?ver=3.2.3
+
+  IP: 193.37.32.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       Vulnerability Scanner B
+    Confidence:  high
+    Requests:    6,645  (39 page views)
+    Active:      11 days  (2026-01-15 → 2026-03-03)
+    Evidence:    6,645 requests over 11 days (peak 1,525 on Feb 27). Probing /.well-known/index.php, /manager.php, /bless.php, /O-Simple.
+    Top paths:
+         18  /wp-includes/ID3
+         14  /wordpress/wp-admin/includes
+         11  /wp-admin/network
+         11  /wp-admin
+         11  /wp-admin/css/colors/blue
+
+  IP: 168.100.149.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       Sitemap Crawler (weekly, replaced 202.8.43.0)
+    Confidence:  high
+    Requests:    5,746  (435 page views)
+    Active:      5 days  (2026-02-09 → 2026-03-02)
+    Evidence:    Same ~1,450 requests/week pattern starting Feb 9. Took over from 202.8.43.0. Same crawl signature.
+    Top paths:
+         20  /sitemap_index.xml
+         18  /robots.txt
+         16  /
+          8  /sitemap.xml
+          8  /projects
+
+  IP: 194.61.40.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       Vulnerability Scanner C
+    Confidence:  high
+    Requests:    4,563  (22 page views)
+    Active:      5 days  (2026-01-29 → 2026-03-03)
+    Evidence:    4,563 requests over 5 days (peak 2,308 on Feb 2). Probing /.well-known/index.php, /wp-includes/ID3, /manager.php. Burst 
+    Top paths:
+          9  /wordpress/wp-admin/includes
+          9  /wp-includes/ID3
+          7  /.well-known/index.php
+          5  /wp-includes/css/dist
+          5  /wp-includes/assets
+
+  IP: 185.177.72.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       Curl Scanner
+    Confidence:  high
+    Requests:    4,368  (19 page views)
+    Active:      6 days  (2026-01-13 → 2026-03-03)
+    Evidence:    4,368 requests over 6 days (peak 1,665 on Mar 3). UA is 'curl/8.7.1'. Automated scanning tool.
+    Top paths:
+         32  /
+         17  /wp-content/themes/Divi/js/html5.js
+          8  /.env
+          7  /.aws/credentials
+          7  /phpinfo.php
+
+  IP: 103.163.220.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       Vulnerability Scanner E
+    Confidence:  high
+    Requests:    4,179  (18 page views)
+    Active:      3 days  (2026-01-08 → 2026-02-10)
+    Evidence:    4,179 requests over 3 days (peak 3,024 on Feb 10). Probing /wp-content/uploads, /wp-content/plugins, /wp-includes. Direc
+    Top paths:
+          6  /wp-content/uploads
+          6  /wp-admin/css/colors/blue
+          6  /wp-content/plugins
+          5  /wp-content/themes/pridmag/db.php?u
+          5  /wp-includes/Requests/about.php
+
+  IP: 158.41.240.0
+    Role:        Web Design / SEO Team
+    Label:       Web Designer (secondary)
+    Confidence:  high
+    Requests:    3,983  (256 page views)
+    Active:      4 days  (2026-02-05 → 2026-02-09)
+    Evidence:    3,983 requests over 4 days (peak 2,020 on Feb 7). Mac/Firefox user. Heavy Divi Builder + about-us page editing. Burst pa
+    Top paths:
+      1,207  /wp-admin/admin-ajax.php
+        115  /wp-json/wp/v2/users/me?context=edit&_locale=user
+         39  /wp-admin/admin-ajax.php?lang=en_US
+         33  /wp-admin/edit.php?post_type=page
+         30  /about-us
+
+  IP: 212.30.36.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       Vulnerability Scanner D
+    Confidence:  high
+    Requests:    3,464  (13 page views)
+    Active:      2 days  (2026-01-25 → 2026-02-14)
+    Evidence:    3,464 requests — 3,462 on single day (Jan 25). Probing /.well-known/index.php, /wp-includes/ID3, /manager.php. Single ma
+    Top paths:
+          6  /.well-known/index.php
+          6  /wordpress/wp-admin/includes
+          6  /wp-includes/ID3
+          3  /manager.php
+          3  /bless.php
+
+  IP: 74.208.59.0
+    Role:        Hosting Infrastructure
+    Label:       Hosting Server (cron/monitoring)
+    Confidence:  high
+    Requests:    3,431  (109 page views)
+    Active:      59 days  (2026-01-05 → 2026-03-04)
+    Evidence:    3,431 requests over all 59 days. Perfectly steady ~55-60/day. WordPress self-pings (wp-cron.php), internal monitoring. I
+    Top paths:
+         70  /?et_check_mod_pagespeed=on
+         36  /
+          9  /wp-cron.php
+          5  /wp-login.php
+          2  /xmlrpc.php
+
+  IP: 212.30.33.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       Vulnerability Scanner F
+    Confidence:  high
+    Requests:    2,442  (3 page views)
+    Active:      3 days  (2026-01-14 → 2026-02-21)
+    Evidence:    2,442 requests over 3 days (peak 2,308 on Feb 21). Same attack patterns as 212.30.36.0 — likely same operator. /.well-kn
+    Top paths:
+          4  /.well-known/index.php
+          4  /wordpress/wp-admin/includes
+          4  /wp-includes/ID3
+          3  /
+          2  /manager.php
+
+  IP: 85.203.15.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       Vulnerability Scanner G
+    Confidence:  high
+    Requests:    2,223  (90 page views)
+    Active:      5 days  (2026-01-07 → 2026-02-14)
+    Evidence:    2,223 requests over 5 days. Short UA ('Mozilla/5.0'). Probing /.well-known/index.php, /wp-includes/ID3, /manager.php.
+    Top paths:
+         81  /wp-login.php
+          4  /.well-known/index.php
+          3  //xmlrpc.php
+          2  /manager.php
+          2  /bless.php
+
+  IP: 45.132.224.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       Vulnerability Scanner I
+    Confidence:  high
+    Requests:    2,188  (24 page views)
+    Active:      3 days  (2026-02-14 → 2026-02-23)
+    Evidence:    2,188 requests over 3 days (peak 1,072 on Feb 15). Burst scanning pattern.
+    Top paths:
+          4  /.well-known/index.php
+          3  /wordpress/wp-admin/includes
+          3  /wp-includes/ID3
+          2  /manager.php
+          2  /bless.php
+
+  IP: 85.203.21.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       Vulnerability Scanner H (same /16 as G)
+    Confidence:  high
+    Requests:    1,781  (9 page views)
+    Active:      3 days  (2026-02-04 → 2026-02-28)
+    Evidence:    1,781 requests over 3 days. Same 85.203.x.x range. Same attack patterns.
+    Top paths:
+          3  /.well-known/index.php
+          2  /manager.php
+          2  /bless.php
+          2  /O-Simple.php
+          2  /lock360.php
+
+  IP: 103.125.146.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       Vulnerability Scanner J
+    Confidence:  medium
+    Requests:    1,294  (20 page views)
+    Active:      2 days  (2026-01-12 → 2026-02-18)
+    Evidence:    ~1,057 requests on Feb 18. Probing /wp-includes/Requests/about.php, /wp-content/themes/ enumeration.
+    Top paths:
+         29  /xmlrpc.php
+          4  /
+          2  /wp-includes/Requests/about.php
+          2  /wp-content/themes/pridmag/db.php?u
+          2  /wp-admin/css/colors/blue
+
+  IP: 185.221.132.0
+    Role:        Vulnerability Scanners / Bots
+    Label:       Vulnerability Scanner K
+    Confidence:  medium
+    Requests:    1,153  (13 page views)
+    Active:      1 days  (2026-02-07 → 2026-02-07)
+    Evidence:    ~909 requests on Feb 7. /.well-known/index.php, /manager.php probes.
+    Top paths:
+          2  /.well-known/index.php
+          2  /wordpress/wp-admin/includes
+          2  /wp-includes/ID3
+          1  /manager.php
+          1  /bless.php
+
+────────────────────────────────────────────────────────────
+SECTION 3: WEEKLY TRENDS — TOTAL vs ORGANIC
+────────────────────────────────────────────────────────────
+      Week    Total PV  Organic PV   Filtered    Total UV  Organic UV
+                                                                     
+  2026-W02       2,073       1,922        151       1,858       1,853
+  2026-W03       2,335       2,178        157       1,660       1,654
+  2026-W04       2,344       2,166        178       1,867       1,863
+  2026-W05       2,423       2,275        148       1,832       1,828
+  2026-W06       2,836       2,482        354       1,670       1,660
+  2026-W07       2,354       2,183        171       1,845       1,838
+  2026-W08       2,469       2,255        214       1,578       1,571
+  2026-W09       2,095       1,932        163       1,500       1,493
+  2026-W10         950         830        120         685         679
+──────────  ────────── ─────────── ──────────  ────────── ───────────
+     TOTAL      19,879      18,223      1,656
+
+  PV = Page Views (human, status 200)
+  UV = Unique Visitors (unique IPs with human classification)
+  Filtered = requests attributed to known admin/hosting/scanner IPs
+
+────────────────────────────────────────────────────────────
+SECTION 4: DAILY UNIQUE VISITORS — TOTAL vs ORGANIC
+────────────────────────────────────────────────────────────
+  2026-01-05  Total: 333  Organic: 330  ████████████████████████████
+  2026-01-06  Total: 345  Organic: 344  █████████████████████████████
+  2026-01-07  Total: 371  Organic: 369  ███████████████████████████████
+  2026-01-08  Total: 423  Organic: 421  ████████████████████████████████████
+  2026-01-09  Total: 347  Organic: 346  █████████████████████████████
+  2026-01-10  Total: 310  Organic: 309  ██████████████████████████
+  2026-01-11  Total: 279  Organic: 279  ████████████████████████
+  2026-01-12  Total: 369  Organic: 365  ███████████████████████████████
+  2026-01-13  Total: 360  Organic: 358  ██████████████████████████████
+  2026-01-14  Total: 312  Organic: 309  ██████████████████████████
+  2026-01-15  Total: 320  Organic: 318  ███████████████████████████
+  2026-01-16  Total: 289  Organic: 288  ████████████████████████
+  2026-01-17  Total: 351  Organic: 350  ██████████████████████████████
+  2026-01-18  Total: 282  Organic: 282  ████████████████████████
+  2026-01-19  Total: 407  Organic: 405  ██████████████████████████████████
+  2026-01-20  Total: 372  Organic: 371  ████████████████████████████████
+  2026-01-21  Total: 424  Organic: 423  ████████████████████████████████████
+  2026-01-22  Total: 357  Organic: 355  ██████████████████████████████
+  2026-01-23  Total: 348  Organic: 347  █████████████████████████████
+  2026-01-24  Total: 275  Organic: 275  ███████████████████████
+  2026-01-25  Total: 271  Organic: 270  ███████████████████████
+  2026-01-26  Total: 312  Organic: 310  ██████████████████████████
+  2026-01-27  Total: 317  Organic: 315  ███████████████████████████
+  2026-01-28  Total: 355  Organic: 353  ██████████████████████████████
+  2026-01-29  Total: 463  Organic: 460  ███████████████████████████████████████
+  2026-01-30  Total: 343  Organic: 341  █████████████████████████████
+  2026-01-31  Total: 266  Organic: 264  ██████████████████████
+  2026-02-01  Total: 305  Organic: 304  ██████████████████████████
+  2026-02-02  Total: 365  Organic: 361  ███████████████████████████████
+  2026-02-03  Total: 293  Organic: 289  ████████████████████████
+  2026-02-04  Total: 355  Organic: 351  ██████████████████████████████
+  2026-02-05  Total: 329  Organic: 325  ████████████████████████████
+  2026-02-06  Total: 310  Organic: 307  ██████████████████████████
+  2026-02-07  Total: 267  Organic: 264  ██████████████████████
+  2026-02-08  Total: 276  Organic: 275  ███████████████████████
+  2026-02-09  Total: 309  Organic: 306  ██████████████████████████
+  2026-02-10  Total: 309  Organic: 307  ██████████████████████████
+  2026-02-11  Total: 372  Organic: 370  ███████████████████████████████
+  2026-02-12  Total: 360  Organic: 359  ███████████████████████████████
+  2026-02-13  Total: 423  Organic: 421  ████████████████████████████████████
+  2026-02-14  Total: 327  Organic: 324  ███████████████████████████
+  2026-02-15  Total: 293  Organic: 291  █████████████████████████
+  2026-02-16  Total: 349  Organic: 346  █████████████████████████████
+  2026-02-17  Total: 346  Organic: 344  █████████████████████████████
+  2026-02-18  Total: 331  Organic: 328  ████████████████████████████
+  2026-02-19  Total: 327  Organic: 326  ████████████████████████████
+  2026-02-20  Total: 246  Organic: 245  █████████████████████
+  2026-02-21  Total: 236  Organic: 235  ████████████████████
+  2026-02-22  Total: 246  Organic: 245  █████████████████████
+  2026-02-23  Total: 264  Organic: 260  ██████████████████████
+  2026-02-24  Total: 261  Organic: 259  ██████████████████████
+  2026-02-25  Total: 271  Organic: 268  ███████████████████████
+  2026-02-26  Total: 349  Organic: 347  █████████████████████████████
+  2026-02-27  Total: 281  Organic: 278  ████████████████████████
+  2026-02-28  Total: 265  Organic: 263  ██████████████████████
+  2026-03-01  Total: 300  Organic: 299  █████████████████████████
+  2026-03-02  Total: 329  Organic: 327  ████████████████████████████
+  2026-03-03  Total: 343  Organic: 338  █████████████████████████████
+  2026-03-04  Total:  85  Organic:  84  ███████
+
+────────────────────────────────────────────────────────────
+SECTION 5: TOP PAGES — ORGANIC vs TOTAL
+────────────────────────────────────────────────────────────
+    #   Organic    Total    Known  Path
+    1.    8,658    8,745       87  /
+    2.      883      956       73  /projects
+    3.      784      849       65  /about-us
+    4.      410      424       14  /project/barn-with-a-view
+    5.      189      199       10  /project/new-castle-town-hall
+    6.      189      200       11  /project/mid-century-home
+    7.      182      193       11  /project/berkshire-farmhouse
+    8.      173      186       13  /project/net-zero-barn
+    9.      172      193       21  /press
+   10.      170      194       24  /project/camberville-chefs-kitchen-and-renovation
+   11.      168      181       13  /project/modern-townhouse
+   12.      158      171       13  /project/classic-townhouse
+   13.      154      165       11  /project/bullfinch-house
+   14.      154      165       11  /project/nantucket-kitchen
+   15.      154      155        1  /?rest_route=/wp/v2/users
+   16.      153      163       10  /project/st-pauls-school-chapels
+   17.      149      160       11  /project/island-renovation-and-expansion
+   18.      145      168       23  /project/pool-house-in-an-olmstead-landscape
+   19.      131      141       10  /project/great-camp-bunkhouse
+   20.      127      141       14  /project/mountain-retreat
+   21.      123      135       12  /project/south-end-townhouse
+   22.      121      134       13  /project/maker-space-art-studio
+   23.      121      133       12  /project/boston-apartment-for-a-young-family
+   24.      120      139       19  /project/heritage-condominium-renovation
+   25.      116      126       10  /project/wellesley-renovation
+
+────────────────────────────────────────────────────────────
+SECTION 6: ORGANIC REFERRER SOURCES
+────────────────────────────────────────────────────────────
+  Direct / internal navigation:  16,174
+
+  Organic Search:
+    Google                1,179
+    Bing                     51
+    Duckduckgo               28
+    Yahoo                    19
+    Ecosia                    1
+
+  Social:
+    Pinterest               145
+    Facebook                 35
+    Instagram                25
+    Linkedin                 12
+    Twitter                   2
+    Reddit                    1
+
+  Other External:
+        26  https://www.bostondesignguide.com/
+        21  https://thephilosopher.net/
+        16  https://visapedia.ru/
+        15  android-app://com.pinterest/
+        13  https://crimeatravels.ru/
+        12  https://nehomemag.com/
+        12  https://t.co/
+        11  https://vavilon-ritual.com.ua/ru/uslugi/krematorij-krematsiya-tela.htm
+         9  https://topkinopro.com/
+         9  https://pamjatnik.com.ua/uslugi-info/mesto-baykovoe-kolumbariy
+
+────────────────────────────────────────────────────────────
+SECTION 7: KNOWN IP DAILY ACTIVITY
+(Verify these spikes match known work periods)
+────────────────────────────────────────────────────────────
+
+  Web Design / SEO Team:
+    2026-01-05      23  █
+    2026-01-12   1,758  ██████████████████████████████████████████████████
+    2026-01-13       1  
+    2026-01-14       1  
+    2026-01-27     727  ████████████████████████████████████
+    2026-01-28     571  ████████████████████████████
+    2026-01-29   1,136  ██████████████████████████████████████████████████
+    2026-01-30   2,087  ██████████████████████████████████████████████████
+    2026-01-31     728  ████████████████████████████████████
+    2026-02-01   1,597  ██████████████████████████████████████████████████
+    2026-02-02   3,316  ██████████████████████████████████████████████████
+    2026-02-03   1,199  ██████████████████████████████████████████████████
+    2026-02-05       7  
+    2026-02-07   2,020  ██████████████████████████████████████████████████
+    2026-02-08   1,909  ██████████████████████████████████████████████████
+    2026-02-09      47  ██
+    2026-02-16     501  █████████████████████████
+    2026-02-18      55  ██
+    2026-02-24      12  
+    2026-02-25      38  █
+    2026-02-26     387  ███████████████████
+
+  Content Maintenance Team:
+    2026-01-05     642  ████████████████████████████████
+    2026-01-06      36  █
+    2026-01-07       8  
+    2026-01-08      19  
+    2026-01-09      13  
+    2026-01-10       2  
+    2026-01-12      49  ██
+    2026-01-13      50  ██
+    2026-01-14     255  ████████████
+    2026-01-15      10  
+    2026-01-16      55  ██
+    2026-01-17       2  
+    2026-01-19     288  ██████████████
+    2026-01-20     588  █████████████████████████████
+    2026-01-21     448  ██████████████████████
+    2026-01-22     141  ███████
+    2026-01-23     200  ██████████
+    2026-01-26       8  
+    2026-01-27       9  
+    2026-01-28     435  █████████████████████
+    2026-01-29      12  
+    2026-01-30      10  
+    2026-01-31       2  
+    2026-02-02     191  █████████
+    2026-02-03     111  █████
+    2026-02-04      46  ██
+    2026-02-05      12  
+    2026-02-06      98  ████
+    2026-02-07      97  ████
+    2026-02-09      14  
+    2026-02-10      14  
+    2026-02-11     276  █████████████
+    2026-02-12     195  █████████
+    2026-02-13       8  
+    2026-02-16     276  █████████████
+    2026-02-17      82  ████
+    2026-02-18     901  █████████████████████████████████████████████
+    2026-02-19     997  █████████████████████████████████████████████████
+    2026-02-20      14  
+    2026-02-23      14  
+    2026-02-24       6  
+    2026-02-25      12  
+    2026-02-26      14  
+    2026-02-27      35  █
+    2026-02-28      59  ██
+    2026-03-02      30  █
+    2026-03-03     112  █████
+    2026-03-04      39  █
+
+========================================================================
+END OF FILTERED REPORT
+========================================================================
