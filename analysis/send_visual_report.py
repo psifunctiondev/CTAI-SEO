@@ -47,8 +47,63 @@ def get_smtp_password():
         return f.read().strip()
 
 
-def send_chart_email(chart_path, draft=False, dry_run=False, week_label=None):
-    # type: (str, bool, bool, str) -> bool
+# ---------------------------------------------------------------------------
+# One-time synopsis for first production email
+# ---------------------------------------------------------------------------
+
+FIRST_RUN_SYNOPSIS = """
+<div style="background-color: #f8f9fa; border-left: 4px solid #F0643A; padding: 16px 20px; margin: 20px 0; border-radius: 0 4px 4px 0;">
+<p style="font-size: 15px; font-weight: 600; color: #1a2433; margin: 0 0 12px 0;">What am I looking at?</p>
+
+<p style="font-size: 13px; color: #374151; margin: 0 0 10px 0; line-height: 1.6;">
+This report separates your website traffic into <strong>human visitors</strong> (above the line) and <strong>automated/mechanical traffic</strong> (below the line). Here's what the mechanical categories mean:
+</p>
+
+<table style="font-size: 13px; color: #374151; border-collapse: collapse; width: 100%; margin-bottom: 12px;">
+<tr style="border-bottom: 1px solid #e5e7eb;">
+<td style="padding: 6px 12px 6px 0; font-weight: 600; white-space: nowrap; vertical-align: top;">Search Crawlers</td>
+<td style="padding: 6px 0;">Google, Bing, and other search engines indexing your site. This is <em>good</em> &mdash; it means search engines are paying attention. No action needed.</td>
+</tr>
+<tr style="border-bottom: 1px solid #e5e7eb;">
+<td style="padding: 6px 12px 6px 0; font-weight: 600; white-space: nowrap; vertical-align: top;">Security Risk</td>
+<td style="padding: 6px 0;">Automated scanners probing for vulnerabilities &mdash; trying common file paths, looking for outdated plugins, or scanning for known exploits. Over the past 3 months, <strong>287 IPs</strong> generated <strong>184,000 of these requests</strong>, and the vast majority hit 404 (page not found) because the vulnerabilities they're looking for don't exist on your site. This is normal internet background noise &mdash; every website sees this.</td>
+</tr>
+<tr style="border-bottom: 1px solid #e5e7eb;">
+<td style="padding: 6px 12px 6px 0; font-weight: 600; white-space: nowrap; vertical-align: top;">WP Recon</td>
+<td style="padding: 6px 0;">Bots specifically probing your WordPress login page and trying to enumerate user accounts. <strong>59 IPs</strong> have attempted this. None have gained access &mdash; they all get redirected to the login screen without getting in.</td>
+</tr>
+<tr style="border-bottom: 1px solid #e5e7eb;">
+<td style="padding: 6px 12px 6px 0; font-weight: 600; white-space: nowrap; vertical-align: top;">Referrer Spam</td>
+<td style="padding: 6px 0;">Junk visits from spam domains (mostly overseas) trying to get their URLs into your analytics. No real visitors involved.</td>
+</tr>
+<tr>
+<td style="padding: 6px 12px 6px 0; font-weight: 600; white-space: nowrap; vertical-align: top;">Benign Scanners</td>
+<td style="padding: 6px 0;">Generic bots (SEO tools, uptime monitors, web archivers) that aren't harmful but aren't real visitors either.</td>
+</tr>
+</table>
+
+<p style="font-size: 14px; font-weight: 600; color: #1a2433; margin: 12px 0 8px 0;">Do we need to do anything?</p>
+<p style="font-size: 13px; color: #374151; margin: 0 0 8px 0; line-height: 1.6;">
+<strong>The good news:</strong> None of these bots have successfully accessed your WordPress admin area. Your site is handling them correctly &mdash; they hit dead ends and move on.
+</p>
+<p style="font-size: 13px; color: #374151; margin: 0 0 8px 0; line-height: 1.6;">
+<strong>Recommended hardening</strong> (we can coordinate with your web team):
+</p>
+<ul style="font-size: 13px; color: #374151; margin: 0 0 0 0; padding-left: 20px; line-height: 1.8;">
+<li><strong>Limit login attempts</strong> &mdash; a plugin like Wordfence or Limit Login Attempts can auto-block IPs after failed logins</li>
+<li><strong>Hide the wp-login page</strong> &mdash; moving the login URL stops most automated WordPress scanners cold</li>
+<li><strong>Add a Web Application Firewall</strong> &mdash; services like Cloudflare (free tier available) can filter out scanner traffic before it reaches your server</li>
+</ul>
+<p style="font-size: 12px; color: #6c7d94; margin: 12px 0 0 0; font-style: italic;">
+This explainer is included with the first report only. Future weekly reports will just contain the chart.
+</p>
+</div>
+"""
+
+
+def send_chart_email(chart_path, draft=False, dry_run=False, week_label=None,
+                     first_run=False):
+    # type: (str, bool, bool, str, bool) -> bool
     """Send the chart as an inline image email."""
 
     if not os.path.exists(chart_path):
@@ -84,6 +139,7 @@ Weekly website traffic summary for catherinetrumanarchitects.com.
 <strong>Below the line:</strong> automated/mechanical traffic (scanners, bots, search engine crawlers)
 </p>
 <img src="cid:traffic_chart" style="max-width: 100%; height: auto;" />
+{synopsis}
 <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top: 24px; border-top: 1px solid #e5e7eb; padding-top: 16px;">
 <tr>
 <td style="font-size: 11px; color: #9ca3af; vertical-align: middle;">Questions? Reply to this email.</td>
@@ -97,6 +153,8 @@ Weekly website traffic summary for catherinetrumanarchitects.com.
 </html>
 """
 
+    synopsis_html = FIRST_RUN_SYNOPSIS if first_run else ""
+    html = html.format(synopsis=synopsis_html)
     html_part = MIMEText(html, "html", "utf-8")
     msg.attach(html_part)
 
@@ -156,6 +214,8 @@ def main():
                         help="Dry run")
     parser.add_argument("--week", type=str, default=None,
                         help="Week label for subject line")
+    parser.add_argument("--first-run", action="store_true",
+                        help="Include one-time explainer synopsis")
     args = parser.parse_args()
 
     # Find latest chart if not specified
@@ -175,7 +235,7 @@ def main():
     print("Mode: {}".format(mode))
 
     ok = send_chart_email(chart_path, draft=args.draft, dry_run=args.test,
-                          week_label=args.week)
+                          week_label=args.week, first_run=args.first_run)
     sys.exit(0 if ok else 1)
 
 
