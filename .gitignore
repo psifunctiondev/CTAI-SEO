@@ -1,6 +1,12 @@
 # Secrets / credentials
 .secrets/
 
+# Generated chart images (regenerated on each run)
+analysis/chart_weekly_*.png
+
+# Access logs (fetched via SFTP, too large for repo)
+access_logs/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
