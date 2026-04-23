@@ -1,0 +1,249 @@
+========================================================================
+CTAI WORDPRESS MEDIA INVENTORY REPORT
+Generated: 2026-04-23 14:48 UTC
+========================================================================
+
+## OVERVIEW
+  Total media items (all types): 1453
+  Total images:                  1441
+  Images needing alt text:       1110
+  Images with alt text:          331
+  Coverage gap:                  77.0% missing alt text
+
+## BY IMAGE TYPE
+  full_res          745
+  original          696
+
+## BY MIME TYPE
+  image/gif                     1
+  image/jpeg                 1421
+  image/png                    13
+  image/svg+xml                 5
+  image/tiff                    1
+
+## BY UPLOAD YEAR
+  2023        1248
+  2024           6
+  2025         179
+  2026           2
+  unknown        6
+
+## BY PROJECT / POST (top 30)
+  Unattached                                       84
+  Classic Townhouse | Historic Beacon Hill         79
+  Mid-Century Modern Home Redesign &#038; Rebuild    76
+  Maker Space &#038; Art Studio                    71
+  Barn With a View                                 67
+  Camberville Chef&#8217;s Kitchen and Renovation    64
+  Pool House in an Olmstead Landscape              63
+  Heritage Condominium Renovation | Downtown Boston    57
+  Contemporary Single-Family Home Conversion       56
+  Cambridge Federal Renovation                     53
+  Berkshire Farmhouse                              51
+  South End Townhouse | Contemporary Renovation    46
+  Modern Townhouse Renovation | Boston             45
+  Concord Home Office                              44
+  Charlestown Townhouse Transformation | Modern Update    39
+  West Cedar Street Renovation                     39
+  Cambridge House                                  36
+  Newton Kitchen                                   35
+  Boston Apartment for a Young Family              35
+  Great Camp Main House                            30
+  Primary Suite Renovation                         26
+  Net Zero Barn                                    25
+  Modern Loft                                      24
+  Bullfinch House                                  24
+  Wellesley Renovation                             22
+  Mountain Retreat                                 21
+  Brookline Addition                               21
+  Townhouse Kitchen                                20
+  Nantucket House                                  18
+  New Castle Town Hall                             16
+
+## IMAGES WITH EXISTING ALT TEXT (style reference)
+  These show the existing alt text style on the site:
+  [9275] Camberville exterior 091225
+    Alt: "Grey Victorian House and a closeup of the front door"
+    File: 2025/11/Locke-Slideshow1-scaled.jpg
+
+  [9122] truman-architects-Heritage-renovation-drawings-scaled
+    Alt: "truman-architects-Heritage-renovation-drawings-scaled"
+    File: 2025/10/truman-architects-Heritage-renovation-drawings-scaled-1.jpg
+
+  [9121] Heritage-Before-1-scaled
+    Alt: "Heritage-Before-1-scaled"
+    File: 2025/10/Heritage-Before-1-scaled-1.jpg
+
+  [9074] Feature-Opt-2-scaled
+    Alt: "Feature-Opt-2-scaled"
+    File: 2025/10/Feature-Opt-2-scaled-1.jpg
+
+  [9034] 3-T2
+    Alt: "Classic Townhouse"
+    File: 2023/03/3-T2.jpg
+
+  [9030] Mid-Century-Rebuild8-1
+    Alt: "Mid-Century-Rebuild"
+    File: 2023/03/Mid-Century-Rebuild8-1.jpg
+
+  [8996] 1920X1305
+    Alt: "1920X1305"
+    File: 2023/03/1920X1305.jpg
+
+  [8994] 1920X1440-4-3
+    Alt: "1920X1440-4-3"
+    File: 2023/03/1920X1440-4-3.jpg
+
+  [8970] 2560X1440-demo
+    Alt: "2560X1440-demo"
+    File: 2023/03/2560X1440-demo.jpg
+
+  [7483] RYAN-NEVIDOMSKY
+    Alt: "RYAN NEVIDOMSKY"
+    File: 2023/09/RYAN-NEVIDOMSKY.jpg
+
+  [6717] 
+    Alt: "NE Home Renovation article Feb 2023 COVER (online article)"
+    File: 2023/07/NE-Home-Renovation-article-Feb-2023-COVER-online-article.jpg
+
+  [6713] 
+    Alt: "Modern Luxury Boston Common Nov 2022 Charlestown COVER_page-0001"
+    File: 2023/07/Modern-Luxury-Boston-Common-Nov-2022-Charlestown-COVER_page-0001.jpg
+
+  [6690] Modern Townhouse 08
+    Alt: "Modern Townhouse 08"
+    File: 2023/03/Modern-Townhouse-08-scaled.jpg
+
+  [6689] 
+    Alt: "Modern Townhouse 02c"
+    File: 2023/03/Modern-Townhouse-02c-scaled.jpg
+
+  [6688] 
+    Alt: "Modern Townhouse 02b"
+    File: 2023/03/Modern-Townhouse-02b-scaled.jpg
+
+  [6683] 
+    Alt: "Townhouse-Kitchen-Before-2"
+    File: 2023/03/Townhouse-Kitchen-Before-2-1.jpg
+
+  [6681] 
+    Alt: "St. Paul's School Chapels T"
+    File: 2023/03/St.-Pauls-School-Chapels-T.jpg
+
+  [6679] 
+    Alt: "St. Paul's School Chapels 05b"
+    File: 2023/03/St.-Pauls-School-Chapels-05b.jpg
+
+  [6678] 
+    Alt: "St. Paul's School Chapels 02"
+    File: 2023/03/St.-Pauls-School-Chapels-02.jpg
+
+  [6677] 
+    Alt: "St. Paul's School Chapels 05a"
+    File: 2023/03/St.-Pauls-School-Chapels-05a.jpg
+
+## PILOT CANDIDATES (safe, identifiable images)
+   1. [9293] Locke Feature 2
+      File:    2025/11/Locke-Feature-2-scaled.jpg
+      Type:    full_res
+      Project: Camberville Chef&#8217;s Kitchen and Renovation
+      Size:    2560x1675
+      URL:     https://catherinetrumanarchitects.com/wp-content/uploads/2025/11/Locke-Feature-2-scaled.jpg
+
+   2. [9133] Heritage-Before-2-scaled
+      File:    2025/10/Heritage-Before-2-scaled-1.jpg
+      Type:    full_res
+      Project: Heritage Condominium Renovation | Downtown Boston
+      Size:    2560x1440
+      URL:     https://catherinetrumanarchitects.com/wp-content/uploads/2025/10/Heritage-Before-2-scaled-1.jpg
+
+   3. [8992] 03_Primary Bath5
+      File:    2023/03/03_Primary-Bath5.jpg
+      Type:    original
+      Project: Classic Townhouse | Historic Beacon Hill
+      Size:    2250x1500
+      URL:     https://catherinetrumanarchitects.com/wp-content/uploads/2023/03/03_Primary-Bath5.jpg
+
+   4. [8954] 37 Pond kitchen 1a
+      File:    2023/09/37-Pond-kitchen-1a.jpg
+      Type:    original
+      Project: Carriage House
+      Size:    2037x1357
+      URL:     https://catherinetrumanarchitects.com/wp-content/uploads/2023/09/37-Pond-kitchen-1a.jpg
+
+   5. [8930] Barn Int 04a
+      File:    2023/09/Barn-Int-04a-scaled.jpg
+      Type:    full_res
+      Project: Barn With a View
+      Size:    2560x1801
+      URL:     https://catherinetrumanarchitects.com/wp-content/uploads/2023/09/Barn-Int-04a-scaled.jpg
+
+   6. [8842] Newton Feature
+      File:    2023/03/Newton-Feature-scaled.jpg
+      Type:    full_res
+      Project: Newton Kitchen
+      Size:    2560x1440
+      URL:     https://catherinetrumanarchitects.com/wp-content/uploads/2023/03/Newton-Feature-scaled.jpg
+
+   7. [8804] truman-architects-23 University Baird-renovation-drawings-16
+      File:    2023/09/truman-architects-23-University-Baird-renovation-drawings-16-scaled.jpg
+      Type:    full_res
+      Project: Primary Suite Renovation
+      Size:    2560x1606
+      URL:     https://catherinetrumanarchitects.com/wp-content/uploads/2023/09/truman-architects-23-University-Baird-renovation-drawings-16-scaled.jpg
+
+   8. [8737] Concord Home Office6
+      File:    2023/03/Concord-Home-Office6-scaled.jpg
+      Type:    full_res
+      Project: Concord Home Office
+      Size:    2560x1440
+      URL:     https://catherinetrumanarchitects.com/wp-content/uploads/2023/03/Concord-Home-Office6-scaled.jpg
+
+   9. [8719] Garden St 16b
+      File:    2023/09/Garden-St-16b-scaled.jpg
+      Type:    full_res
+      Project: Cambridge Federal Renovation
+      Size:    1762x2560
+      URL:     https://catherinetrumanarchitects.com/wp-content/uploads/2023/09/Garden-St-16b-scaled.jpg
+
+  10. [8676] truman-architects Maker Space 1st
+      File:    2023/09/truman-architects-Maker-Space-1st-scaled.jpg
+      Type:    full_res
+      Project: Maker Space &#038; Art Studio
+      Size:    2560x1606
+      URL:     https://catherinetrumanarchitects.com/wp-content/uploads/2023/09/truman-architects-Maker-Space-1st-scaled.jpg
+
+  11. [8597] Poolhouse Before 3
+      File:    2023/09/Poolhouse-Before-3-scaled.jpg
+      Type:    full_res
+      Project: Pool House in an Olmstead Landscape
+      Size:    2560x1440
+      URL:     https://catherinetrumanarchitects.com/wp-content/uploads/2023/09/Poolhouse-Before-3-scaled.jpg
+
+  12. [8161] truman-architects-modern-townhouse-07 08
+      File:    2023/03/truman-architects-modern-townhouse-07-08.jpg
+      Type:    original
+      Project: Modern Townhouse Renovation | Boston
+      Size:    1094x734
+      URL:     https://catherinetrumanarchitects.com/wp-content/uploads/2023/03/truman-architects-modern-townhouse-07-08.jpg
+
+  13. [6551] Catherine Truman Architects
+      File:    2023/06/boston-home-kitchen-fall2014-cover.jpg
+      Type:    original
+      Project: Net Zero Barn
+      Size:    810x1100
+      URL:     https://catherinetrumanarchitects.com/wp-content/uploads/2023/06/boston-home-kitchen-fall2014-cover.jpg
+
+  14. [6550] Catherine Truman Architects
+      File:    2023/06/new-england-home-january2017-cover.jpg
+      Type:    original
+      Project: West Cedar Street Renovation
+      Size:    810x1100
+      URL:     https://catherinetrumanarchitects.com/wp-content/uploads/2023/06/new-england-home-january2017-cover.jpg
+
+  15. [6276] 10 (plans)
+      File:    2023/03/10-plans-scaled.jpg
+      Type:    full_res
+      Project: Modern Loft
+      Size:    2560x1606
+      URL:     https://catherinetrumanarchitects.com/wp-content/uploads/2023/03/10-plans-scaled.jpg
